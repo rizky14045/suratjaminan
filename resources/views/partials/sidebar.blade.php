@@ -34,12 +34,12 @@
                                                     class="d-none d-lg-inline">Monitoring Tagihan</span>
                                             </a>
                                         </li>
-                                        <li class="mr-1">
+                                        {{-- <li class="mr-1">
                                             <a href="{{ url('admin/export') }}"
                                                 class="btn-ctm-space text-dark header_class"><span
                                                     class="fa fa-file pr-0 pr-lg-2"></span><span
                                                     class="d-none d-lg-inline">Export</span></a>
-                                        </li>
+                                        </li> --}}
                                     </ul>
                                 </div>
                             </div>
