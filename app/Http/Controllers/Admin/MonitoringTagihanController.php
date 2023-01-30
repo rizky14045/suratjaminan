@@ -30,12 +30,7 @@ class MonitoringTagihanController extends Controller
     {
         $perPage = 25;
         $monitoringtagihan = MonitoringTagihan::latest()->get();
-        foreach($monitoringtagihan as $i => $item) {
-            $existing_id_form[] = $item->id_form_jaminan;
-        }
-        $data['formjaminan'] = FormJaminan::where('status_pengajuan','Sudah Disetujui MKAD')
-        ->whereNotIn('id', $existing_id_form)
-        ->pluck('nomor_surat','id');
+
         $data['monitoringtagihan'] = $monitoringtagihan;
         return view('admin.monitoring-tagihan.index', $data);
     }
