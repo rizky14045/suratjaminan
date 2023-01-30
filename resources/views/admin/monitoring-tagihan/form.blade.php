@@ -3,7 +3,7 @@
         @if ($formMode != 'edit')
             <div class="form-group{{ $errors->has('id_form_jaminan') ? 'has-error' : '' }}">
                 {!! Form::label('id_form_jaminan', 'Nomor Form Jaminan', ['class' => 'control-label']) !!}
-                {!! Form::select('id_form_jaminan', $formjaminan, null, '' == 'required' ? ['class' => 'form-control js-example-basic-multiple', 'required' => 'required'] : ['class' => 'form-control js-example-basic-multiple']) !!}
+                {!! Form::select('id_form_jaminan', null, '' == 'required' ? ['class' => 'form-control js-example-basic-multiple', 'required' => 'required'] : ['class' => 'form-control js-example-basic-multiple']) !!}
                 {!! $errors->first('id_form_jaminan', '<p class="help-block">:message</p>') !!}
             </div>
         @endif
