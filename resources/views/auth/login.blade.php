@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title> Login : Surat Jaminan</title>
-    <link rel='shortcut icon' type='image/x-icon' href="{{asset('/favicon.png')}}" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('vendor/lakers') }}/img/new-logo.ico">
 
     <!-- vendor css -->
     <link href="{{asset('vendor/login')}}/lib/%40fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">

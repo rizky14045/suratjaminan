@@ -5,7 +5,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <title>Surat Jaminan</title>
      <!-- Favicon -->
-     <link rel="icon" type="image/x-icon" href="{{ asset('vendor/lakers') }}/img/favicon.png">
+     <link rel="icon" type="image/x-icon" href="{{ asset('vendor/lakers') }}/img/new-logo.ico">
 
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="{{ asset('vendor/lakers') }}/css/bootstrap.min.css">
