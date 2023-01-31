@@ -21,8 +21,7 @@
   <!-- End SweetAlert2 -->
 </head>
 
-<body>
-
+<body style="background-image: {{{{asset('vendor/lakers/img/bg-suratjaminan.png')}}}};">
     <div class="d-flex align-items-center justify-content-center ht-100v">
         <img src="{{asset('vendor/login')}}/img/geek.png" class="wd-100p ht-100p object-fit-cover" alt="">
         <div class="overlay-body bg-black-6 d-flex align-items-center justify-content-center">
@@ -30,7 +29,7 @@
                 <div class="signin-logo tx-center tx-28 tx-bold tx-white">
                     <img src="{{asset('vendor/lakers/img/logo-pjb.png')}}" style="width:200px;" alt="">
                 </div>
-                <div class="tx-white-5 tx-center mg-b-60">Silahkan Login dengan NIK Anda</div>
+                <div class="tx-white-5 tx-center mg-b-60">Silahkan Login dengan NIK Anda <br> Selamat Datang Di Aplikasi Surat Jaminan</div>
                 <form action="{{route('login.submit')}}" method="POST">
                     {{ csrf_field() }}
                     <div class="form-group">
