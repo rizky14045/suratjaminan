@@ -27,8 +27,8 @@
                         <div class="user-card card shadow-sm bg-white text-center ctm-border-radius">
                             <div class="user-info card-body">
                                 <div class="user-avatar mb-4">
-                                    <img src="{{ asset('vendor/lakers') }}/img/profiles/img-13.jpg" alt="User Avatar"
-                                        class="img-fluid rounded-circle" width="100">
+                                    <img src="{{asset('vendor/lakers/img/logo-pjb.png')}}" alt="User Avatar"
+                                        class="img-fluid" width="300">
                                 </div>
                                 <div class="user-details">
                                     <h4 class="text-uppercase"><b>Selamat Datang {{ Auth::user()->name }}</b></h4>
