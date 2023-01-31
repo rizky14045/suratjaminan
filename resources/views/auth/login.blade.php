@@ -18,13 +18,18 @@
     <link rel="stylesheet" href="{{asset('vendor/login')}}/css/bracket.dark.css">
       <!-- SweetAlert2 -->
   <link rel="stylesheet" href="{{asset('vendor/sweetalert')}}/sweetalert.css">
+  <style>
+    /* .body-login{
+        background-image: url('vendor/lakers/img/bg-suratjaminan.png') !important;
+    } */
+  </style>
   <!-- End SweetAlert2 -->
 </head>
 
-<body style="background-image: {{asset('vendor/lakers/img/bg-suratjaminan.png')}};">
-    <div class="d-flex align-items-center justify-content-center ht-100v">
+<body>
+    <div class="d-flex align-items-center justify-content-center ht-100v" >
         <img src="{{asset('vendor/login')}}/img/geek.png" class="wd-100p ht-100p object-fit-cover" alt="">
-        <div class="overlay-body bg-black-6 d-flex align-items-center justify-content-center">
+        <div class="overlay-body d-flex align-items-center justify-content-center body-login"style="background-image: url({{asset('vendor/lakers/img/bg-suratjaminan.jpg')}}) !important" >
             <div class="login-wrapper wd-300 wd-xs-350 pd-25 pd-xs-40 rounded bd bd-white-2 bg-black-7">
                 <div class="signin-logo tx-center tx-28 tx-bold tx-white">
                     <img src="{{asset('vendor/lakers/img/logo-pjb.png')}}" style="width:200px;" alt="">

@@ -32,7 +32,7 @@
                                 </div>
                                 <div class="user-details">
                                     <h4 class="text-uppercase"><b>Selamat Datang {{ Auth::user()->name }}</b></h4>
-                                    <h6 class="mt-3"><span class=" bg-warning border border-dark p-1">PT PLN Nusantara Power Unit Pembangkitan Muara Karang</span>
+                                    <h6 class="mt-3"><span class="">PT PLN Nusantara Power Unit Pembangkitan Muara Karang</span>
                                     </h6>
                                     <h6 class="mt-3">
                                         {{ date('D, F j Y') }}

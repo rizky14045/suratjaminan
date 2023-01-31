@@ -245,8 +245,13 @@ class FormJaminanController extends Controller
     public function sendEmail($id)
     {
         $formjaminan = FormJaminan::where('id',$id)->first();
-        Mail::to($formjaminan['rumahsakit']['email'])->send(new \App\Mail\FormJaminanEmail($formjaminan));
-        Mail::to($formjaminan['karyawan']['email'])->send(new \App\Mail\Karyawan_Mail($formjaminan));
+        if($formjaminan['rumahsakit']['email']){
+            Mail::to($formjaminan['rumahsakit']['email'])->send(new \App\Mail\FormJaminanEmail($formjaminan));
+
+        }
+        if($formjaminan['karyawan']['email']){
+            Mail::to($formjaminan['karyawan']['email'])->send(new \App\Mail\Karyawan_Mail($formjaminan));
+        }
         Alert::success('Email Success Sent !' );
         $formjaminan->status_email = true;
         $formjaminan->save();

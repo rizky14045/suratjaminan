@@ -160,8 +160,7 @@
     </div>
     <div class="pembuka_surat">
         <p class="pertama" style="text-align: justify">
-            Yang bertanda tangan di bawah ini , Manajer Keuangan dan Administrasi <strong> Unit Pembangkitan Muara
-                Karang</strong> dengan ini menerangkan bahwa,
+            Yang bertanda tangan di bawah ini , Manajer Keuangan dan Administrasi <strong> PT PLN Nusantara Power Unit Pembangkitan Muara Karang</strong> dengan ini menerangkan bahwa,
         </p>
     </div>
     <div class="deskripsi">
@@ -179,7 +178,7 @@
     </div>
     <div class="isi_surat">
         <p class="pertama" style="text-align: justify">
-            Adalah benar yang bersangkutan karyawan <strong>PT Pembangkitan Jawa Bali</strong>, Surat jaminan perawatan
+            Adalah benar yang bersangkutan karyawan <strong>PT PLN Nusantara Power Unit Pembangkitan Muara Karang</strong>, Surat jaminan perawatan
             kesehatan ini di berikan kepada karyawan yang bersangkutan untuk keperluan perawatan sebagai berikut :
         </p>
     </div>
@@ -219,12 +218,12 @@
         <span class="rumah_sakit">{{ $formjaminan['rumahSakit']['nama_rumah_sakit'] }}</span>
     </div>
     <div class="penjelasan">
-        <p>Semua biaya dapat ditagihkan di <strong>PT PJB Unit Pembangkitan Muara Karang</strong>, Jalan Pluit Karang
+        <p>Semua biaya dapat ditagihkan di <strong>PT PLN Nusantara Power Unit Pembangkitan Muara Karang</strong>, Jalan Pluit Karang
             Ayu Jakarta Utara-14450, sedangkan selisih biaya yang tidak sesuai haknya dan non medis serta biaya materai
             ditanggung oleh Karyawan sebelum meninggalkan Rumah Sakit.</p>
-        <p>Untuk koordinasi terkait diagnosa dan rencana tidakan yang akan di berikan kepada pasien, dapat menghubungi
+        <p>Untuk koordinasi terkait diagnosa dan rencana tindakan yang akan di berikan kepada pasien, dapat menghubungi
             Dokter Perusahaan, yaitu dr. Permata Sp.OK ( No. HP : 085882017685). untuk informasi lebih lanjut terkait
-            administrasi jaminan perawatan kesehatan, dapat menghubungi contact person : Sdr . I Gusti Ngurah Bartah (
+            administrasi jaminan perawatan kesehatan, dapat menghubungi contact person : Sdr . I Gusti Ngurah Bartha (
             HP : 082230920005 / ext. 1309) / Sdr, Nasir (HP : 081281121064 / ext. 1313)</p>
         <p>Demikian atas bantuan dan kerja sama yang baik, kami ucapkan terima kasih.</p>
 
@@ -250,7 +249,7 @@
         <br>
         <span>Surat Tagihan agar dilampiri : </span>
         <ol type="a" class="list">
-            <li>Kuitansi atas nama PT PJB UP Muara Karang.</li>
+            <li>Kuitansi atas nama PT PLN Nusantara Power Unit Pembangkitan Muara Karang.</li>
             <li>Daftar nama obat yang di pakai.</li>
             <li>Fotokopi surat pengantar penegakan diagnosa (bila ada).</li>
             <li>Surat Pengantaar / Jaminan Aslinya.</li>

@@ -31,7 +31,7 @@
                                     <li class="list-group-item text-center button-1"><a href="{{ url('/admin/users') }}"
                                             class="text-white">User</a></li>
                                     <li class="list-group-item text-center button-1"><a
-                                            href="{{ url('/admin/karyawan') }}" class="text-white">Karyawan</a></li>
+                                            href="{{ url('/admin/karyawan') }}" class="text-white">Karyawan & Pensiunan</a></li>
                                     <li class="list-group-item text-center button-1"><a
                                             href="{{ url('/admin/kelas-rawat-inap') }}" class="text-white">Kelas Rawat
                                             Inap</a>
