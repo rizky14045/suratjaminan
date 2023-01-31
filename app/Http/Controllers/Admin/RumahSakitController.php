@@ -28,7 +28,7 @@ class RumahSakitController extends Controller
     public function index(Request $request)
     {
         $perPage = 25;
-        $rumahsakit = RumahSakit::latest()->paginate($perPage);
+        $rumahsakit = RumahSakit::latest()->get();
         $data['rumahsakit'] = $rumahsakit;
         return view('admin.rumah-sakit.index', $data);
     }
