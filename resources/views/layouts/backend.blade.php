@@ -27,7 +27,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-3 col-md-3 col-sm-3 col-6">
                             <div class="logo my-3 my-sm-0">
-                                <a href="index.html">
+                                <a href="{{url('admin')}}">
                                     <img src="{{ asset('vendor/lakers') }}/img/logo-pjb.png" alt="logo image"
                                         class="img-fluid" width="100">
                                 </a>
