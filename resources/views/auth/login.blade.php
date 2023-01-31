@@ -21,7 +21,7 @@
   <!-- End SweetAlert2 -->
 </head>
 
-<body style="background-image: {{{{asset('vendor/lakers/img/bg-suratjaminan.png')}}}};">
+<body style="background-image: {{asset('vendor/lakers/img/bg-suratjaminan.png')}};">
     <div class="d-flex align-items-center justify-content-center ht-100v">
         <img src="{{asset('vendor/login')}}/img/geek.png" class="wd-100p ht-100p object-fit-cover" alt="">
         <div class="overlay-body bg-black-6 d-flex align-items-center justify-content-center">
