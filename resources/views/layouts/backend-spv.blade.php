@@ -42,7 +42,7 @@
                                             <a href="javascript:void(0)" data-toggle="dropdown"
                                                 class=" menu-style dropdown-toggle">
                                                 <div class="user-avatar d-inline-block">
-                                                    <img src="{{ asset('vendor/lakers') }}/img/profiles/img-13.jpg"
+                                                    <img src="{{ asset('vendor/lakers') }}/img/logo-pjb.png"
                                                         alt="user avatar" class="rounded-circle img-fluid" width="55">
                                                 </div>
                                             </a>
