@@ -121,7 +121,7 @@ class UserController extends Controller
             $file= $request->file('file_ttd');
             $image_name = $file->getClientOriginalName();
             if($user->file_ttd){
-                unlink(public_path('ttd_image/'.$user->file_ttd));
+                unlink(public_path('ttd_file/'.$user->file_ttd));
                 $file->move(public_path('ttd_file/'),$image_name);
             }else{
                 $file->move(public_path('ttd_file/'),$image_name);
