@@ -129,7 +129,11 @@ class FormJaminanController extends Controller
 
         $latest_form = FormJaminan::latest()->first();
         $spv = User::where('role','spv')->latest()->limit(1)->get();
-        $nomor = $latest_form->id + 1;
+        if($latest_form){
+            $nomor = $latest_form->id + 1;
+        }else{
+            $nomor = 1;
+        }
         $karyawan = Karyawan::where('id',$request->id_karyawan)->first();
         
         if($karyawan['status_karyawan'] == 'karyawan_tetap'){

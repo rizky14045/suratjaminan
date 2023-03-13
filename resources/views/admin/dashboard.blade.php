@@ -132,9 +132,9 @@
                                                         {{-- <h4 class="card-title font-weight-bold">{{ $item->nomor_surat }} --}}
                                                         {{-- </h4> --}}
                                                         <a href="{{ url('admin/detail-monitoring/' . $item->id) }}"
-                                                            class="card-title font-weight-bold">{{ $item->formJaminan->nomor_surat }}
+                                                            class="card-title font-weight-bold">{{ $item->formJaminan->nomor_surat ?? '' }}
                                                         </a>
-                                                        <span>{{ $item->formJaminan->karyawan->nama_karyawan }} | <span
+                                                        <span>{{ $item->formJaminan->karyawan->nama_karyawan ?? '' }} | <span
                                                                 class="border bg-success p-sm-1 font-weight-bold text-light" style="font-size: 12px;">{{$item->status_pembayaran}}</span>
                                                         </span>
                                                     </div>
