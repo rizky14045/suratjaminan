@@ -222,7 +222,7 @@
             Ayu Jakarta Utara-14450, sedangkan selisih biaya yang tidak sesuai haknya dan non medis serta biaya materai
             ditanggung oleh Karyawan sebelum meninggalkan Rumah Sakit.</p>
         <p>Untuk koordinasi terkait diagnosa dan rencana tindakan yang akan di berikan kepada pasien, dapat menghubungi
-            Dokter Perusahaan, yaitu dr. Permata Sp.OK ( No. HP : 085882017685). untuk informasi lebih lanjut terkait
+            Dokter Perusahaan, yaitu Dr Erni Novelia Sinaga ( No. HP : 081226120949). untuk informasi lebih lanjut terkait
             administrasi jaminan perawatan kesehatan, dapat menghubungi contact person : Sdr . I Gusti Ngurah Bartha (
             HP : 082230920005 / ext. 1309) / Sdr, Nasir (HP : 081281121064 / ext. 1313)</p>
         <p>Demikian atas bantuan dan kerja sama yang baik, kami ucapkan terima kasih.</p>
