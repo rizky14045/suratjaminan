@@ -281,7 +281,7 @@
                                                                                         class="lnr lnr-envelope"></span>Email
                                                                                 </button>
                                                                             </a>
-                                                                            <a href="{{ url('/admin/form-jaminan/' . $item->id . '/print_PDF') }}"
+                                                                            <a href="{{ asset('generate-pdf/' . $item->file_pdf) }}"
                                                                                 title="Print PDF FormJaminan">
                                                                                 <button class="btn btn-sm btn-success">
                                                                                     <span
