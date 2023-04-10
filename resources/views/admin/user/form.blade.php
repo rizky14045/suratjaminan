@@ -27,11 +27,11 @@
         {!! $errors->first('file_ttd', '<p class="help-block">:message</p>') !!}
         <small>File berformat Png dan maksimal file 4MB</small>
     </div>
-    {{-- @if ($user['file_ttd'])
+    @if ($user['file_ttd'])
         <div>
-            <img src="{{ asset('ttd_image/' . $user['file_ttd']) }}" alt="" height="75" width="150">
+            <img src="{{ asset('ttd_file/' . $user['file_ttd']) }}" alt="" height="75" width="150">
         </div>
-    @endif --}}
+    @endif
 
 @endif
 @if ($user['role'] == 'spv')
@@ -41,11 +41,11 @@
         {!! $errors->first('file_ttd', '<p class="help-block">:message</p>') !!}
         <small>File berformat Png dan maksimal file 4MB</small>
     </div>
-    {{-- @if ($user['file_ttd'])
+    @if ($user['file_ttd'])
         <div>
-            <img src="{{ asset('ttd_image/' . $user['file_ttd']) }}" alt="" height="75" width="150">
+            <img src="{{ asset('ttd_file/' . $user['file_ttd']) }}" alt="" height="75" width="150">
         </div>
-    @endif --}}
+    @endif
 
 @endif
 <div class="form-group{{ $errors->has('password') ? 'has-error' : '' }}">
