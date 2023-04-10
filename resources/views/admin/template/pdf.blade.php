@@ -142,7 +142,7 @@
 
     .stempel {
         display: block;
-        margin-left: -300px;
+        margin-left: -280px;
         margin-top: 20px;
     }
 
@@ -237,7 +237,7 @@
         </span>
         <br>
         <div class="stempel">
-            <img src="{{ public_path('ttd_file/' . $mkad[0]['file_ttd']) }}" alt="" height="100" width="150">
+            <img src="{{ public_path('ttd_file/' . $mkad[0]['file_ttd']) }}" alt="">
         </div>
         <span class="ttd-nama">{{ $mkad[0]['name'] }}</span>
         <div class="paraf">
