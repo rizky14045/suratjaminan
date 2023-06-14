@@ -38,6 +38,7 @@
 
     .deskripsi {
         margin-left: 40px
+        font-size:14px;
     }
 
     .deskripsi .nama {
@@ -101,15 +102,15 @@
     }
 
     .induk_deskripsi {
-        margin-left: 66px;
+        margin-left: 72px;
     }
 
     .jabatan_deskripsi {
-        margin-left: 100px;
+        margin-left: 102px;
     }
 
     .alamat_deskripsi {
-        margin-left: 100px;
+        margin-left: 102px;
     }
 
     .nama_informasi {
@@ -163,7 +164,7 @@
             Yang bertanda tangan di bawah ini , Manajer Keuangan dan Administrasi <strong> PT PLN Nusantara Power Unit Pembangkitan Muara Karang</strong> dengan ini menerangkan bahwa,
         </p>
     </div>
-    <div class="deskripsi">
+    <div class="deskripsi" style="font-size: 12px;">
         <span>Nama <span class="nama_deskripsi">:</span> </span>
         <span class="nama">{{ $formjaminan['karyawan']['nama_karyawan'] }}</span>
         <br>
