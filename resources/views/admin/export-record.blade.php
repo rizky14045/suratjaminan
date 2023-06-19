@@ -1,4 +1,12 @@
 @extends('layouts.backend')
+@section('styles')
+    <style>
+        td ul li{
+            list-style-type:  disc !important;
+            color:black;
+        }
+    </style>
+@endsection
 @section('content')
 <div class="page-wrapper" style="transform: none;">
     <div class="container-fluid" style="transform: none;">
@@ -49,7 +57,7 @@
             <div class="col-xl-9 col-lg-8  col-md-12">
                 <div class="card shadow-sm ctm-border-radius grow">
                     <div class="card-body align-center">
-                        <form action="{{url('admin/export')}}" method="GET">
+                        <form action="{{url('admin/export-history-record')}}" method="GET">
                             <div class="row filter-row">
                                 <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
                                     <div class="form-group mb-xl-0 mb-md-2 mb-sm-2">
@@ -87,31 +95,25 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Nomor Surat</th>
-                                        <th>Jenis Surat</th>
                                         <th>Nama Karyawan</th>
-                                        <th>NID</th>
-                                        <th>Nama Pasien</th>
-                                        <th>Jenis Pemeriksaan</th>
-                                        <th>Rumah Sakit</th>
-                                        <th>Kelas Rawat Inap</th>
-                                        <th>Status Pengajuan</th>
+                                        <th>Nid</th>
+                                        <th>Riwayat Penyakit</th>
+                                        <th>Jenis Pengobatan / Tindakan</th>
+                                        <th>Riwayat Obat</th>
+                                                        <th>Resume Medis</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @isset($forms)
-                                        @foreach ($forms as $item)
+                                    @isset($records)
+                                        @foreach ($records as $item)
                                         <tr>
-                                            <td>{{ $loop->iteration}}</td>
-                                            <td>{{ $item->nomor_surat }}</td>
-                                            <td>{{ $item->jenis_surat }}</td>
-                                            <td>{{ $item->karyawan['nama_karyawan'] }}</td>
-                                            <td>{{ $item->karyawan['nid'] }}</td>
-                                            <td>{{ $item->nama_pasien }}</td>
-                                            <td>{{ $item->jenisPemeriksaan['jenis_pemeriksaan'] }}</td>
-                                            <td>{{ $item->rumahSakit['nama_rumah_sakit'] }}</td>
-                                            <td>{{ $item->jenis_kelas }} / {{ number_format($item->harga) }}</td>
-                                            <td>{{ $item->status_pengajuan }}</td>
+                                            <td>{{$loop->iteration}}</td>
+                                            <td>{{ $item->karyawan->nama_karyawan ?? '' }}</td>
+                                            <td>{{ $item->karyawan->nid ?? '' }}</td>
+                                            <td class="text-ck">{{ $item->riwayat_penyakit }}</td>
+                                            <td class="text-ck">{{ $item->jenis_pengobatan }}</td>
+                                            <td class="text-ck">{{ $item->riwayat_obat }}</td>
+                                            <td class="text-ck">{{ $item->resume_medis }}</td>
                                         </tr>
                                         @endforeach
                                     @else
@@ -140,7 +142,7 @@
         var wb = XLSX.utils.table_to_book(elt, { sheet: "sheet1" });
         return dl ?
             XLSX.write(wb, { bookType: type, bookSST: true, type: 'base64' }) :
-            XLSX.writeFile(wb, fn || ('Export Data-{{$tanggal_mulai}}-{{$tanggal_selesai}}.' + (type || 'xlsx')));
+            XLSX.writeFile(wb, fn || ('Export-history-records-Data-{{$tanggal_mulai}}-{{$tanggal_selesai}}.' + (type || 'xlsx')));
     }
 
 </script>

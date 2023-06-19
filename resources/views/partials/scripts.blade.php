@@ -57,5 +57,18 @@
      });
  </script>
  <script src="{{ asset('vendor/sweetalert') }}/sweetalert.min.js"></script>
+ {{-- <script src="{{asset('vendor/ckeditor')}}/ckeditor.js"></script> --}}
+{{-- <script>
+    CKEDITOR.replace( 'riwayat_penyakit' );
+</script>
+<script>
+    CKEDITOR.replace( 'jenis_pengobatan' );
+</script>
+<script>
+    CKEDITOR.replace( 'riwayat_obat' );
+</script>
+<script>
+    CKEDITOR.replace( 'resume_medis' );
+</script> --}}
  @include('vendor.sweet.alert')
  @yield('scripts')

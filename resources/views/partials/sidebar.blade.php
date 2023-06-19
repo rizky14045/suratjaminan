@@ -34,6 +34,14 @@
                                                     class="d-none d-lg-inline">Monitoring Tagihan</span>
                                             </a>
                                         </li>
+
+                                        <li class="mr-1">
+                                            <a href="{{ url('admin/history-record') }}"
+                                                class="btn-ctm-space text-dark header_class"><span
+                                                    class="fa fa-clock-o pr-0 pr-lg-2"></span><span
+                                                    class="d-none d-lg-inline">History Record</span></a>
+                                        </li>
+
                                         <li class="mr-1">
                                             <a href="{{ url('admin/export') }}"
                                                 class="btn-ctm-space text-dark header_class"><span

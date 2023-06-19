@@ -43,6 +43,8 @@ Route::resource('admin/rumah-sakit', 'Admin\\RumahSakitController');
 Route::resource('admin/monitoring-tagihan', 'Admin\\MonitoringTagihanController');
 
 Route::get('admin/export', 'Admin\ExportController@index');
+Route::get('admin/export-history-record', 'Admin\ExportController@historyRecord');
+Route::resource('admin/history-record', 'Admin\\HistoryRecordController');
 
 // MKAD
 Route::get('mkad', 'MKAD\MKADController@index');
