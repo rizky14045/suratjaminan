@@ -42,6 +42,8 @@ Route::resource('admin/jenis-pemeriksaan', 'Admin\\JenisPemeriksaanController');
 Route::resource('admin/rumah-sakit', 'Admin\\RumahSakitController');
 Route::resource('admin/monitoring-tagihan', 'Admin\\MonitoringTagihanController');
 
+Route::get('admin/export', 'Admin\ExportController@index');
+
 // MKAD
 Route::get('mkad', 'MKAD\MKADController@index');
 Route::get('mkad/form-jaminan', 'MKAD\MKADController@indexKaryawan');
