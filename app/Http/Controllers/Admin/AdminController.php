@@ -23,9 +23,9 @@ class AdminController extends Controller
     public function index()
     {   
         $formjaminan['monitoring'] =MonitoringTagihan::latest()->limit(3)->get();
-        $formjaminan['sudah'] =FormJaminan::where('status_pengajuan','=','Sudah Disetujui MKAD')->latest()->limit(3)->get();
+        $formjaminan['sudah'] =FormJaminan::latest()->limit(3)->get();
         $formjaminan['count_monitoring'] = MonitoringTagihan::count();
-        $formjaminan['count_sudah'] = FormJaminan::where('status_pengajuan','=','Sudah Disetujui MKAD')->count();
+        $formjaminan['count_sudah'] = FormJaminan::count();
     
         return view('admin.dashboard', $formjaminan);
     }

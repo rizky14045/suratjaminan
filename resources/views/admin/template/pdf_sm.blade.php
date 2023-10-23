@@ -38,6 +38,7 @@
 
     .deskripsi {
         margin-left: 40px
+        font-size:14px;
     }
 
     .deskripsi .nama {
@@ -78,21 +79,21 @@
         text-transform: uppercase;
         font-weight: bold;
     }
+    .paraf{
+        margin-top: -22px;
+        margin-left:-290px;
+    }
 
     .ttd-nama {
         display: inline-block;
-        margin-top: 10px;
-        margin-left: 40px;
+        margin-top: -10px;
+        margin-left: 5px;
         text-transform: uppercase;
         font-weight: bold;
     }
-    .paraf{
-        margin-top: -20px;
-        margin-left:-260px
-    }
 
     .catatan {
-        margin-top: 20px;
+        /* margin-top: 10px; */
         text-align: justify;
     }
 
@@ -101,15 +102,15 @@
     }
 
     .induk_deskripsi {
-        margin-left: 66px;
+        margin-left: 72px;
     }
 
     .jabatan_deskripsi {
-        margin-left: 100px;
+        margin-left: 102px;
     }
 
     .alamat_deskripsi {
-        margin-left: 100px;
+        margin-left: 102px;
     }
 
     .nama_informasi {
@@ -142,8 +143,8 @@
 
     .stempel {
         display: block;
-        margin-left: -300px;
-        margin-top: 20px;
+        margin-left: -280px;
+        margin-top: -10px;
     }
 
     ol {
@@ -160,11 +161,10 @@
     </div>
     <div class="pembuka_surat">
         <p class="pertama" style="text-align: justify">
-            Yang bertanda tangan di bawah ini , Manajer Keuangan dan Administrasi <strong> Unit Pembangkitan Muara
-                Karang</strong> dengan ini menerangkan bahwa,
+            Yang bertanda tangan di bawah ini , Senior Manager <strong> PT PLN Nusantara Power Unit Pembangkitan Muara Karang</strong> dengan ini menerangkan bahwa,
         </p>
     </div>
-    <div class="deskripsi">
+    <div class="deskripsi" style="font-size: 12px;">
         <span>Nama <span class="nama_deskripsi">:</span> </span>
         <span class="nama">{{ $formjaminan['karyawan']['nama_karyawan'] }}</span>
         <br>
@@ -179,7 +179,7 @@
     </div>
     <div class="isi_surat">
         <p class="pertama" style="text-align: justify">
-            Adalah benar yang bersangkutan karyawan <strong>PT Pembangkitan Jawa Bali</strong>, Surat jaminan perawatan
+            Adalah benar yang bersangkutan karyawan <strong>PT PLN Nusantara Power Unit Pembangkitan Muara Karang</strong>, Surat jaminan perawatan
             kesehatan ini di berikan kepada karyawan yang bersangkutan untuk keperluan perawatan sebagai berikut :
         </p>
     </div>
@@ -219,12 +219,12 @@
         <span class="rumah_sakit">{{ $formjaminan['rumahSakit']['nama_rumah_sakit'] }}</span>
     </div>
     <div class="penjelasan">
-        <p>Semua biaya dapat ditagihkan di <strong>PT PJB Unit Pembangkitan Muara Karang</strong>, Jalan Pluit Karang
+        <p>Semua biaya dapat ditagihkan di <strong>PT PLN Nusantara Power Unit Pembangkitan Muara Karang</strong>, Jalan Pluit Karang
             Ayu Jakarta Utara-14450, sedangkan selisih biaya yang tidak sesuai haknya dan non medis serta biaya materai
             ditanggung oleh Karyawan sebelum meninggalkan Rumah Sakit.</p>
-        <p>Untuk koordinasi terkait diagnosa dan rencana tidakan yang akan di berikan kepada pasien, dapat menghubungi
+        <p>Untuk koordinasi terkait diagnosa dan rencana tindakan yang akan di berikan kepada pasien, dapat menghubungi
             Dokter Perusahaan, yaitu Dr Erni Novelia Sinaga ( No. HP : 081226120949). untuk informasi lebih lanjut terkait
-            administrasi jaminan perawatan kesehatan, dapat menghubungi contact person : Sdr . I Gusti Ngurah Bartah (
+            administrasi jaminan perawatan kesehatan, dapat menghubungi contact person : Sdr . I Gusti Ngurah Bartha (
             HP : 082230920005 / ext. 1309) / Sdr, Nasir (HP : 081281121064 / ext. 1313)</p>
         <p>Demikian atas bantuan dan kerja sama yang baik, kami ucapkan terima kasih.</p>
 
@@ -234,15 +234,15 @@
         <span> Jakarta, {{ date('j F Y') }}</span>
         <br>
         <span class="ttd-mkad">
-            manajer keuangan & adm.
+            senior manager
         </span>
         <br>
         <div class="stempel">
-            <img src="{{ public_path('ttd_file/stempel.png' ) }}" alt="" height="100" width="150">
+            <img src="{{ public_path('ttd_file/' . $sm[0]['file_ttd']) }}" alt="" style="width:15%">
         </div>
-        <span class="ttd-nama">{{ $mkad[0]['name'] }}</span>
+        <span class="ttd-nama">{{ $sm[0]['name'] }}</span>
         <div class="paraf">
-            <img src="{{ public_path('ttd_file/'.$spv[0]['file_ttd']) }}" height="20" width="40">
+            <img src="{{ public_path('ttd_file/'.$mkad[0]['file_ttd']) }}" height="20" width="30">
         </div>
     </div>
     <div class="catatan">
@@ -250,7 +250,7 @@
         <br>
         <span>Surat Tagihan agar dilampiri : </span>
         <ol type="a" class="list">
-            <li>Kuitansi atas nama PT PJB UP Muara Karang.</li>
+            <li>Kuitansi atas nama PT PLN Nusantara Power Unit Pembangkitan Muara Karang.</li>
             <li>Daftar nama obat yang di pakai.</li>
             <li>Fotokopi surat pengantar penegakan diagnosa (bila ada).</li>
             <li>Surat Pengantaar / Jaminan Aslinya.</li>

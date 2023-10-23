@@ -1,4 +1,4 @@
-@extends('layouts.backend-spv')
+@extends('layouts.backend-sm')
 
 @section('content')
     <div class="page-wrapper">
@@ -14,7 +14,7 @@
                                             <div class="custom-breadcrumb">
                                                 <ol class="breadcrumb no-bg-color d-inline-block p-0 m-0 mb-2">
                                                     <li class="breadcrumb-item d-inline-block"><a
-                                                            href="{{ url('/mkad') }}" class="text-dark">Home</a></li>
+                                                            href="{{ url('/sm') }}" class="text-dark">Home</a></li>
                                                     <li class="breadcrumb-item d-inline-block active">Form Jaminan</li>
                                                 </ol>
                                                 <h4 class="text-dark">Form Jaminan Pensiunan</h4>
@@ -30,10 +30,10 @@
                                 <ul class="list-group">
 
                                     <li class="list-group-item text-center button-1"><a
-                                            href="{{ url('/spv/form-jaminan') }}" class="text-white">Karyawan</a>
+                                            href="{{ url('/sm/form-jaminan') }}" class="text-white">Karyawan</a>
                                     </li>
                                     <li class="list-group-item text-center button-1"><a
-                                            href="{{ url('/spv/form-jaminan-pensiunan') }}"
+                                            href="{{ url('/sm/form-jaminan-pensiunan') }}"
                                             class="text-white">Pensiunan</a></li>
                                 </ul>
                             </div>
@@ -111,19 +111,29 @@
                                                             </td>
                                                             <td class="text-right" align="center">
                                                                 <div class="table-action">
-                                                                    <a href="{{ url('/spv/form-jaminan/' . $item->id) }}"
+                                                                    <a href="{{ url('/sm/form-jaminan/' . $item->id) }}"
                                                                         title="View FormJaminan">
                                                                         <button class="btn btn-sm btn-info">
                                                                             <span class="lnr lnr-eye"></span>View
                                                                         </button>
                                                                     </a>
-                                                                    @if ($item->status_pengajuan == 'Menunggu Persetujuan SPV')
-                                                                    <a href="{{ url('/spv/form-jaminan/approve/' . $item->id) }}"
-                                                                        title="Approve FormJaminan">
-                                                                        <button class="btn btn-sm btn-success">
-                                                                            <span class="fa fa-check"></span>Approve
+                                                                    @if ($item->status_pengajuan == 'Sudah Disetujui Senior Manager')
+                                                                        
+                                                                    <a href="{{ url('/sm/show-pdf/' . $item->id) }}"
+                                                                        title="View FormJaminan" target="_blank">
+                                                                        <button class="btn btn-sm btn-info">
+                                                                            <span class="lnr lnr-eye"></span>PDF
                                                                         </button>
                                                                     </a>
+                                                                    @endif
+                                                                    
+                                                                    @if($item->status_pengajuan == 'Sudah Disetujui MKAD')
+                                                                        <a href="{{ url('/sm/form-jaminan/approve/' . $item->id) }}"
+                                                                            title="Approve FormJaminan">
+                                                                            <button class="btn btn-sm btn-success">
+                                                                                <span class="fa fa-check"></span>Approve
+                                                                            </button>
+                                                                        </a>
                                                                     @endif
                                                                 </div>
                                                             </td>
@@ -172,22 +182,29 @@
                                                             <td>{{ $item->status_pengajuan }}</td>
                                                             <td class="text-right" align="center">
                                                                 <div class="table-action">
-                                                                    <a href="{{ url('/mkad/form-jaminan/' . $item->id) }}"
+                                                                    <a href="{{ url('/sm/form-jaminan/' . $item->id) }}"
                                                                         title="View FormJaminan">
                                                                         <button class="btn btn-sm btn-info">
                                                                             <span class="lnr lnr-eye"></span>View
                                                                         </button>
                                                                     </a>
-                                                                     @if ($item->status_pengajuan == 'Menunggu Persetujuan SPV')  
-                                                                     <a href="{{ url('/spv/form-jaminan/approve/' . $item->id) }}"
-                                                                         title="Approve FormJaminan">
-                                                                         <button class="btn btn-sm btn-success">
-                                                                             <span class="fa fa-check"></span>Approve
-                                                                         </button>
-                                                                     </a>
-                                                                    @endif
-                                                                 
+                                                                    @if ($item->status_pengajuan == 'Sudah Disetujui Senior Manager')
                                                                         
+                                                                    <a href="{{ url('/sm/show-pdf/' . $item->id) }}"
+                                                                        title="View FormJaminan"  target="_blank">
+                                                                        <button class="btn btn-sm btn-info">
+                                                                            <span class="lnr lnr-eye"></span>
+                                                                        </button>
+                                                                    </a>
+                                                                    @endif
+                                                                    @if($item->status_pengajuan == 'Sudah Disetujui MKAD')
+                                                                        <a href="{{ url('/sm/form-jaminan/approve/' . $item->id) }}"
+                                                                            title="Approve FormJaminan">
+                                                                            <button class="btn btn-sm btn-success">
+                                                                                <span class="fa fa-check"></span>Approve
+                                                                            </button>
+                                                                        </a>
+                                                                        @endif
                                                                 </div>
                                                             </td>
                                                         </tr>

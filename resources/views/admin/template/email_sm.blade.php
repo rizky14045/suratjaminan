@@ -239,8 +239,8 @@
                                                         style="font-size: 20px; line-height: 1.2; text-align: center; word-break: break-word; mso-line-height-alt: 34px; margin: 0;">
                                                         <span style="font-size: 20px;">
                                                             <strong>
-                                                                <span style="font-size: 20px;">Halo SPV
-                                                                    {{ $spv[0]['name'] }}</span>
+                                                                <span style="font-size: 20px;">Halo Senior Manager
+                                                                    {{ $sm[0]['name'] }}</span>
                                                             </strong>
                                                         </span>
                                                         <br />

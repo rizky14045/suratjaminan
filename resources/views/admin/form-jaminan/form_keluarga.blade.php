@@ -42,7 +42,7 @@
         </div>
         <div class="form-group{{ $errors->has('id_rumah_sakit') ? 'has-error' : '' }}">
             {!! Form::label('id_rumah_sakit', 'Rumah Sakit', ['class' => 'control-label']) !!}
-            {!! Form::select('id_rumah_sakit', $rumahSakit, null, '' == 'required' ? ['class' => 'form-control', 'required' => 'required'] : ['class' => 'form-control', 'placeholder' => 'Silahkan Pilih']) !!}
+            {!! Form::select('id_rumah_sakit', $rumahSakit, null, '' == 'required' ? ['class' => 'js-example-basic-multiple form-control', 'required' => 'required'] : ['class' => 'js-example-basic-multiple form-control', 'placeholder' => 'Silahkan Pilih']) !!}
             {!! $errors->first('id_rumah_sakit', '<p class="help-block">:message</p>') !!}
         </div>
         <div class="form-group{{ $errors->has('hubungan_keluarga') ? 'has-error' : '' }}">

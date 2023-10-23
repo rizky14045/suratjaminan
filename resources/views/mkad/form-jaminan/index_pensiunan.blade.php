@@ -117,22 +117,14 @@
                                                                             <span class="lnr lnr-eye"></span>View
                                                                         </button>
                                                                     </a>
-                                                                    
-                                                                    @if($item->status_pengajuan == 'Sudah Disetujui SPV')
-                                                                    <a href="{{ url('/mkad/show-pdf/' . $item->id) }}"
-                                                                        title="View FormJaminan" target="_blank">
-                                                                        <button class="btn btn-sm btn-info">
-                                                                            <span class="lnr lnr-eye"></span>PDF
+                                                                    @if ($item->status_pengajuan == 'Menunggu Persetujuan MKAD')
+                                                                    <a href="{{ url('/mkad/form-jaminan/approve/' . $item->id) }}"
+                                                                        title="Approve FormJaminan">
+                                                                        <button class="btn btn-sm btn-success">
+                                                                            <span class="fa fa-check"></span>Approve
                                                                         </button>
                                                                     </a>
-
-                                                                        <a href="{{ url('/mkad/form-jaminan/approve/' . $item->id) }}"
-                                                                            title="Approve FormJaminan">
-                                                                            <button class="btn btn-sm btn-success">
-                                                                                <span class="fa fa-check"></span>Approve
-                                                                            </button>
-                                                                        </a>
-                                                                        @endif
+                                                                    @endif
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -186,21 +178,16 @@
                                                                             <span class="lnr lnr-eye"></span>View
                                                                         </button>
                                                                     </a>
-                                                                   
-                                                                    @if($item->status_pengajuan == 'Sudah Disetujui SPV')
-                                                                    <a href="{{ url('/mkad/show-pdf/' . $item->id) }}"
-                                                                        title="View FormJaminan"  target="_blank">
-                                                                        <button class="btn btn-sm btn-info">
-                                                                            <span class="lnr lnr-eye"></span>
-                                                                        </button>
-                                                                    </a>
-                                                                        <a href="{{ url('/mkad/form-jaminan/approve/' . $item->id) }}"
-                                                                            title="Approve FormJaminan">
-                                                                            <button class="btn btn-sm btn-success">
-                                                                                <span class="fa fa-check"></span>Approve
-                                                                            </button>
-                                                                        </a>
-                                                                        @endif
+                                                                     @if ($item->status_pengajuan == 'Menunggu Persetujuan MKAD')  
+                                                                     <a href="{{ url('/mkad/form-jaminan/approve/' . $item->id) }}"
+                                                                         title="Approve FormJaminan">
+                                                                         <button class="btn btn-sm btn-success">
+                                                                             <span class="fa fa-check"></span>Approve
+                                                                         </button>
+                                                                     </a>
+                                                                    @endif
+                                                                 
+                                                                        
                                                                 </div>
                                                             </td>
                                                         </tr>

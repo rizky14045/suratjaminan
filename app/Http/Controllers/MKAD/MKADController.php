@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers\MKAD;
 
 use App\Http\Controllers\Controller;
@@ -12,8 +11,6 @@ use App\Models\JenisPemeriksaan;
 use App\Models\RumahSakit;
 use Alert;
 use Mail;
-use PDF;
-use Illuminate\Support\Str;
 
 class MKADController extends Controller
 {
@@ -28,10 +25,10 @@ class MKADController extends Controller
      */
     public function index()
     {   
-        $formjaminan['menunggu'] =FormJaminan::where('status_pengajuan','=','Sudah Disetujui SPV')->latest()->limit(3)->get();
-        $formjaminan['sudah'] =FormJaminan::where('status_pengajuan','=','Sudah Disetujui MKAD')->latest()->limit(3)->get();
-        $formjaminan['count_menunggu'] = FormJaminan::where('status_pengajuan','=','Sudah Disetujui SPV')->count();
-        $formjaminan['count_sudah'] = FormJaminan::where('status_pengajuan','=','Sudah Disetujui MKAD')->count();
+        $formjaminan['menunggu'] =FormJaminan::where('status_pengajuan','=','Menunggu Persetujuan MKAD')->latest()->limit(3)->get();
+        $formjaminan['sudah'] =FormJaminan::where('status_pengajuan','!=','Menunggu Persetujuan MKAD')->latest()->limit(3)->get();
+        $formjaminan['count_menunggu'] = FormJaminan::where('status_pengajuan','=','Menunggu Persetujuan MKAD')->count();
+        $formjaminan['count_sudah'] = FormJaminan::where('status_pengajuan','!=','Menunggu Persetujuan MKAD')->count();
         return view('mkad.dashboard', $formjaminan);
     }
 
@@ -41,14 +38,14 @@ class MKADController extends Controller
                                     ->select('karyawans.*', 'form_jaminans.*', 'kelas_rawat_inaps.*', 'form_jaminans.id as id')      
                                     ->where('karyawans.status_karyawan', 'karyawan_tetap')
                                     ->where('form_jaminans.jenis_surat', 'personal')
-                                    ->orderBy('form_jaminans.status_pengajuan', 'Sudah Disetujui SPV')
+                                    ->orderBy('form_jaminans.status_pengajuan', 'ASC')
                                     ->latest('form_jaminans.created_at')->get();
         $formjaminan_keluarga = FormJaminan::join('karyawans', 'form_jaminans.id_karyawan', 'karyawans.id')
                                     ->join('kelas_rawat_inaps', 'karyawans.id_kelas_rawat_inap', 'kelas_rawat_inaps.id')  
                                     ->select('karyawans.*', 'form_jaminans.*', 'kelas_rawat_inaps.*', 'form_jaminans.id as id')      
                                     ->where('karyawans.status_karyawan', 'karyawan_tetap')
                                     ->where('form_jaminans.jenis_surat', 'keluarga')
-                                    ->orderBy('form_jaminans.status_pengajuan', 'Sudah Disetujui SPV')
+                                    ->orderBy('form_jaminans.status_pengajuan', 'ASC')
                                     ->latest('form_jaminans.created_at')->get();
 
         $karyawan = Karyawan::where('status_karyawan', 'karyawan_tetap')->get();
@@ -70,14 +67,14 @@ class MKADController extends Controller
                                     ->select('karyawans.*', 'form_jaminans.*', 'kelas_rawat_inaps.*', 'form_jaminans.id as id')      
                                     ->where('karyawans.status_karyawan', 'pensiunan')
                                     ->where('form_jaminans.jenis_surat', 'personal')
-                                    ->orderBy('form_jaminans.status_pengajuan', 'Sudah Disetujui SPV')
+                                    ->orderBy('form_jaminans.status_pengajuan', 'ASC')
                                     ->latest('form_jaminans.created_at')->get();
         $formjaminan_keluarga = FormJaminan::join('karyawans', 'form_jaminans.id_karyawan', 'karyawans.id')
                                     ->join('kelas_rawat_inaps', 'karyawans.id_kelas_rawat_inap', 'kelas_rawat_inaps.id')  
                                     ->select('karyawans.*', 'form_jaminans.*', 'kelas_rawat_inaps.*', 'form_jaminans.id as id')      
                                     ->where('karyawans.status_karyawan', 'pensiunan')
                                     ->where('form_jaminans.jenis_surat', 'keluarga')
-                                    ->orderBy('form_jaminans.status_pengajuan', 'Sudah Disetujui SPV')
+                                    ->orderBy('form_jaminans.status_pengajuan', 'ASC')
                                     ->latest('form_jaminans.created_at')->get();
 
         $karyawan = Karyawan::where('status_karyawan', 'pensiunan')->get();
@@ -100,23 +97,17 @@ class MKADController extends Controller
         return view('mkad.form-jaminan.show', compact('formjaminan'));
     }
 
-    public function showPDF($id)
-    {
-        $formjaminan = FormJaminan::where('id',$id)->first();
-        $mkad = User::where('role','mkad')->latest()->limit(1)->get();
-        $spv = User::where('role','spv')->latest()->limit(1)->get();
-        $slug = Str::slug($formjaminan['karyawan']['nama_karyawan'], '-');
-        $nomor_pecah = explode("/",$formjaminan->nomor_surat);
-        $nomor_gabung = implode("-",$nomor_pecah);
-        $pdf_name = $nomor_gabung.'-'.$formjaminan->jenis_surat.'-'.date('Y-m-d').'-'.$formjaminan['karyawan']['nid'].'-'. $slug .'.pdf' ;
-       return PDF::loadView('admin/template/pdf_mkad', compact(['formjaminan','mkad','spv']))->setPaper('a4', 'portrait')->stream($pdf_name);
-    }
     public function approveJaminan($id)
     {
+        $sm = User::where('role','sm')->latest()->limit(1)->get();
         $formjaminan = FormJaminan::findOrFail($id);
-        $formjaminan->status_pengajuan = 'Sudah Disetujui MKAD';
+        $formjaminan->status_pengajuan = 'Sudah Di setujui MKAD';
         $formjaminan->save();
-        Alert::success('Form Jaminan Berhasil Disetujui' );
+        if($formjaminan){
+            Mail::to($sm[0]['email'])->send(new \App\Mail\Sm_Mail($sm,$formjaminan));
+        }
+        Alert::success('Form Jaminan Berhasil Di setujui' );
+
         return redirect()->back();
     }
 }

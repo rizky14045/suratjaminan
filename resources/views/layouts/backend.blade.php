@@ -27,10 +27,25 @@
                     <div class="row align-items-center">
                         <div class="col-lg-3 col-md-3 col-sm-3 col-6">
                             <div class="logo my-3 my-sm-0">
-                                <a href="{{url('admin')}}">
-                                    <img src="{{ asset('vendor/lakers') }}/img/logo-pjb.png" alt="logo image"
-                                        class="img-fluid" width="100">
-                                </a>
+                                @if (Auth::user()->role == 'spv')
+                                    <a href="{{url('admin')}}">
+                                        <img src="{{ asset('vendor/lakers') }}/img/logo-pjb.png" alt="logo image"
+                                            class="img-fluid" width="100">
+                                    </a>
+                                @endif
+                                @if (Auth::user()->role == 'mkad')
+                                    <a href="{{url('mkad')}}">
+                                        <img src="{{ asset('vendor/lakers') }}/img/logo-pjb.png" alt="logo image"
+                                            class="img-fluid" width="100">
+                                    </a>
+                                @endif
+                                @if (Auth::user()->role == 'sm')
+                                    <a href="{{url('sm')}}">
+                                        <img src="{{ asset('vendor/lakers') }}/img/logo-pjb.png" alt="logo image"
+                                            class="img-fluid" width="100">
+                                    </a>
+                                @endif
+                               
                             </div>
                         </div>
                         <div class="col-lg-9 col-md-9 col-sm-9 col-6 text-right">
@@ -141,7 +156,20 @@
             </div>
             <!-- /Top Header Section -->
             <!-- Slide Nav -->
+            @if (Auth::user()->role == 'spv')
             @include('partials.sidebar')
+                
+            @endif
+            <!-- Slide Nav -->
+            @if (Auth::user()->role == 'mkad')
+            @include('partials.sidebar-mkad')
+                
+            @endif
+            <!-- Slide Nav -->
+            @if (Auth::user()->role == 'sm')
+            @include('partials.sidebar-sm')
+                
+            @endif
         </header>
         <!-- /Header -->
         <!-- Page Wrapper -->

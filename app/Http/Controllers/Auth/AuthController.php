@@ -23,7 +23,7 @@ class AuthController extends Controller
         $email = $req->get('email');
         $credentials = $req->only('email', 'password');
         $user = User::where('email', $email)->first();
-        if (auth()->guard('web')->attempt($credentials) && $user->role == 'admin') {
+        if (auth()->guard('web')->attempt($credentials) && $user->role == 'spv') {
             session(["email" => $email]);
             Alert::success('Login Success'
         );
@@ -35,10 +35,10 @@ class AuthController extends Controller
             return redirect('/mkad');
 
         } 
-        elseif (auth()->guard('web')->attempt($credentials) && $user->role == 'spv') {
+        elseif (auth()->guard('web')->attempt($credentials) && $user->role == 'sm') {
             session(["email" => $email]);
             Alert::success('Login Success');
-            return redirect('/spv');
+            return redirect('/sm');
 
         } 
         else {

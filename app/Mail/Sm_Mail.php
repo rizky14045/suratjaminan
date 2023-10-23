@@ -7,19 +7,19 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class Spv_Mail extends Mailable
+class Sm_Mail extends Mailable
 {
     use Queueable, SerializesModels;
-    public $spv;
+    public $sm;
     public $data_karyawan;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($spv,$data_karyawan)
+    public function __construct($sm,$data_karyawan)
     {
-        $this->spv = $spv;
+        $this->sm = $sm;
         $this->data_karyawan = $data_karyawan;
     }
 
@@ -30,7 +30,7 @@ class Spv_Mail extends Mailable
      */
     public function build()
     {
-        return $this->view('admin/template/email_spv')
-        ->from('mrizkysaputra.xmia1@gmail.com');
+        return $this->subject('Aplikasi Surat Jaminan Kesehatan')
+        ->view('admin/template/email_sm');
     }
 }

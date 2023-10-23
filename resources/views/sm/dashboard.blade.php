@@ -1,4 +1,4 @@
-@extends('layouts.backend-spv')
+@extends('layouts.backend-sm')
 
 @section('content')
     <div class="page-wrapper">
@@ -17,7 +17,7 @@
                                                             class="text-dark">Home</a></li>
                                                     <li class="breadcrumb-item d-inline-block active">Dashboard</li>
                                                 </ol>
-                                                <h4 class="text-dark">SPV Dashboard</h4>
+                                                <h4 class="text-dark">Senior Manager Dashboard</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -27,13 +27,12 @@
                         <div class="user-card card shadow-sm bg-white text-center ctm-border-radius">
                             <div class="user-info card-body">
                                 <div class="user-avatar mb-4">
-                                    <img src="{{ asset('vendor/lakers') }}/img/profiles/img-13.jpg" alt="User Avatar"
+                                    <img src="{{ asset('vendor/lakers') }}/img/logo-pjb.png" alt="User Avatar"
                                         class="img-fluid rounded-circle" width="100">
                                 </div>
                                 <div class="user-details">
                                     <h4 class="text-uppercase"><b>Selamat Datang {{ Auth::user()->name }}</b></h4>
-                                    <h6 class="mt-3"><span class=" bg-warning border border-dark p-1">PT. PJB UP Muara
-                                            Karang</span>
+                                    <h6 class="mt-3"><span class="p-1">PT PLN Nusantara Power <br> Unit Pembangkitan Muara Karang</span>
                                     </h6>
                                     <h6 class="mt-3">
                                         {{ date('D, F j Y') }}
@@ -68,7 +67,7 @@
                                         <i class="fa fa-clock-o"></i>
                                     </div>
                                     <div class="card-right">
-                                        <h4 class="card-title">MENUNGGU PERSETUJUAN SPV</h4>
+                                        <h4 class="card-title">MENUNGGU PERSETUJUAN SENIOR MANAGER</h4>
                                         <p class="card-text">{{ $count_menunggu }}</p>
                                     </div>
                                 </div>
@@ -83,8 +82,8 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="card-right">
-                                            <h4 class="card-title mr-auto float-right">DAFTAR SURAT JAMINAN YANG SUDAH
-                                                DIBUAT <span class="border bg-primary p-sm-1">{{ $count_sudah }}</span>
+                                            <h4 class="card-title mr-auto float-right">SURAT JAMINAN YANG SUDAH
+                                                DIAPPROVE <span class="border bg-primary p-sm-1">{{ $count_sudah }}</span>
                                             </h4>
                                         </div>
                                     </div>
@@ -115,14 +114,13 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="card-right">
-                                            <h4 class="card-title mr-auto float-right">DAFTAR PERSETUJUAN SPV<span
+                                            <h4 class="card-title mr-auto float-right">SUDAH DISETUJUI SENIOR MANAGER <span
                                                     class="border bg-danger p-sm-1 text-light">{{ $count_menunggu }}</span>
                                             </h4>
                                         </div>
                                     </div>
                                     <ul class="list-group list-group-flush">
                                         @foreach ($menunggu as $item)
-
                                             <li class="list-group-item">
                                                 <div class="card-body">
                                                     <div class="card-icon bg-secondary">
@@ -132,7 +130,7 @@
                                                         <a href="{{ url('form-jaminans/' . $item->id) }}"
                                                             class="card-title font-weight-bold">{{ $item->nomor_surat ?? '' }}
                                                         </a>
-                                                        <span>{{ $item->karyawan['nama_karyawan'] ??'' }} | <span
+                                                        <span>{{ $item->karyawan['nama_karyawan'] ?? '' }} | <span
                                                                 class="border bg-danger p-sm-1 font-weight-bold text-light">Belum
                                                                 Disetujui</span>
                                                         </span>

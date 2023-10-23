@@ -50,14 +50,14 @@ Route::resource('admin/history-record', 'Admin\\HistoryRecordController');
 Route::get('mkad', 'MKAD\MKADController@index');
 Route::get('mkad/form-jaminan', 'MKAD\MKADController@indexKaryawan');
 Route::get('mkad/form-jaminan/{id}', 'MKAD\MKADController@showJaminan');
-Route::get('mkad/show-pdf/{id}', 'MKAD\MKADController@showPDF');
 Route::get('mkad/form-jaminan/approve/{id}', 'MKAD\MKADController@approveJaminan');
 Route::get('mkad/form-jaminan-pensiunan', 'MKAD\MKADController@indexPensiunan');
 
 
-// SPV
-Route::get('spv', 'SPV\SPVController@index');
-Route::get('spv/form-jaminan', 'SPV\SPVController@indexKaryawan');
-Route::get('spv/form-jaminan/{id}', 'SPV\SPVController@showJaminan');
-Route::get('spv/form-jaminan/approve/{id}', 'SPV\SPVController@approveJaminan');
-Route::get('spv/form-jaminan-pensiunan', 'SPV\SPVController@indexPensiunan');
+// SM
+Route::get('sm', 'SM\SMController@index');
+Route::get('sm/form-jaminan', 'SM\SMController@indexKaryawan');
+Route::get('sm/form-jaminan/{id}', 'SM\SMController@showJaminan');
+Route::get('sm/form-jaminan/approve/{id}', 'SM\SMController@approveJaminan');
+Route::get('sm/form-jaminan-pensiunan', 'SM\SMController@indexPensiunan');
+Route::get('sm/show-pdf/{id}', 'SM\SMController@showPDF');

@@ -83,7 +83,7 @@
                                     <div class="card-body">
                                         <div class="card-right">
                                             <h4 class="card-title mr-auto float-right">DAFTAR SURAT JAMINAN SUDAH
-                                                DI BUAT <span class="border bg-primary p-sm-1">{{ $count_sudah }}</span>
+                                                DI BUAT <span class="border bg-primary p-sm-1 text-white">{{ $count_sudah }}</span>
                                             </h4>
                                         </div>
                                     </div>
@@ -102,7 +102,7 @@
                                                             class="card-title font-weight-bold">{{ $item->nomor_surat }}
                                                         </a>
                                                         <span>{{ $item->karyawan['nama_karyawan'] }} | <span
-                                                                class="border bg-primary p-sm-1 font-weight-bold" style="font-size: 12px;">Disetujui</span>
+                                                                class="border bg-primary p-sm-1 font-weight-bold" style="font-size: 12px;color:white;">{{$item->status_pengajuan}}</span>
                                                         </span>
                                                     </div>
                                                 </div>

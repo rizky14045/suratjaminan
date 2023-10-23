@@ -1,3 +1,4 @@
+
 @extends('layouts.backend')
 
 @section('content')
@@ -96,23 +97,23 @@
                                                                 <span class="lnr lnr-arrow-left">Back</span>
                                                             </button>
                                                         </a>
-                                                    @elseif(Auth::user()->role == 'admin')
-                                                    <a href="{{ url('/admin') }}"><button
+                                                    @elseif(Auth::user()->role == 'sm')
+                                                    <a href="{{ url('/sm') }}"><button
                                                             class="btn btn-sm btn-warning">
                                                             <span class="lnr lnr-arrow-left">Back</span>
                                                         </button>
                                                     </a> 
                                                     @else
-                                                    <a href="{{ url('/spv') }}"><button
+                                                    <a href="{{ url('/admin') }}"><button
                                                             class="btn btn-sm btn-warning">
                                                             <span class="lnr lnr-arrow-left">Back</span>
                                                         </button>
                                                     </a> 
 
                                                     @endif
-                                                    @if (Auth::user()->role == 'mkad')
-                                                        @if ($formjaminan->status_pengajuan == 'Sudah Disetujui SPV')
-                                                            <a href="{{ url('/mkad/form-jaminan/approve/' . $formjaminan->id) }}"
+                                                    @if (Auth::user()->role == 'sm')
+                                                        @if ($formjaminan->status_pengajuan == 'Sudah Di setujui MKAD')
+                                                            <a href="{{ url('/sm/form-jaminan/approve/' . $formjaminan->id) }}"
                                                                 title="Approve FormJaminan">
                                                                 <button class="btn btn-sm btn-success">
                                                                     <span class="fa fa-check"></span>Approve
@@ -120,9 +121,9 @@
                                                             </a>
                                                         @endif
                                                     @endif
-                                                    @if (Auth::user()->role == 'spv')
-                                                        @if ($formjaminan->status_pengajuan == 'Menunggu Persetujuan SPV')
-                                                            <a href="{{ url('/spv/form-jaminan/approve/' . $formjaminan->id) }}"
+                                                    @if (Auth::user()->role == 'mkad')
+                                                        @if ($formjaminan->status_pengajuan == 'Menunggu Persetujuan MKAD')
+                                                            <a href="{{ url('/mkad/form-jaminan/approve/' . $formjaminan->id) }}"
                                                                 title="Approve FormJaminan">
                                                                 <button class="btn btn-sm btn-success">
                                                                     <span class="fa fa-check"></span>Approve

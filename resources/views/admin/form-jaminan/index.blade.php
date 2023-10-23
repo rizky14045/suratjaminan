@@ -265,7 +265,7 @@
                                                                                 <span class="lnr lnr-eye"></span>View
                                                                             </button>
                                                                         </a>
-                                                                        @if ($item->status_pengajuan == 'Sudah Disetujui MKAD')
+                                                                        @if ($item->status_pengajuan == 'Sudah Disetujui Senior Manager' || $item->status_pengajuan == 'Sudah Disetujui MKAD')
 
                                                                             @if ($item->file_pdf)
                                                                                 <a href="{{ url('/admin/form-jaminan/' . $item->id . '/email') }}"
@@ -414,7 +414,7 @@
                                                                                 <span class="lnr lnr-eye"></span>View
                                                                             </button>
                                                                         </a>
-                                                                        @if ($item->status_pengajuan == 'Sudah Disetujui MKAD')
+                                                                        @if ($item->status_pengajuan == 'Sudah Disetujui Senior Manager' || $item->status_pengajuan == 'Sudah Disetujui MKAD')
                                                                             @if ($item->file_pdf)
                                                                                 <a href="{{ url('/admin/form-jaminan/' . $item->id . '/email') }}"
                                                                                     title="Email FormJaminan">

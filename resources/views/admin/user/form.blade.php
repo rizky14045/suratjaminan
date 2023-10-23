@@ -11,7 +11,7 @@
 <div class="form-group{{ $errors->has('role') ? 'has-error' : '' }}">
     <label for="role" class="control-label">{{ 'Role' }}</label>
     <select name="role" class="form-control" id="role">
-        @foreach (json_decode('{" admin":"admin","mkad":"mkad" ,"spv":"spv"}', true) as $optionKey=>
+        @foreach (json_decode('{" mkad":"mkad","sm":"sm" ,"spv":"spv"}', true) as $optionKey=>
             $optionValue)
             <option value="{{ $optionKey }}"
                 {{ isset($user->role) && $user->role == $optionKey ? 'selected' : '' }}>{{ $optionValue }}
@@ -20,7 +20,7 @@
     </select>
     {!! $errors->first('role', '<p class="help-block">:message</p>') !!}
 </div>
-@if ($user['role'] == 'mkad')
+@if ($user['role'] == 'sm')
     <div class="form-group{{ $errors->has('file_ttd') ? 'has-error' : '' }}">
         <label for="file_ttd" class="control-label">{{ 'File Tanda Tangan dan Stampel' }}</label>
         <input class="form-control" name="file_ttd" type="file" id="file_ttd" value="{{ $user->file_ttd or '' }}">
@@ -34,7 +34,7 @@
     @endif
 
 @endif
-@if ($user['role'] == 'spv')
+@if ($user['role'] == 'mkad')
     <div class="form-group{{ $errors->has('file_ttd') ? 'has-error' : '' }}">
         <label for="file_ttd" class="control-label">{{ 'File Paraf' }}</label>
         <input class="form-control" name="file_ttd" type="file" id="file_ttd" value="{{ $user->file_ttd or '' }}">

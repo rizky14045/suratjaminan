@@ -28,8 +28,8 @@ class Karyawan_Mail extends Mailable
      */
     public function build()
     {
-        return $this->view('admin/template/email_karyawan')
-        ->attach(public_path('generate-pdf/'.$this->formjaminan['file_pdf']))
-        ->from('mrizkysaputra.xmia1@gmail.com');
+        return $this->subject('Aplikasi Surat Jaminan Kesehatan')
+        ->view('admin/template/email_karyawan')
+        ->attach(public_path('generate-pdf/'.$this->formjaminan['file_pdf']));
     }
 }

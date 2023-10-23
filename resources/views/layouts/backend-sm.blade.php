@@ -27,7 +27,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-3 col-md-3 col-sm-3 col-6">
                             <div class="logo my-3 my-sm-0">
-                                <a href="{{url('spv')}}">
+                                <a href="{{url('sm')}}">
                                     <img src="{{ asset('vendor/lakers') }}/img/logo-pjb.png" alt="logo image"
                                         class="img-fluid" width="100">
                                 </a>
@@ -76,14 +76,14 @@
                                     <div class="user-info align-center bg-theme text-center">
                                         <a href="javascript:void(0)" class="d-block menu-style text-white">
                                             <div class="user-avatar d-inline-block mr-3">
-                                                <img src="{{ asset('vendor/lakers') }}/img/profiles/img-13.jpg"
+                                                <img src="{{ asset('vendor/lakers') }}/img/logo-pjb.png"
                                                     alt="user avatar" class="rounded-circle" width="50">
                                             </div>
                                         </a>
                                     </div>
                                     <hr>
                                     <div class="user-menu-items px-3 m-0">
-                                        <a class="px-0 pb-2 pt-0 mb-5" href="{{ url('/spv') }}">
+                                        <a class="px-0 pb-2 pt-0 mb-5" href="{{ url('/mkad') }}">
                                             <span class="media align-items-center">
                                                 <span class="lnr lnr-home mr-3"></span>
                                                 <span class="media-body text-truncate text-left">
@@ -91,7 +91,7 @@
                                                 </span>
                                             </span>
                                         </a>
-                                        <a class="px-0 pb-2 pt-0 mt-5" href="{{ url('/spv/form-jaminan') }}">
+                                        <a class="px-0 pb-2 pt-0 mt-5" href="{{ url('/mkad/form-jaminan') }}">
                                             <span class="media align-items-center">
                                                 <span class="fa fa-list mr-3"></span>
                                                 <span class="media-body text-truncate text-left">
@@ -117,7 +117,7 @@
             </div>
             <!-- /Top Header Section -->
             <!-- Slide Nav -->
-            @include('partials.sidebar-spv')
+            @include('partials.sidebar-sm')
         </header>
         <!-- /Header -->
         <!-- Page Wrapper -->

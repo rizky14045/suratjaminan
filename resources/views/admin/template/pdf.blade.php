@@ -80,20 +80,20 @@
         font-weight: bold;
     }
     .paraf{
-        margin-top: -20px;
-        margin-left:-260px
+        margin-top: -22px;
+        margin-left:-290px;
     }
 
     .ttd-nama {
         display: inline-block;
-        margin-top: 10px;
-        margin-left: 40px;
+        margin-top: -10px;
+        margin-left: 5px;
         text-transform: uppercase;
         font-weight: bold;
     }
 
     .catatan {
-        margin-top: 20px;
+        /* margin-top: 10px; */
         text-align: justify;
     }
 
@@ -144,7 +144,7 @@
     .stempel {
         display: block;
         margin-left: -280px;
-        margin-top: 20px;
+        margin-top: -10px;
     }
 
     ol {
@@ -161,7 +161,7 @@
     </div>
     <div class="pembuka_surat">
         <p class="pertama" style="text-align: justify">
-            Yang bertanda tangan di bawah ini , Manajer Keuangan dan Administrasi <strong> PT PLN Nusantara Power Unit Pembangkitan Muara Karang</strong> dengan ini menerangkan bahwa,
+            Yang bertanda tangan di bawah ini , Senior Manager <strong> PT PLN Nusantara Power Unit Pembangkitan Muara Karang</strong> dengan ini menerangkan bahwa,
         </p>
     </div>
     <div class="deskripsi" style="font-size: 12px;">
@@ -234,15 +234,15 @@
         <span> Jakarta, {{ date('j F Y') }}</span>
         <br>
         <span class="ttd-mkad">
-            manajer keuangan & adm.
+            senior manager
         </span>
         <br>
         <div class="stempel">
-            <img src="{{ public_path('ttd_file/' . $mkad[0]['file_ttd']) }}" alt="">
+            <img src="{{ public_path('ttd_file/' . $sm[0]['file_ttd']) }}" alt="" style="width:15%">
         </div>
-        <span class="ttd-nama">{{ $mkad[0]['name'] }}</span>
+        <span class="ttd-nama">{{ $sm[0]['name'] }}</span>
         <div class="paraf">
-            <img src="{{ public_path('ttd_file/'.$spv[0]['file_ttd']) }}" height="20" width="40">
+            <img src="{{ public_path('ttd_file/'.$mkad[0]['file_ttd']) }}" height="20" width="30">
         </div>
     </div>
     <div class="catatan">

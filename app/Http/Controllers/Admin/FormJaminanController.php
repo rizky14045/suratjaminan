@@ -128,7 +128,7 @@ class FormJaminanController extends Controller
     {
 
         $latest_form = FormJaminan::latest()->first();
-        $spv = User::where('role','spv')->latest()->limit(1)->get();
+        $mkad = User::where('role','mkad')->latest()->limit(1)->get();
         if($latest_form){
             $nomor = $latest_form->id + 1;
         }else{
@@ -145,11 +145,11 @@ class FormJaminanController extends Controller
         // dd($mkad[0]['name']);
         $request['nomor_surat']= $nomor .'/' .$status.'/450/SDM/'.date('Y');
         $request['status_email'] = 0;
-        $request['status_pengajuan'] = 'Menunggu Persetujuan SPV';
+        $request['status_pengajuan'] = 'Menunggu Persetujuan MKAD';
         $requestData = $request->all();
         $data_karyawan = FormJaminan::create($requestData);
         if($data_karyawan){
-            Mail::to($spv[0]['email'])->send(new \App\Mail\Spv_Mail($spv,$data_karyawan));
+            Mail::to($mkad[0]['email'])->send(new \App\Mail\Mkad_Mail($mkad,$data_karyawan));
         }
         Alert::success('New ' . 'FormJaminan'. ' Created!' );
         $nomor++;
@@ -271,7 +271,7 @@ class FormJaminanController extends Controller
     {
         $formjaminan = FormJaminan::where('id',$id)->first();
         $mkad = User::where('role','mkad')->latest()->limit(1)->get();
-        $spv = User::where('role','spv')->latest()->limit(1)->get();
+        $sm = User::where('role','sm')->latest()->limit(1)->get();
         $slug = Str::slug($formjaminan['karyawan']['nama_karyawan'], '-');
         $nomor_pecah = explode("/",$formjaminan->nomor_surat);
         $nomor_gabung = implode("-",$nomor_pecah);
@@ -279,7 +279,7 @@ class FormJaminanController extends Controller
         $formjaminan->file_pdf = $pdf_name;
         $formjaminan->save();
 
-        $data_pdf= PDF::loadView('admin/template/pdf', compact(['formjaminan','mkad','spv']))->setPaper('a4', 'portrait')->save(public_path('generate-pdf/'.$pdf_name));
+        $data_pdf= PDF::loadView('admin/template/pdf', compact(['formjaminan','mkad','sm']))->setPaper('a4', 'portrait')->save(public_path('generate-pdf/'.$pdf_name));
 
 
         Alert::success('Generate PDF Success' );
