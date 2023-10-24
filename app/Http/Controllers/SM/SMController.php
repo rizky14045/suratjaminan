@@ -42,6 +42,7 @@ class SMController extends Controller
                                     ->where('karyawans.status_karyawan', 'karyawan_tetap')
                                     ->where('form_jaminans.jenis_surat', 'personal')
                                     ->where('form_jaminans.status_pengajuan', '!=' ,'Menunggu Persetujuan MKAD')
+                                    ->where('form_jaminans.status_pengajuan', '!=' ,'Sudah Disetujui MKAD')
                                     ->orderBy('form_jaminans.status_pengajuan', 'asc')
                                     ->latest('form_jaminans.created_at')->get();
         $formjaminan_keluarga = FormJaminan::join('karyawans', 'form_jaminans.id_karyawan', 'karyawans.id')
@@ -50,6 +51,7 @@ class SMController extends Controller
                                     ->where('karyawans.status_karyawan', 'karyawan_tetap')
                                     ->where('form_jaminans.jenis_surat', 'keluarga')
                                     ->where('form_jaminans.status_pengajuan', '!=' ,'Menunggu Persetujuan MKAD')
+                                    ->where('form_jaminans.status_pengajuan', '!=' ,'Sudah Disetujui MKAD')
                                     ->orderBy('form_jaminans.status_pengajuan', 'asc')
                                     ->latest('form_jaminans.created_at')->get();
 
