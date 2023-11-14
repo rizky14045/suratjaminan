@@ -234,7 +234,7 @@
     <div class="ttd">
         <span> Jakarta, {{ date('j F Y') }}</span>
         <br>
-        @if ($formjaminan['status_pengajuan'] == 'Sudah Di setujui MKAD')
+        @if ($formjaminan['status_pengajuan'] == 'Sudah Di setujui MKAD' || $formjaminan['status_pengajuan'] == 'Sudah Disetujui MKAD')
         <span class="ttd-mkad" style="padding-bottom:70px; padding-top:10px;">
             senior manager
         </span>
