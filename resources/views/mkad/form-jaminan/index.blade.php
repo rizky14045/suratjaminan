@@ -146,7 +146,6 @@
                                                             <th>Rumah Sakit</th>
                                                             <th>Kelas Rawat Inap</th>
                                                             <th>Status Pengajuan</th>
-                                                            <th>Status Email</th>
                                                             <th>Actions</th>
                                                         </tr>
                                                     </thead>
