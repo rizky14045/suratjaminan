@@ -1,16 +1,20 @@
 <?php
 namespace App\Http\Controllers\MKAD;
 
-use App\Http\Controllers\Controller;
+use Mail;
+use Alert;
+use PDF;
 use App\User;
-use Illuminate\Http\Request;
-use App\Models\FormJaminan;
 use App\Models\Karyawan;
+use App\Models\RumahSakit;
+use App\Models\FormJaminan;
+use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use App\Models\KelasRawatInap;
 use App\Models\JenisPemeriksaan;
-use App\Models\RumahSakit;
-use Alert;
-use Mail;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class MKADController extends Controller
 {
@@ -109,5 +113,44 @@ class MKADController extends Controller
         Alert::success('Form Jaminan Berhasil Di setujui' );
 
         return redirect()->back();
+    }
+
+    public function showPDF($id)
+    {
+        $formjaminan = FormJaminan::where('id',$id)->first();
+        $mkad = User::where('role','mkad')->latest()->limit(1)->get();
+        $sm = User::where('role','sm')->latest()->limit(1)->get();
+        $slug = Str::slug($formjaminan['karyawan']['nama_karyawan'], '-');
+        $nomor_pecah = explode("/",$formjaminan->nomor_surat);
+        $nomor_gabung = implode("-",$nomor_pecah);
+        $pdf_name = $nomor_gabung.'-'.$formjaminan->jenis_surat.'-'.date('Y-m-d').'-'.$formjaminan['karyawan']['nid'].'-'. $slug .'.pdf' ;
+       return PDF::loadView('admin/template/pdf_mkad', compact(['formjaminan','mkad','sm']))->setPaper('a4', 'portrait')->stream($pdf_name);
+    }
+
+    public function ubahPassword(){
+        return view('mkad.ubah-password');
+    }
+    public function savePassword(Request $request){
+
+        $validated = $request->validate([
+            'password_lama' => 'required|string',
+            'password' => [
+                'required',
+                'string',
+            ],
+            'konfirmasi_password' => 'string|required|same:password'
+        ]);
+    
+
+        $user = User::find(Auth::user()->id);
+        if( Hash::check($request->password_lama,$user->password) ){
+            $user->password = bcrypt($request->password);
+            $user->save();
+
+            return redirect()->back()->with('success', 'Berhasil Merubah Password');
+        } else {
+            return redirect()->back()->with('failed', 'Password lama salah');
+        }
+
     }
 }

@@ -49,14 +49,20 @@ Route::resource('admin/history-record', 'Admin\\HistoryRecordController');
 // MKAD
 Route::get('mkad', 'MKAD\MKADController@index');
 Route::get('mkad/form-jaminan', 'MKAD\MKADController@indexKaryawan');
+Route::get('mkad/ubah-password', 'MKAD\MKADController@ubahPassword');
+Route::post('mkad/ubah-password', 'MKAD\MKADController@savePassword');
 Route::get('mkad/form-jaminan/{id}', 'MKAD\MKADController@showJaminan');
 Route::get('mkad/form-jaminan/approve/{id}', 'MKAD\MKADController@approveJaminan');
 Route::get('mkad/form-jaminan-pensiunan', 'MKAD\MKADController@indexPensiunan');
+Route::get('mkad/show-pdf/{id}', 'MKAD\MKADController@showPDF');
+
 
 
 // SM
 Route::get('sm', 'SM\SMController@index');
 Route::get('sm/form-jaminan', 'SM\SMController@indexKaryawan');
+Route::get('sm/ubah-password', 'SM\SMController@ubahPassword');
+Route::post('sm/ubah-password', 'SM\SMController@savePassword');
 Route::get('sm/form-jaminan/{id}', 'SM\SMController@showJaminan');
 Route::get('sm/form-jaminan/approve/{id}', 'SM\SMController@approveJaminan');
 Route::get('sm/form-jaminan-pensiunan', 'SM\SMController@indexPensiunan');

@@ -103,14 +103,14 @@
                                                                                 <span class="lnr lnr-eye"></span>View
                                                                             </button>
                                                                         </a>
-                                                                        @if ($item->status_pengajuan == 'Sudah Disetujui Senior Manager')     
+                                                                
                                                                         <a href="{{ url('/sm/show-pdf/' . $item->id) }}"
-                                                                            title="View FormJaminan">
-                                                                            <button class="btn btn-sm btn-info">
-                                                                                <span class="lnr lnr-eye"></span>PDF
+                                                                            title="View FormJaminan" target="_blank">
+                                                                            <button class="btn btn-sm btn-warning text-white">
+                                                                                <span class="lnr lnr-eye"></span>Preview PDF
                                                                             </button>
                                                                         </a>
-                                                                        @endif
+
                                                                         @if($item->status_pengajuan == 'Sudah Di setujui MKAD')
                                                                         <a href="{{ url('/sm/form-jaminan/approve/' . $item->id) }}"
                                                                             title="Approve FormJaminan">
@@ -173,15 +173,13 @@
                                                                                 <span class="lnr lnr-eye"></span>View
                                                                             </button>
                                                                         </a>
-                                                                       @if ($item->status_pengajuan == 'Sudah Disetujui Senior Manager')
                                                                            
                                                                        <a href="{{ url('/sm/show-pdf/' . $item->id) }}"
                                                                         title="View FormJaminan"  target="_blank">
-                                                                        <button class="btn btn-sm btn-info">
-                                                                            <span class="lnr lnr-eye"></span>PDF
+                                                                        <button class="btn btn-sm btn-warning text-white">
+                                                                            <span class="lnr lnr-eye"></span>Preview PDF
                                                                         </button>
                                                                         </a>
-                                                                        @endif
                                                                         @if($item->status_pengajuan == 'Sudah Disetujui MKAD')
                                                                         <a href="{{ url('/sm/form-jaminan/approve/' . $item->id) }}"
                                                                             title="Approve FormJaminan">

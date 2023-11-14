@@ -111,6 +111,12 @@
                                                             </td>
                                                             <td class="text-right" align="center">
                                                                 <div class="table-action">
+                                                                    <a href="{{ url('/mkad/show-pdf/' . $item->id) }}"
+                                                                        title="View FormJaminan"  target="_blank">
+                                                                        <button class="btn btn-sm btn-warning text-white">
+                                                                            <span class="lnr lnr-eye">Preview PDF</span>
+                                                                        </button>
+                                                                    </a>
                                                                     <a href="{{ url('/mkad/form-jaminan/' . $item->id) }}"
                                                                         title="View FormJaminan">
                                                                         <button class="btn btn-sm btn-info">
@@ -172,6 +178,12 @@
                                                             <td>{{ $item->status_pengajuan }}</td>
                                                             <td class="text-right" align="center">
                                                                 <div class="table-action">
+                                                                    <a href="{{ url('/mkad/show-pdf/' . $item->id) }}"
+                                                                        title="View FormJaminan"  target="_blank">
+                                                                        <button class="btn btn-sm btn-warning text-white">
+                                                                            <span class="lnr lnr-eye">Preview PDF</span>
+                                                                        </button>
+                                                                    </a>
                                                                     <a href="{{ url('/mkad/form-jaminan/' . $item->id) }}"
                                                                         title="View FormJaminan">
                                                                         <button class="btn btn-sm btn-info">

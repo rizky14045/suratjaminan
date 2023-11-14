@@ -20,6 +20,13 @@
                                                     class="d-none d-lg-inline">Form Jaminan</span>
                                             </a>
                                         </li>
+                                        <li class="mr-1 {{request()->segment(1) == 'mkad' && request()->segment(2) == 'ubah-password' ? 'active' : ''}}">
+                                            <a href="{{ url('mkad/ubah-password') }}"
+                                                class="btn-ctm-space text-dark header_class"><span
+                                                    class="fa fa-key pr-0 pr-lg-2"></span><span
+                                                    class="d-none d-lg-inline">Ubah Password</span>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>

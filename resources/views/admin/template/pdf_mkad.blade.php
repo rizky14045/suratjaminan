@@ -234,17 +234,28 @@
     <div class="ttd">
         <span> Jakarta, {{ date('j F Y') }}</span>
         <br>
-        <span class="ttd-mkad">
+        @if ($formjaminan['status_pengajuan'] == 'Sudah Di setujui MKAD')
+        <span class="ttd-mkad" style="padding-bottom:70px; padding-top:10px;">
             senior manager
         </span>
         <br>
-        <div class="stempel">
-            <img src="{{ public_path('ttd_file/' . $sm[0]['file_ttd']) }}" alt="" style="width:10%">
-        </div>
-        <span class="ttd-nama">{{ $sm[0]['name'] }}</span>
+        <span class="ttd-nama" style="margin-top:5px;">{{ $sm[0]['name'] }}</span>
         <div class="paraf">
             <img src="{{ public_path('ttd_file/'.$mkad[0]['file_ttd']) }}" height="30" width="30">
         </div>
+        @endif
+
+        @if ($formjaminan['status_pengajuan'] == 'Menunggu Persetujuan MKAD')
+        <span class="ttd-mkad" style="padding-bottom:70px; padding-top:10px;">
+            senior manager
+        </span>
+        <br>
+        <span class="ttd-nama" style="margin-top:5px;">{{ $sm[0]['name'] }}</span>
+        {{-- <div class="paraf">
+            <img src="{{ public_path('ttd_file/'.$mkad[0]['file_ttd']) }}" height="30" width="30">
+        </div> --}}
+        @endif
+
     </div>
     <div class="catatan">
         <span style="text-decoration: underline;">Catatan</span>

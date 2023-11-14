@@ -114,7 +114,7 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="card-right">
-                                            <h4 class="card-title mr-auto float-right">SUDAH DISETUJUI SENIOR MANAGER <span
+                                            <h4 class="card-title mr-auto float-right">MENUNGGU PERSETUJUAN SENIOR MANAGER<span
                                                     class="border bg-danger p-sm-1 text-light">{{ $count_menunggu }}</span>
                                             </h4>
                                         </div>

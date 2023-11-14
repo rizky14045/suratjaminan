@@ -2,18 +2,20 @@
 
 namespace App\Http\Controllers\SM;
 
-use App\Http\Controllers\Controller;
+use PDF;
+use Mail;
+use Alert;
 use App\User;
-use Illuminate\Http\Request;
-use App\Models\FormJaminan;
 use App\Models\Karyawan;
+use App\Models\RumahSakit;
+use App\Models\FormJaminan;
+use Illuminate\Support\Str;
+use Illuminate\Http\Request;
 use App\Models\KelasRawatInap;
 use App\Models\JenisPemeriksaan;
-use App\Models\RumahSakit;
-use Alert;
-use Mail;
-use PDF;
-use Illuminate\Support\Str;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class SMController extends Controller
 {
@@ -124,5 +126,32 @@ class SMController extends Controller
         $formjaminan->save();
         Alert::success('Form Jaminan Berhasil Disetujui' );
         return redirect()->back();
+    }
+
+    public function ubahPassword(){
+        return view('sm.ubah-password');
+    }
+    public function savePassword(Request $request){
+
+        $validated = $request->validate([
+            'password_lama' => 'required|string',
+            'password' => [
+                'required',
+                'string',
+            ],
+            'konfirmasi_password' => 'string|required|same:password'
+        ]);
+    
+
+        $user = User::find(Auth::user()->id);
+        if( Hash::check($request->password_lama,$user->password) ){
+            $user->password = bcrypt($request->password);
+            $user->save();
+
+            return redirect()->back()->with('success', 'Berhasil Merubah Password');
+        } else {
+            return redirect()->back()->with('failed', 'Password lama salah');
+        }
+
     }
 }

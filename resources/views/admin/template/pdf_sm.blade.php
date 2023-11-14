@@ -86,14 +86,14 @@
 
     .ttd-nama {
         display: inline-block;
-        margin-top: -10px;
-        margin-left: 5px;
+        margin-top: -5px;
+        margin-left: 20px;
         text-transform: uppercase;
         font-weight: bold;
     }
 
     .catatan {
-        /* margin-top: 10px; */
+        margin-top: 10px;
         text-align: justify;
     }
 
@@ -143,8 +143,9 @@
 
     .stempel {
         display: block;
-        margin-left: -280px;
-        margin-top: -10px;
+        margin-left: -260px;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
 
     ol {
@@ -233,17 +234,31 @@
     <div class="ttd">
         <span> Jakarta, {{ date('j F Y') }}</span>
         <br>
+        @if ($formjaminan['status_pengajuan'] == 'Sudah Disetujui Senior Manager')
         <span class="ttd-mkad">
             senior manager
         </span>
         <br>
         <div class="stempel">
-            <img src="{{ public_path('ttd_file/' . $sm[0]['file_ttd']) }}" alt="" style="width:15%">
+            <img src="{{ public_path('ttd_file/' . $sm[0]['file_ttd']) }}" alt="" style="width:10%">
         </div>
         <span class="ttd-nama">{{ $sm[0]['name'] }}</span>
         <div class="paraf">
-            <img src="{{ public_path('ttd_file/'.$mkad[0]['file_ttd']) }}" height="20" width="30">
+            <img src="{{ public_path('ttd_file/'.$mkad[0]['file_ttd']) }}" height="30" width="30">
         </div>
+        @endif
+
+        @if ($formjaminan['status_pengajuan'] == 'Sudah Di setujui MKAD')
+        <span class="ttd-mkad" style="padding-bottom:70px; padding-top:10px;">
+            senior manager
+        </span>
+        <br>
+        <span class="ttd-nama" style="margin-top:5px;">{{ $sm[0]['name'] }}</span>
+        <div class="paraf">
+            <img src="{{ public_path('ttd_file/'.$mkad[0]['file_ttd']) }}" height="30" width="30">
+        </div>
+        @endif
+
     </div>
     <div class="catatan">
         <span style="text-decoration: underline;">Catatan</span>
