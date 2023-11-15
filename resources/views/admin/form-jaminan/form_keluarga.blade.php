@@ -42,7 +42,13 @@
         </div>
         <div class="form-group{{ $errors->has('id_rumah_sakit') ? 'has-error' : '' }}">
             {!! Form::label('id_rumah_sakit', 'Rumah Sakit', ['class' => 'control-label']) !!}
-            {!! Form::select('id_rumah_sakit', $rumahSakit, null, '' == 'required' ? ['class' => 'js-example-basic-multiple form-control', 'required' => 'required'] : ['class' => 'js-example-basic-multiple form-control', 'placeholder' => 'Silahkan Pilih']) !!}
+            <select name="id_rumah_sakit" id="id_rumah_sakit_keluarga" class="js-example-basic-multiple form-control">
+                <option value="" disabled selected>Silahkan Dipilih</option>
+                @foreach ($rumahSakit as $item)
+                    <option value="{{ $item->id }}">{{ $item->nama_rumah_sakit }}</option>
+                @endforeach
+            </select>
+            {{-- {!! Form::select('id_rumah_sakit', $rumahSakit, null, '' == 'required' ? ['class' => 'js-example-basic-multiple form-control', 'required' => 'required'] : ['class' => 'js-example-basic-multiple form-control', 'placeholder' => 'Silahkan Pilih']) !!} --}}
             {!! $errors->first('id_rumah_sakit', '<p class="help-block">:message</p>') !!}
         </div>
         <div class="form-group{{ $errors->has('hubungan_keluarga') ? 'has-error' : '' }}">

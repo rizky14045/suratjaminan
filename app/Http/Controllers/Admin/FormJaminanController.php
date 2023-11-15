@@ -51,7 +51,7 @@ class FormJaminanController extends Controller
         $karyawan = Karyawan::where('status_karyawan', 'karyawan_tetap')->get();
         $kelasrawatinap = KelasRawatInap::pluck('jenis_kelas', 'id');
         $jenisPemeriksaan = JenisPemeriksaan::pluck('jenis_pemeriksaan', 'id');
-        $rumahSakit = RumahSakit::pluck('nama_rumah_sakit', 'id');
+        $rumahSakit = RumahSakit::all();
         $data['formjaminan_personal'] = $formjaminan_personal;
         $data['formjaminan_keluarga'] = $formjaminan_keluarga;
         $data['karyawan'] = $karyawan;
@@ -97,7 +97,7 @@ class FormJaminanController extends Controller
         $karyawan = Karyawan::where('status_karyawan', 'pensiunan')->get();
         $kelasrawatinap = KelasRawatInap::pluck('jenis_kelas', 'id');
         $jenisPemeriksaan = JenisPemeriksaan::pluck('jenis_pemeriksaan', 'id');
-        $rumahSakit = RumahSakit::pluck('nama_rumah_sakit', 'id');
+        $rumahSakit = RumahSakit::all();
         $data['formjaminan_personal'] = $formjaminan_personal;
         $data['formjaminan_keluarga'] = $formjaminan_keluarga;
         $data['karyawan'] = $karyawan;
