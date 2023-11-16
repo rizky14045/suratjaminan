@@ -14,6 +14,8 @@
 Route::get('/', function () {
     return view('auth.login');
 });
+Route::get('/qrcode/senior-manager', 'HomeController@sm')->name('qrcode.sm');
+Route::get('/qrcode/mkad', 'HomeController@mkad')->name('qrcode.mkad');
 Route::get('/user-login', 'Auth\AuthController@page')->name('login.page');
 Route::post('/user-login', 'Auth\AuthController@loginUser')->name('login.submit');
 
