@@ -35,18 +35,24 @@
                                             </a>
                                         </li>
 
-                                        <li class="mr-1">
+                                        <li class="mr-1 {{request()->segment(1) == 'admin' && request()->segment(2) =='history-record'  ? 'active' : ''}}">
                                             <a href="{{ url('admin/history-record') }}"
                                                 class="btn-ctm-space text-dark header_class"><span
                                                     class="fa fa-clock-o pr-0 pr-lg-2"></span><span
                                                     class="d-none d-lg-inline">History Record</span></a>
                                         </li>
 
-                                        <li class="mr-1">
+                                        <li class="mr-1 {{request()->segment(1) == 'admin' && request()->segment(2) =='export' || request()->segment(2) =='export-history-record' ? 'active' : ''}}">
                                             <a href="{{ url('admin/export') }}"
                                                 class="btn-ctm-space text-dark header_class"><span
                                                     class="fa fa-file pr-0 pr-lg-2"></span><span
                                                     class="d-none d-lg-inline">Export</span></a>
+                                        </li>
+                                        <li class="mr-1 {{request()->segment(1) == 'admin' && request()->segment(2) =='surat-keterangan' || request()->segment(2) =='visa' ? 'active' : ''}}">
+                                            <a href="{{ url('admin/surat-keterangan') }}"
+                                                class="btn-ctm-space text-dark header_class"><span
+                                                    class="fa fa-envelope pr-0 pr-lg-2"></span><span
+                                                    class="d-none d-lg-inline">Surat</span></a>
                                         </li>
                                     </ul>
                                 </div>

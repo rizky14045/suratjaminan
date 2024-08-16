@@ -65,5 +65,5 @@
 
 <div class="form-group" align="right">
     {!! Form::submit($formMode === 'edit' ? 'Update' : 'Create', ['class' => 'btn btn-success btn-lg']) !!}
-    <a href="#" onClick="javascript:history.go(-1)" class="btn btn-danger btn-lg">Cancel and Back</a>
+    <a href="#" class="btn btn-danger btn-lg" data-dismiss="modal" >Cancel and Back</a>
 </div>

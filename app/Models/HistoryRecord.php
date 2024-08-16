@@ -18,6 +18,6 @@ class HistoryRecord extends Model
 
     public function karyawan()
     {
-        return $this->hasOne('App\Models\Karyawan', 'id', 'karyawan_id');
+        return $this->hasOne('App\Models\Karyawan', 'id', 'karyawan_id')->withTrashed();
     }
 }

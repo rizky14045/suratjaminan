@@ -80,13 +80,16 @@
         font-weight: bold;
     }
     .paraf{
-        margin-top: -22px;
         margin-left:-290px;
+    }
+    .paraf-asman{
+        margin-top: -22px;
+        margin-left:10px;
     }
 
     .ttd-nama {
         display: inline-block;
-        margin-top: -5px;
+        margin-top: -28px;
         margin-left: 20px;
         text-transform: uppercase;
         font-weight: bold;
@@ -235,15 +238,19 @@
         <span> Jakarta, {{ date('j F Y') }}</span>
         <br>
         <span class="ttd-mkad">
-            senior manager
+            {{ $sm[0]['jabatan'] }}
         </span>
         <br>
         <div class="stempel">
-            <img src="{{ public_path('ttd_file/' . $sm[0]['file_ttd']) }}" alt="" style="width:10%">
+            <img src="{{public_path('qrcode/sm.png')}}" alt="" width="85">
+        </div>
+         <div class="paraf">
+            <img src="{{public_path('qrcode/mkad.png')}}" alt="" width="30">
         </div>
         <span class="ttd-nama">{{ $sm[0]['name'] }}</span>
-        <div class="paraf">
-            <img src="{{ public_path('ttd_file/'.$mkad[0]['file_ttd']) }}" height="30" width="30">
+       
+        <div class="paraf-asman">
+            <img src="{{public_path('qrcode/asman.png')}}" alt="" width="30">
         </div>
     </div>
     <div class="catatan">

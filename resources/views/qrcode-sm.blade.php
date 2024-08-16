@@ -25,13 +25,14 @@
                 <img src="{{ asset('vendor/lakers') }}/img/logo-pjb.png" alt="" style="width: 50%;">
             </div>
             <hr>
-            <img src="{{asset('ttd_qrcode/sm_ttd.png')}}" alt="" class="mx-auto">
+            <img src="{{ asset('ttd_file/'.$sm[0]->file_ttd )}}" alt="" class="mx-auto">
             <div class="paragraf text-center">
-                <h5> Nama : Maryono</h5>
-                <h5> Jabatan : SENIOR MANAGER UP MUARA KARANG</h5>
-                <h5> NID : 7594034JA</h5>
+                <h5> Nama : {{$sm[0]->name}}</h5>
+                <h5> Jabatan : {{$sm[0]->jabatan}}</h5>
+                <h5> NID : {{$sm[0]->nid}}</h5>
 
             </div>
+        </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

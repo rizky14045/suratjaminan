@@ -56,7 +56,7 @@ class FormJaminan extends Model
     }
     public function karyawan() 
     { 
-        return $this->belongsTo('App\Models\Karyawan','id_karyawan','id'); 
+        return $this->belongsTo('App\Models\Karyawan','id_karyawan','id')->withTrashed();
     }
     public function monitoringTagihan() 
     { 

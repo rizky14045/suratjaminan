@@ -3,11 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Karyawan extends Model
 {
     
-
+    use SoftDeletes;
     /**
      * The database table used by the model.
      *
@@ -27,7 +28,7 @@ class Karyawan extends Model
      *
      * @var array
      */
-    protected $fillable = ['nama_karyawan', 'nid', 'jabatan','jenjang_jabatan', 'alamat', 'tanggal_lahir', 'istri', 'anak_1', 'anak_2','status_karyawan','id_kelas_rawat_inap','tgl_lahir_istri','tgl_lahir_anak_1','tgl_lahir_anak_2','email'];
+    protected $fillable = ['nama_karyawan', 'nid', 'jabatan','jenjang_jabatan', 'alamat', 'tanggal_lahir', 'istri', 'anak_1', 'anak_2','status_karyawan','id_kelas_rawat_inap','tgl_lahir_istri','tgl_lahir_anak_1','tgl_lahir_anak_2','email','tanggal_masuk_karyawan'];
 
     
 

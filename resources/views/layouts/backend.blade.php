@@ -45,6 +45,18 @@
                                             class="img-fluid" width="100">
                                     </a>
                                 @endif
+                                @if (Auth::user()->role == 'dokter')
+                                    <a href="{{url('dokter')}}">
+                                        <img src="{{ asset('vendor/lakers') }}/img/logo-pjb.png" alt="logo image"
+                                            class="img-fluid" width="100">
+                                    </a>
+                                @endif
+                                @if (Auth::user()->role == 'asman')
+                                    <a href="{{url('asman')}}">
+                                        <img src="{{ asset('vendor/lakers') }}/img/logo-pjb.png" alt="logo image"
+                                            class="img-fluid" width="100">
+                                    </a>
+                                @endif
                                
                             </div>
                         </div>
@@ -138,6 +150,14 @@
                                                 </span>
                                             </span>
                                         </a>
+                                        <a class="px-0 pb-2 pt-0 mt-5" href="{{ url('/admin/export') }}">
+                                            <span class="media align-items-center">
+                                                <span class="fa fa-file mr-3"></span>
+                                                <span class="media-body text-truncate text-left">
+                                                    <span class="text-truncate text-left">Export</span>
+                                                </span>
+                                            </span>
+                                        </a>
                                         <a class="p-2" href="{{ route('logout') }}">
                                             <span class="media align-items-center">
                                                 <span class="lnr lnr-power-switch mr-3"></span>
@@ -156,7 +176,7 @@
             </div>
             <!-- /Top Header Section -->
             <!-- Slide Nav -->
-            @if (Auth::user()->role == 'spv')
+            @if (Auth::user()->role == 'admin')
             @include('partials.sidebar')
                 
             @endif
@@ -168,6 +188,14 @@
             <!-- Slide Nav -->
             @if (Auth::user()->role == 'sm')
             @include('partials.sidebar-sm')
+                
+            @endif
+            @if (Auth::user()->role == 'dokter')
+            @include('partials.sidebar-dokter')
+                
+            @endif
+            @if (Auth::user()->role == 'asman')
+            @include('partials.sidebar-asman')
                 
             @endif
         </header>

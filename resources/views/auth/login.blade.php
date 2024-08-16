@@ -34,11 +34,17 @@
                 <div class="signin-logo tx-center tx-28 tx-bold tx-white">
                     <img src="{{asset('vendor/lakers/img/logo-pjb.png')}}" style="width:200px;" alt="">
                 </div>
-                <div class="tx-white-5 tx-center mg-b-60">Silahkan Login dengan NIK Anda <br> Selamat Datang Di Aplikasi Surat Jaminan</div>
+                <div class="tx-white-5 tx-center mg-b-60">Silahkan Login <br> Selamat Datang Di Aplikasi Surat Jaminan</div>
+                @if (\Session::has('error'))
+                    <div class="alert alert-danger">
+                            {!! \Session::get('error') !!}
+                    </div>
+                @endif
+
                 <form action="{{route('login.submit')}}" method="POST">
                     {{ csrf_field() }}
                     <div class="form-group">
-                        <input type="text" name="email" class="form-control fc-outline-dark" placeholder="Silahkan Masukkan NIK Anda">
+                        <input type="text" name="email" class="form-control fc-outline-dark" placeholder="Silahkan Masukkan Email Anda">
                     </div><!-- form-group -->
                     <div class="form-group">
                         <input type="password" name="password" class="form-control fc-outline-dark" placeholder="Silahkan Masukkan Password Anda">

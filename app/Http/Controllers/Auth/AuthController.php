@@ -23,7 +23,7 @@ class AuthController extends Controller
         $email = $req->get('email');
         $credentials = $req->only('email', 'password');
         $user = User::where('email', $email)->first();
-        if (auth()->guard('web')->attempt($credentials) && $user->role == 'spv') {
+        if (auth()->guard('web')->attempt($credentials) && $user->role == 'admin') {
             session(["email" => $email]);
             Alert::success('Login Success'
         );
@@ -35,6 +35,18 @@ class AuthController extends Controller
             return redirect('/mkad');
 
         } 
+        elseif (auth()->guard('web')->attempt($credentials) && $user->role == 'dokter') {
+            session(["email" => $email]);
+            Alert::success('Login Success');
+            return redirect('/dokter');
+
+        } 
+        elseif (auth()->guard('web')->attempt($credentials) && $user->role == 'asman') {
+            session(["email" => $email]);
+            Alert::success('Login Success');
+            return redirect('/asman');
+
+        } 
         elseif (auth()->guard('web')->attempt($credentials) && $user->role == 'sm') {
             session(["email" => $email]);
             Alert::success('Login Success');
@@ -42,8 +54,7 @@ class AuthController extends Controller
 
         } 
         else {
-            Alert::error('Email atau ' . 'Password'. ' Salah!' );
-            return redirect('/user-login');
+            return redirect()->back()->with('error', 'Email atau password salah !');
         }
     }
 }
