@@ -25,11 +25,11 @@
             <input class="form-control" name="keperluan" type="text" id="keperluan" value="{{ $suratketerangan->keperluan or '' }}" placeholder="ex . Administrasi KTA BNI Flexi">
             {!! $errors->first('keperluan', '<p class="help-block">:message</p>') !!}
         </div>
-        <div class="form-group{{ $errors->has('tanggal_masuk_karyawan') ? 'has-error' : '' }}">
+        {{-- <div class="form-group{{ $errors->has('tanggal_masuk_karyawan') ? 'has-error' : '' }}">
             <label for="tanggal_masuk_karyawan" class="control-label">{{ 'Tanggal Masuk Karyawan' }}</label>
             <input class="form-control" name="tanggal_masuk_karyawan" type="date" id="tanggal_masuk_karyawan" value="{{ $suratketerangan->tanggal_masuk_karyawan or '' }}">
             {!! $errors->first('tanggal_masuk_karyawan', '<p class="help-block">:message</p>') !!}
-        </div>
+        </div> --}}
     </div>
 </div>
 
