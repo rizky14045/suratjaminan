@@ -75,14 +75,14 @@ Route::get('mkad/show-pdf/{id}', 'MKAD\MKADController@showPDF');
 Route::resource('mkad/surat-keterangan', 'MKAD\\SuratKeteranganController');
 Route::get('mkad/surat-keterangan/pdf/{id}', 'MKAD\SuratKeteranganController@showPDF');
 Route::get('mkad/surat-keterangan/approve/{id}', 'MKAD\SuratKeteranganController@approve');
-Route::get('mkad/visa', 'mkad\VisaController@index');
-Route::get('mkad/visa/{id}', 'mkad\VisaController@create');
-Route::post('mkad/visa', 'mkad\VisaController@store');
-Route::get('mkad/visa/{id}/edit', 'mkad\VisaController@edit');
-Route::post('mkad/visa/{id}/edit', 'mkad\VisaController@update');
-Route::delete('mkad/visa/{id}', 'mkad\VisaController@destroy');
-Route::get('mkad/visa/pdf/{id}', 'mkad\VisaController@showPDF');
-Route::get('mkad/visa/approve/{id}', 'mkad\VisaController@approve');
+Route::get('mkad/visa', 'MKAD\VisaController@index');
+Route::get('mkad/visa/{id}', 'MKAD\VisaController@create');
+Route::post('mkad/visa', 'MKAD\VisaController@store');
+Route::get('mkad/visa/{id}/edit', 'MKAD\VisaController@edit');
+Route::post('mkad/visa/{id}/edit', 'MKAD\VisaController@update');
+Route::delete('mkad/visa/{id}', 'MKAD\VisaController@destroy');
+Route::get('mkad/visa/pdf/{id}', 'MKAD\VisaController@showPDF');
+Route::get('mkad/visa/approve/{id}', 'MKAD\VisaController@approve');
 
 
 
@@ -107,17 +107,17 @@ Route::get('asman/form-jaminan/approve/{id}', 'ASMAN\AsmanController@approveJami
 Route::get('asman/form-jaminan-pensiunan', 'ASMAN\AsmanController@indexPensiunan');
 Route::get('asman/show-pdf/{id}', 'ASMAN\AsmanController@showPDF');
 
-Route::resource('asman/surat-keterangan', 'Asman\\SuratKeteranganController');
-Route::get('asman/surat-keterangan/pdf/{id}', 'Asman\SuratKeteranganController@showPDF');
-Route::get('asman/surat-keterangan/approve/{id}', 'Asman\SuratKeteranganController@approve');
-Route::get('asman/visa', 'Asman\VisaController@index');
-Route::get('asman/visa/{id}', 'Asman\VisaController@create');
-Route::post('asman/visa', 'Asman\VisaController@store');
-Route::get('asman/visa/{id}/edit', 'Asman\VisaController@edit');
-Route::post('asman/visa/{id}/edit', 'Asman\VisaController@update');
-Route::delete('asman/visa/{id}', 'Asman\VisaController@destroy');
-Route::get('asman/visa/pdf/{id}', 'Asman\VisaController@showPDF');
-Route::get('asman/visa/approve/{id}', 'Asman\VisaController@approve');
+Route::resource('asman/surat-keterangan', 'ASMAN\\SuratKeteranganController');
+Route::get('asman/surat-keterangan/pdf/{id}', 'ASMAN\SuratKeteranganController@showPDF');
+Route::get('asman/surat-keterangan/approve/{id}', 'ASMAN\SuratKeteranganController@approve');
+Route::get('asman/visa', 'ASMAN\VisaController@index');
+Route::get('asman/visa/{id}', 'ASMAN\VisaController@create');
+Route::post('asman/visa', 'ASMAN\VisaController@store');
+Route::get('asman/visa/{id}/edit', 'ASMAN\VisaController@edit');
+Route::post('asman/visa/{id}/edit', 'ASMAN\VisaController@update');
+Route::delete('asman/visa/{id}', 'ASMAN\VisaController@destroy');
+Route::get('asman/visa/pdf/{id}', 'ASMAN\VisaController@showPDF');
+Route::get('asman/visa/approve/{id}', 'ASMAN\VisaController@approve');
 
 
 
