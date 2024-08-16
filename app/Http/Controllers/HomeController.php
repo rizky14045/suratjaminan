@@ -48,18 +48,8 @@ class HomeController extends Controller
         $json_data =  json_decode( preg_replace('/[\x00-\x1F\x80-\xFF]/', '', $json), true );
 
         foreach ($json_data as $item){
-            // dd($item['id']);
-            $karyawan = Karyawan::where('nid',$item['nid'])->first();
-            if ($karyawan){
-                $karyawan->tanggal_masuk_karyawan = $item['tanggal_masuk_karyawan'];
-                $karyawan->nid = $item['nid'];
-                $karyawan->jabatan = $item['jabatan'];
-                $karyawan->jenjang_jabatan = $item['jenjang_jabatan'];
-                $karyawan->status_karyawan = $item['status_karyawan'];
-                $karyawan->id_kelas_rawat_inap = $item['jenis_kelas'];
-                $karyawan->save();
-            }else{
-                Karyawan::create([
+   
+            Karyawan::create([
                     'nama_karyawan' => $item['nama_karyawan'],
                     'nid' => $item['nid'],
                     'jenjang_jabatan' => $item['jenjang_jabatan'],
@@ -77,7 +67,6 @@ class HomeController extends Controller
                     'email' => $item['email'],
                     'id_kelas_rawat_inap' => $item['jenis_kelas'],
                 ]);
-            }
         }
 
         alert()->success('New ' . 'Announcement'. ' Created!' );
