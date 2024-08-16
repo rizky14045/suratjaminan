@@ -126,7 +126,7 @@
                                                                         </button>
                                                                     </a>
                                                                     
-                                                                    @if($item->status_pengajuan == 'Sudah Disetujui MKAD')
+                                                                    @if($item->rangking == 4 )
                                                                         <a href="{{ url('/sm/form-jaminan/approve/' . $item->id) }}"
                                                                             title="Approve FormJaminan">
                                                                             <button class="btn btn-sm btn-success">
@@ -196,7 +196,7 @@
                                                                         </button>
                                                                     </a>
 
-                                                                    @if($item->status_pengajuan == 'Sudah Disetujui MKAD')
+                                                                    @if($item->rangking == 4 )
                                                                         <a href="{{ url('/sm/form-jaminan/approve/' . $item->id) }}"
                                                                             title="Approve FormJaminan">
                                                                             <button class="btn btn-sm btn-success">

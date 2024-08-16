@@ -109,7 +109,7 @@
                                                                                 <span class="lnr lnr-eye"></span>View
                                                                             </button>
                                                                         </a>
-                                                                        @if ($item->status_pengajuan == 'Menunggu Persetujuan MKAD')
+                                                                        @if ($item->rangking == 3 )
                                                                         <a href="{{ url('/mkad/form-jaminan/approve/' . $item->id) }}"
                                                                             title="Approve FormJaminan">
                                                                             <button class="btn btn-sm btn-success">
@@ -178,7 +178,7 @@
                                                                                 <span class="lnr lnr-eye"></span>View
                                                                             </button>
                                                                         </a>
-                                                                        @if ($item->status_pengajuan == 'Menunggu Persetujuan MKAD')
+                                                                        @if ($item->rangking == 3 )
                                                                         <a href="{{ url('/mkad/form-jaminan/approve/' . $item->id) }}"
                                                                             title="Approve FormJaminan">
                                                                             <button class="btn btn-sm btn-success">

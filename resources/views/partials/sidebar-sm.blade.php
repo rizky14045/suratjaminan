@@ -27,6 +27,12 @@
                                                     class="d-none d-lg-inline">Ubah Password</span>
                                             </a>
                                         </li>
+                                        <li class="mr-1 {{request()->segment(1) == 'sm' && request()->segment(2) =='surat-keterangan' || request()->segment(2) =='visa' ? 'active' : ''}}">
+                                            <a href="{{ url('sm/surat-keterangan') }}"
+                                                class="btn-ctm-space text-dark header_class"><span
+                                                    class="fa fa-envelope pr-0 pr-lg-2"></span><span
+                                                    class="d-none d-lg-inline">Surat</span></a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>

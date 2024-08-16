@@ -213,7 +213,7 @@
                                                     style="font-size: 12px; line-height: 1.5; color: #555555; font-family: Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; mso-line-height-alt: 18px;">
                                                     <p
                                                         style="font-size: 14px; line-height: 1.5; text-align: center; word-break: break-word; mso-line-height-alt: 21px; margin: 0;">
-                                                        PJB MUARA KARANG</p>
+                                                        PLN Nusantara Power MUARA KARANG</p>
                                                 </div>
                                             </div>
                                         </div>

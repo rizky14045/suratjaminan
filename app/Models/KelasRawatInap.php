@@ -49,6 +49,6 @@ class KelasRawatInap extends Model
     }
     public function karyawan()
     {
-        return $this->hasOne('App\Models\Karyawan');
+        return $this->hasOne('App\Models\Karyawan')->withTrashed();
     }
 }

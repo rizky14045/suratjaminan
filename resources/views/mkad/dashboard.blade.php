@@ -17,7 +17,7 @@
                                                             class="text-dark">Home</a></li>
                                                     <li class="breadcrumb-item d-inline-block active">Dashboard</li>
                                                 </ol>
-                                                <h4 class="text-dark">MKAD Dashboard</h4>
+                                                <h4 class="text-dark">MBS Dashboard</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -68,7 +68,7 @@
                                         <i class="fa fa-clock-o"></i>
                                     </div>
                                     <div class="card-right">
-                                        <h4 class="card-title">MENUNGGU PERSETUJUAN MKAD</h4>
+                                        <h4 class="card-title">MENUNGGU PERSETUJUAN MBS</h4>
                                         <p class="card-text">{{ $count_menunggu }}</p>
                                     </div>
                                 </div>
@@ -115,7 +115,7 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="card-right">
-                                            <h4 class="card-title mr-auto float-right">DAFTAR PERSETUJUAN MKAD<span
+                                            <h4 class="card-title mr-auto float-right">DAFTAR PERSETUJUAN MBS<span
                                                     class="border bg-danger p-sm-1 text-light">{{ $count_menunggu }}</span>
                                             </h4>
                                         </div>

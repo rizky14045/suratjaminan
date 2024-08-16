@@ -103,6 +103,18 @@
                                                             <span class="lnr lnr-arrow-left">Back</span>
                                                         </button>
                                                     </a> 
+                                                    @elseif(Auth::user()->role == 'dokter')
+                                                    <a href="{{ url('/dokter') }}"><button
+                                                            class="btn btn-sm btn-warning">
+                                                            <span class="lnr lnr-arrow-left">Back</span>
+                                                        </button>
+                                                    </a> 
+                                                    @elseif(Auth::user()->role == 'asman')
+                                                    <a href="{{ url('/asman') }}"><button
+                                                            class="btn btn-sm btn-warning">
+                                                            <span class="lnr lnr-arrow-left">Back</span>
+                                                        </button>
+                                                    </a> 
                                                     @else
                                                     <a href="{{ url('/admin') }}"><button
                                                             class="btn btn-sm btn-warning">
@@ -124,6 +136,26 @@
                                                     @if (Auth::user()->role == 'mkad')
                                                         @if ($formjaminan->status_pengajuan == 'Menunggu Persetujuan MKAD')
                                                             <a href="{{ url('/mkad/form-jaminan/approve/' . $formjaminan->id) }}"
+                                                                title="Approve FormJaminan">
+                                                                <button class="btn btn-sm btn-success">
+                                                                    <span class="fa fa-check"></span>Approve
+                                                                </button>
+                                                            </a>
+                                                        @endif
+                                                    @endif
+                                                    @if (Auth::user()->role == 'asman')
+                                                        @if ($formjaminan->status_pengajuan == 'Menunggu Persetujuan Asisten Manager')
+                                                            <a href="{{ url('/asman/form-jaminan/approve/' . $formjaminan->id) }}"
+                                                                title="Approve FormJaminan">
+                                                                <button class="btn btn-sm btn-success">
+                                                                    <span class="fa fa-check"></span>Approve
+                                                                </button>
+                                                            </a>
+                                                        @endif
+                                                    @endif
+                                                    @if (Auth::user()->role == 'dokter')
+                                                        @if ($formjaminan->status_pengajuan == 'Menunggu Persetujuan Dokter')
+                                                            <a href="{{ url('/dokter/form-jaminan/approve/' . $formjaminan->id) }}"
                                                                 title="Approve FormJaminan">
                                                                 <button class="btn btn-sm btn-success">
                                                                     <span class="fa fa-check"></span>Approve

@@ -128,7 +128,7 @@ class FormJaminanController extends Controller
     {
 
         $latest_form = FormJaminan::latest()->first();
-        $mkad = User::where('role','mkad')->latest()->limit(1)->get();
+        $dokter = User::where('role','dokter')->latest()->limit(1)->get();
         if($latest_form){
             $nomor = $latest_form->id + 1;
         }else{
@@ -142,14 +142,14 @@ class FormJaminanController extends Controller
             $status = 'PS';
         }
         
-        // dd($mkad[0]['name']);
+        // dd($dokter[0]['name']);
         $request['nomor_surat']= $nomor .'/' .$status.'/450/SDM/'.date('Y');
         $request['status_email'] = 0;
-        $request['status_pengajuan'] = 'Menunggu Persetujuan MKAD';
+        $request['status_pengajuan'] = 'Menunggu Persetujuan Dokter';
         $requestData = $request->all();
         $data_karyawan = FormJaminan::create($requestData);
         if($data_karyawan){
-            Mail::to($mkad[0]['email'])->send(new \App\Mail\Mkad_Mail($mkad,$data_karyawan));
+            Mail::to($dokter[0]['email'])->send(new \App\Mail\Dokter_Mail($dokter,$data_karyawan));
         }
         Alert::success('New ' . 'FormJaminan'. ' Created!' );
         $nomor++;

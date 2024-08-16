@@ -30,10 +30,10 @@ class SMController extends Controller
      */
     public function index()
     {   
-        $formjaminan['menunggu'] =FormJaminan::where('status_pengajuan','=','Sudah Di setujui MKAD')->latest()->limit(3)->get();
-        $formjaminan['sudah'] =FormJaminan::where('status_pengajuan','=','Sudah Disetujui Senior Manager')->latest()->limit(3)->get();
-        $formjaminan['count_menunggu'] = FormJaminan::where('status_pengajuan','=','Sudah Di setujui MKAD')->count();
-        $formjaminan['count_sudah'] = FormJaminan::where('status_pengajuan','=','Sudah Disetujui Senior Manager')->count();
+        $formjaminan['menunggu'] =FormJaminan::where('rangking','=', 4)->latest()->limit(3)->get();
+        $formjaminan['sudah'] =FormJaminan::where('rangking','=' , 5)->latest()->limit(3)->get();
+        $formjaminan['count_menunggu'] = FormJaminan::where('rangking','=', 4)->count();
+        $formjaminan['count_sudah'] = FormJaminan::where('rangking','=' , 5)->count();
         return view('sm.dashboard', $formjaminan);
     }
 
@@ -43,18 +43,20 @@ class SMController extends Controller
                                     ->select('karyawans.*', 'form_jaminans.*', 'kelas_rawat_inaps.*', 'form_jaminans.id as id')      
                                     ->where('karyawans.status_karyawan', 'karyawan_tetap')
                                     ->where('form_jaminans.jenis_surat', 'personal')
-                                    ->where('form_jaminans.status_pengajuan', '!=' ,'Menunggu Persetujuan MKAD')
-                                    ->where('form_jaminans.status_pengajuan', '!=' ,'Sudah Disetujui MKAD')
-                                    ->orderBy('form_jaminans.status_pengajuan', 'asc')
+                                    ->where('form_jaminans.rangking', '!=' ,1)
+                                    ->where('form_jaminans.rangking', '!=' ,2)
+                                    ->where('form_jaminans.rangking', '!=' ,3)
+                                    ->orderBy('form_jaminans.rangking', 'asc')
                                     ->latest('form_jaminans.created_at')->get();
         $formjaminan_keluarga = FormJaminan::join('karyawans', 'form_jaminans.id_karyawan', 'karyawans.id')
                                     ->join('kelas_rawat_inaps', 'karyawans.id_kelas_rawat_inap', 'kelas_rawat_inaps.id')  
                                     ->select('karyawans.*', 'form_jaminans.*', 'kelas_rawat_inaps.*', 'form_jaminans.id as id')      
                                     ->where('karyawans.status_karyawan', 'karyawan_tetap')
                                     ->where('form_jaminans.jenis_surat', 'keluarga')
-                                    ->where('form_jaminans.status_pengajuan', '!=' ,'Menunggu Persetujuan MKAD')
-                                    ->where('form_jaminans.status_pengajuan', '!=' ,'Sudah Disetujui MKAD')
-                                    ->orderBy('form_jaminans.status_pengajuan', 'asc')
+                                    ->where('form_jaminans.rangking', '!=' ,1)
+                                    ->where('form_jaminans.rangking', '!=' ,2)
+                                    ->where('form_jaminans.rangking', '!=' ,3)
+                                    ->orderBy('form_jaminans.rangking', 'asc')
                                     ->latest('form_jaminans.created_at')->get();
 
         $karyawan = Karyawan::where('status_karyawan', 'karyawan_tetap')->get();
@@ -76,16 +78,20 @@ class SMController extends Controller
                                     ->select('karyawans.*', 'form_jaminans.*', 'kelas_rawat_inaps.*', 'form_jaminans.id as id')      
                                     ->where('karyawans.status_karyawan', 'pensiunan')
                                     ->where('form_jaminans.jenis_surat', 'personal')
-                                    ->where('form_jaminans.status_pengajuan', '!=' ,'Menunggu Persetujuan MKAD')
-                                    ->orderBy('form_jaminans.status_pengajuan', 'asc')
+                                    ->where('form_jaminans.rangking', '!=' ,1)
+                                    ->where('form_jaminans.rangking', '!=' ,2)
+                                    ->where('form_jaminans.rangking', '!=' ,3)
+                                    ->orderBy('form_jaminans.rangking', 'asc')
                                     ->latest('form_jaminans.created_at')->get();
         $formjaminan_keluarga = FormJaminan::join('karyawans', 'form_jaminans.id_karyawan', 'karyawans.id')
                                     ->join('kelas_rawat_inaps', 'karyawans.id_kelas_rawat_inap', 'kelas_rawat_inaps.id')  
                                     ->select('karyawans.*', 'form_jaminans.*', 'kelas_rawat_inaps.*', 'form_jaminans.id as id')      
                                     ->where('karyawans.status_karyawan', 'pensiunan')
                                     ->where('form_jaminans.jenis_surat', 'keluarga')
-                                    ->where('form_jaminans.status_pengajuan', '!=' ,'Menunggu Persetujuan MKAD')
-                                    ->orderBy('form_jaminans.status_pengajuan', 'asc')
+                                    ->where('form_jaminans.rangking', '!=' ,1)
+                                    ->where('form_jaminans.rangking', '!=' ,2)
+                                    ->where('form_jaminans.rangking', '!=' ,3)
+                                    ->orderBy('form_jaminans.rangking', 'asc')
                                     ->latest('form_jaminans.created_at')->get();
 
         $karyawan = Karyawan::where('status_karyawan', 'pensiunan')->get();
@@ -122,6 +128,7 @@ class SMController extends Controller
     public function approveJaminan($id)
     {
         $formjaminan = FormJaminan::findOrFail($id);
+        $formjaminan->rangking = 5;
         $formjaminan->status_pengajuan = 'Sudah Disetujui Senior Manager';
         $formjaminan->save();
         Alert::success('Form Jaminan Berhasil Disetujui' );
