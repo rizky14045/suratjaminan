@@ -466,4 +466,20 @@
                 });
             })
     </script>
+    <script>
+        $(document).ready(function() {
+            $('.js-example-basic-multiple-personal').select2({
+               theme: 'bootstrap4',
+               dropdownParent: $('#add-FormJaminanPersonal')
+           });
+        });
+    </script>
+     <script>
+        $(document).ready(function() {
+            $('.js-example-basic-multiple-keluarga').select2({
+               theme: 'bootstrap4',
+               dropdownParent: $('#add-FormJaminanKeluarga')
+           });
+        });
+    </script>
 @stop

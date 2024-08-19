@@ -161,4 +161,16 @@
             </div>
         </div>
     </div>
+
+@endsection
+
+@section('scripts')
+ <script>
+    $(document).ready(function() {
+        $('.js-example-basic-multiple-history').select2({
+           theme: 'bootstrap4',
+           dropdownParent: $('#add-Karyawan')
+       });
+    });
+</script>
 @endsection
