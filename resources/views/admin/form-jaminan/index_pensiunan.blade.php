@@ -482,4 +482,12 @@
            });
         });
     </script>
+     <script>
+        $(document).ready(function() {
+            $('.js-example-basic-multiple-sakit').select2({
+               theme: 'bootstrap4',
+               dropdownParent: $('#add-FormJaminanKeluarga')
+           });
+        });
+    </script>
 @stop

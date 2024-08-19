@@ -42,7 +42,7 @@
         </div>
         <div class="form-group{{ $errors->has('id_rumah_sakit') ? 'has-error' : '' }}">
             {!! Form::label('id_rumah_sakit', 'Rumah Sakit', ['class' => 'control-label']) !!}
-            <select name="id_rumah_sakit" id="id_rumah_sakit_keluarga" class="js-example-basic-multiple form-control">
+            <select name="id_rumah_sakit" id="id_rumah_sakit_keluarga" class="js-example-basic-multiple-keluarga form-control">
                 <option value="" disabled selected>Silahkan Dipilih</option>
                 @foreach ($rumahSakit as $item)
                     <option value="{{ $item->id }}">{{ $item->nama_rumah_sakit }}</option>
