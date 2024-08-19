@@ -234,27 +234,16 @@
     <div class="ttd">
         <span> Jakarta, {{ date('j F Y') }}</span>
         <br>
-        @if ($formjaminan['status_pengajuan'] == 'Sudah Di setujui MKAD' || $formjaminan['status_pengajuan'] == 'Sudah Disetujui MKAD')
+        {{-- @if ($formjaminan['status_pengajuan'] == 'Sudah Di setujui MKAD' || $formjaminan['status_pengajuan'] == 'Sudah Disetujui MKAD') --}}
         <span class="ttd-mkad" style="padding-bottom:70px; padding-top:10px;">
-            senior manager
+            {{ $sm[0]['jabatan'] }}
         </span>
         <br>
         <span class="ttd-nama" style="margin-top:5px;">{{ $sm[0]['name'] }}</span>
         <div class="paraf">
-            <img src="{{ public_path('ttd_file/'.$mkad[0]['file_ttd']) }}" height="30" width="30">
+            {{-- <img src="{{ public_path('ttd_file/'.$mkad[0]['file_ttd']) }}" height="30" width="30"> --}}
         </div>
-        @endif
-
-        @if ($formjaminan['status_pengajuan'] == 'Menunggu Persetujuan MKAD')
-        <span class="ttd-mkad" style="padding-bottom:70px; padding-top:10px;">
-            senior manager
-        </span>
-        <br>
-        <span class="ttd-nama" style="margin-top:5px;">{{ $sm[0]['name'] }}</span>
-        {{-- <div class="paraf">
-            <img src="{{ public_path('ttd_file/'.$mkad[0]['file_ttd']) }}" height="30" width="30">
-        </div> --}}
-        @endif
+        {{-- @endif --}}
 
     </div>
     <div class="catatan">

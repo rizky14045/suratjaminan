@@ -10,7 +10,7 @@
         <div class="form-group{{ $errors->has('id_karyawan') ? 'has-error' : '' }}">
             {!! Form::label('id_karyawan', 'Karyawan', ['class' => 'control-label']) !!}
             <input type="hidden" name="jenis_surat" value="keluarga">
-            <select name="id_karyawan" id="id_karyawan_keluarga" class="js-example-basic-multiple form-control">
+            <select name="id_karyawan" id="id_karyawan_keluarga" class="js-example-basic-multiple-keluarga form-control">
                 <option value="" disabled selected>Silahkan Dipilih</option>
                 @foreach ($karyawan as $item)
                     <option value="{{ $item->id }}">{{ $item->nama_karyawan }}</option>

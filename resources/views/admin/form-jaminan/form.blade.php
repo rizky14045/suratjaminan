@@ -10,7 +10,7 @@
             {!! Form::label('id_karyawan', 'Karyawan', ['class' => 'control-label']) !!}
             <br>
             <input type="hidden" name="jenis_surat" value="personal">
-            <select name="id_karyawan" id="id_karyawan_personal" class="js-example-basic-multiple form-control">
+            <select name="id_karyawan" id="id_karyawan_personal" class="js-example-basic-multiple-personal form-control">
                 <option value="" disabled selected>Silahkan Dipilih</option>
                 @foreach ($karyawan as $item)
                     <option value="{{ $item->id }}">{{ $item->nama_karyawan }}</option>

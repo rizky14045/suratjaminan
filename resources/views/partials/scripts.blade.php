@@ -37,15 +37,16 @@
  <script>
      $(document).ready(function() {
          $('#data-table').DataTable();
+         $('.js-example-basic-multiple').select2({
+            theme: 'bootstrap4',
+        });
      });
  </script>
- <script>
+ {{-- <script>
     $('.js-example-basic-multiple').ready(function() {
-        $('.js-example-basic-multiple').select2({
-            theme: 'bootstrap4'
-        });
+        
     });
-</script>
+</script> --}}
  <script>
      $(document).ready(function() {
          $('#data-table-1').DataTable();
