@@ -299,7 +299,7 @@
         "nama_karyawan": "AGUS JAMALUDIN",
         "nid": "8913027ZJY",
         "jabatan": "TECHNICIAN PRODUKSI PLTGU BLOK I C",
-        "jenjang_jabatan": "F4",
+        "jenjang_jabatan": "F5",
         "alamat": "JALAN SULAWESI NO. 15 RT 003/010 DESA MULYOHARJO",
         "tanggal_lahir": "1989-09-29",
         "istri": "ARIFINA FAHAMSYA",
@@ -312,7 +312,7 @@
         "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "jamaludin@plnnusantarapower.co.id",
-        "jenis_kelas": "2"
+        "jenis_kelas": "3"
     },
     {
         "id": "16",
@@ -1055,7 +1055,7 @@
         "nama_karyawan": "BERNANDEZ NOVERSON LUPY",
         "nid": "8915124ZJY",
         "jabatan": "ASSISTANT MANAGER SYSTEM OWNER",
-        "jenjang_jabatan": "F4",
+        "jenjang_jabatan": "SPV A",
         "alamat": "TOWUA II NO 22B PALU RT 003 RW 005 KEL TATURA SELATAN",
         "tanggal_lahir": "1989-11-23",
         "istri": "GREIS NOVELIN MOGELEA",
@@ -2546,7 +2546,7 @@
         "nama_karyawan": "I GUSTI NGURAH BARTHA PRADNYA P",
         "nid": "8814006ZJY",
         "jabatan": "SENIOR OFFICER KINERJA SDM, UMUM & CSR",
-        "jenjang_jabatan": "F5",
+        "jenjang_jabatan": "F4",
         "alamat": "RUNGKUT LOR RL 3 F/4 RT 4 RW 9 KEL KALIRUNGKUT RUNGKUT",
         "tanggal_lahir": "1988-12-14",
         "istri": "AA AYU TRIUTAMI",
@@ -2559,7 +2559,7 @@
         "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "bartha@ptplnnusantarapower.com",
-        "jenis_kelas": "3"
+        "jenis_kelas": "2"
     },
     {
         "id": "123",
@@ -2903,7 +2903,7 @@
         "nama_karyawan": "JOKO WICAKSONO",
         "nid": "8405094JA",
         "jabatan": "ASSISTANT MANAGER PRODUKSI PLTGU BLOK II B",
-        "jenjang_jabatan": "F5",
+        "jenjang_jabatan": "SPV A",
         "alamat": "PERUM PONDOK LAKAH PERMAI AA/22 RT/RW:03/16 PANINGGILAN CILEDUG",
         "tanggal_lahir": "1984-08-03",
         "istri": "ERICA WAHYU CHRISTIAN",
@@ -2916,7 +2916,7 @@
         "tgl_lahir_anak_2": "2017-10-20",
         "tgl_lahir_anak_3": "2020-08-15",
         "email": "jokowicaksono@ptplnnusantarapower.com",
-        "jenis_kelas": "3"
+        "jenis_kelas": "2"
     },
     {
         "id": "140",
@@ -2987,7 +2987,7 @@
         "nama_karyawan": "KOKO APRIYANTO",
         "nid": "9116241ZJY",
         "jabatan": "TECHNICIAN PEMELIHARAAN SIPIL PLTU & PLTGU BLOK I",
-        "jenjang_jabatan": "SPV A",
+        "jenjang_jabatan": "F5",
         "alamat": "JL RAWA GENI RAYA HARMONIS 1 RR7 RT 04 RW 08 KEL RATU JAYA",
         "tanggal_lahir": "1991-04-14",
         "istri": "CARINA FIRSTCA UTOMO",
@@ -3000,7 +3000,7 @@
         "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "koko.apriyanto@ptplnnusantarapower.com",
-        "jenis_kelas": "2"
+        "jenis_kelas": "3"
     },
     {
         "id": "144",
@@ -3235,6 +3235,27 @@
     },
     {
         "id": "155",
+        "tanggal_masuk_karyawan": "2008-05-01",
+        "nama_karyawan": "MGS FERIADI",
+        "nid": "8108055JA",
+        "jabatan": "MANAGER OPERASI",
+        "jenjang_jabatan": "MD",
+        "alamat": "Perum Puri Permata Blok E4 No. 2 Cipondoh KOTA TANGERANG",
+        "tanggal_lahir": "1981-02-03",
+        "istri": "DINI MAYASARI",
+        "anak_1": "MGS GIBRAN AL AZHAR",
+        "anak_2": "MGS HIBBAN AL-KAHFI",
+        "anak_3": "MASAGUS ZEHAAN AL JAUZI",
+        "status_karyawan": "karyawan_tetap",
+        "tgl_lahir_istri": "1982-09-06",
+        "tgl_lahir_anak_1": "2010-11-22",
+        "tgl_lahir_anak_2": "2014-03-12",
+        "tgl_lahir_anak_3": "2023-03-09",
+        "email": "feriadi@plnnusantarapower.co.id",
+        "jenis_kelas": "2"
+    },
+    {
+        "id": "156",
         "tanggal_masuk_karyawan": "2013-01-01",
         "nama_karyawan": "MIRZA HADI KHUSYAIRI",
         "nid": "8813029ZJY",
@@ -3255,7 +3276,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "156",
+        "id": "157",
         "tanggal_masuk_karyawan": "2011-01-01",
         "nama_karyawan": "MOCH ZAINUDIN",
         "nid": "8811004JA",
@@ -3276,7 +3297,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "157",
+        "id": "158",
         "tanggal_masuk_karyawan": "2015-06-01",
         "nama_karyawan": "MOCHAMAD RIDHO ALDILLA",
         "nid": "8915149ZJY",
@@ -3297,7 +3318,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "158",
+        "id": "159",
         "tanggal_masuk_karyawan": "2008-05-01",
         "nama_karyawan": "MOHAMAD ABDUL WAHAB",
         "nid": "8108057JA",
@@ -3318,7 +3339,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "159",
+        "id": "160",
         "tanggal_masuk_karyawan": "2016-11-01",
         "nama_karyawan": "MOHAMAD ZAENURI",
         "nid": "9316072ZJY",
@@ -3339,7 +3360,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "160",
+        "id": "161",
         "tanggal_masuk_karyawan": "2015-12-01",
         "nama_karyawan": "MOHAMMAD RIZALDO ADI GURASTO",
         "nid": "9215282ZJY",
@@ -3360,7 +3381,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "161",
+        "id": "162",
         "tanggal_masuk_karyawan": "2016-11-01",
         "nama_karyawan": "MUCHAMAD HAWIDHI SUKARNA",
         "nid": "9216200ZJY",
@@ -3381,7 +3402,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "162",
+        "id": "163",
         "tanggal_masuk_karyawan": "2011-01-01",
         "nama_karyawan": "MUCHAMMAD REZA PRABUDI",
         "nid": "8811013JA",
@@ -3402,7 +3423,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "163",
+        "id": "164",
         "tanggal_masuk_karyawan": "2008-05-01",
         "nama_karyawan": "MUHAMAD BUDI DARMAWAN",
         "nid": "8108060JA",
@@ -3423,7 +3444,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "164",
+        "id": "165",
         "tanggal_masuk_karyawan": "2015-12-01",
         "nama_karyawan": "MUHAMAD HUSEN RAMADHAN",
         "nid": "9415363ZJY",
@@ -3444,7 +3465,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "165",
+        "id": "166",
         "tanggal_masuk_karyawan": "2011-01-01",
         "nama_karyawan": "MUHAMAD NOVAN INDRA ATMOKO",
         "nid": "8911029JA",
@@ -3465,7 +3486,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "166",
+        "id": "167",
         "tanggal_masuk_karyawan": "2019-11-01",
         "nama_karyawan": "MUHAMAD RAFIF HERDAFA",
         "nid": "9519036ZJY",
@@ -3486,7 +3507,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "167",
+        "id": "168",
         "tanggal_masuk_karyawan": "2014-01-01",
         "nama_karyawan": "MUHAMAD ROSHIE FRIANSYAH",
         "nid": "9214110ZJY",
@@ -3507,7 +3528,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "168",
+        "id": "169",
         "tanggal_masuk_karyawan": "2016-11-01",
         "nama_karyawan": "MUHAMAD WISNU NUGROHO",
         "nid": "9216105ZJY",
@@ -3528,7 +3549,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "169",
+        "id": "170",
         "tanggal_masuk_karyawan": "2011-01-01",
         "nama_karyawan": "MUHAMMAD ABDULLAH",
         "nid": "8811018JA",
@@ -3549,7 +3570,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "170",
+        "id": "171",
         "tanggal_masuk_karyawan": "2005-01-19",
         "nama_karyawan": "MUHAMMAD ARIF ISKANDAR",
         "nid": "8405014JA",
@@ -3570,7 +3591,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "171",
+        "id": "172",
         "tanggal_masuk_karyawan": "2015-12-01",
         "nama_karyawan": "MUHAMMAD DAIROTUS SUHUD",
         "nid": "9315359ZJY",
@@ -3591,7 +3612,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "172",
+        "id": "173",
         "tanggal_masuk_karyawan": "2010-09-01",
         "nama_karyawan": "MUHAMMAD DENI INDRAWAN",
         "nid": "8610069JA",
@@ -3612,7 +3633,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "173",
+        "id": "174",
         "tanggal_masuk_karyawan": "2017-12-19",
         "nama_karyawan": "MUHAMMAD IMAM SYAFI I",
         "nid": "9417146ZJY",
@@ -3633,7 +3654,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "174",
+        "id": "175",
         "tanggal_masuk_karyawan": "2015-01-01",
         "nama_karyawan": "MUHAMMAD IMRAN MITRANINGJEKTI",
         "nid": "9215022ZJY",
@@ -3654,7 +3675,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "175",
+        "id": "176",
         "tanggal_masuk_karyawan": "2018-12-01",
         "nama_karyawan": "MUHAMMAD RIDHO FAKHRIZAL",
         "nid": "9718052ZJY",
@@ -3675,7 +3696,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "176",
+        "id": "177",
         "tanggal_masuk_karyawan": "2020-11-01",
         "nama_karyawan": "MUHAMMAD RIDHO HAMVERNA",
         "nid": "9720012ZJY",
@@ -3696,7 +3717,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "177",
+        "id": "178",
         "tanggal_masuk_karyawan": "2016-11-01",
         "nama_karyawan": "MUHAMMAD RIFKI ARADIANSYAH",
         "nid": "9416039ZJY",
@@ -3717,7 +3738,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "178",
+        "id": "179",
         "tanggal_masuk_karyawan": "2005-09-01",
         "nama_karyawan": "MUHAMMAD SAIFUL MUJAB",
         "nid": "8405085JA",
@@ -3738,7 +3759,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "179",
+        "id": "180",
         "tanggal_masuk_karyawan": "2017-01-01",
         "nama_karyawan": "MUHAMMAD WAHYU ADEFANZAH",
         "nid": "9217052ZJY",
@@ -3759,7 +3780,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "180",
+        "id": "181",
         "tanggal_masuk_karyawan": "1992-10-05",
         "nama_karyawan": "MUJITO",
         "nid": "7392111K3",
@@ -3780,7 +3801,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "181",
+        "id": "182",
         "tanggal_masuk_karyawan": "1992-10-05",
         "nama_karyawan": "MUJIYONO",
         "nid": "7092131K3",
@@ -3801,7 +3822,28 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "182",
+        "id": "183",
+        "tanggal_masuk_karyawan": "2024-02-01",
+        "nama_karyawan": "NAJIB ALFAN YANUAR",
+        "nid": "0024027ZJY",
+        "jabatan": "TECHNICIAN CONDITION BASED MAINTENANCE",
+        "jenjang_jabatan": "F5",
+        "alamat": "BANYU PUTIH BARAT RT 002 RW 013 KEL SIDOREJO LOR K KOTA SALATIGA",
+        "tanggal_lahir": "2000-01-01",
+        "istri": "",
+        "anak_1": "",
+        "anak_2": "",
+        "anak_3": "",
+        "status_karyawan": "karyawan_tetap",
+        "tgl_lahir_istri": "1900-10-10",
+        "tgl_lahir_anak_1": "1900-10-10",
+        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_3": "1900-10-10",
+        "email": "najib.alfan@plnnusantarapower.co.id",
+        "jenis_kelas": "3"
+    },
+    {
+        "id": "184",
         "tanggal_masuk_karyawan": "2011-12-01",
         "nama_karyawan": "NANDA FATRIANSYAH",
         "nid": "9111191JA",
@@ -3822,7 +3864,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "183",
+        "id": "185",
         "tanggal_masuk_karyawan": "1993-05-01",
         "nama_karyawan": "NASIR",
         "nid": "7093129K3",
@@ -3843,7 +3885,28 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "184",
+        "id": "186",
+        "tanggal_masuk_karyawan": "2007-10-01",
+        "nama_karyawan": "NASTOPO DARMAWAN",
+        "nid": "8207062JA",
+        "jabatan": "MANAGER ENJINIRING & QUALITY ASSURANCE",
+        "jenjang_jabatan": "MD",
+        "alamat": "PERUM CANDRABAGA BLOK AR4 NO 2 DESA BAHAGIA KECAMATAN BABELAN KAB. BEKASI",
+        "tanggal_lahir": "1982-08-17",
+        "istri": "SUWARSIH",
+        "anak_1": "ADIBATUL HANIFAH",
+        "anak_2": "ASMA AZIZAH",
+        "anak_3": "MUHAMMAD IDRIS",
+        "status_karyawan": "karyawan_tetap",
+        "tgl_lahir_istri": "1981-04-24",
+        "tgl_lahir_anak_1": "2009-11-09",
+        "tgl_lahir_anak_2": "2011-06-24",
+        "tgl_lahir_anak_3": "2015-10-16",
+        "email": "nastopo@plnnusantarapower.co.id",
+        "jenis_kelas": "2"
+    },
+    {
+        "id": "187",
         "tanggal_masuk_karyawan": "1992-07-15",
         "nama_karyawan": "NASRIP HIDAYAT",
         "nid": "7092113K3",
@@ -3864,7 +3927,28 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "185",
+        "id": "188",
+        "tanggal_masuk_karyawan": "2008-02-01",
+        "nama_karyawan": "NDARU TRIHATMOKO",
+        "nid": "8008026JA",
+        "jabatan": "MANAGER BUSINESS SUPPORT",
+        "jenjang_jabatan": "MD",
+        "alamat": "PREMIER ESTATE BAMBU APUS BLOK G NO 15 CIPAYUNG KOTA JAKARTA TIMUR",
+        "tanggal_lahir": "1980-11-05",
+        "istri": "AMELIA POERWOKO",
+        "anak_1": "BLAIR MARIONETTE HATMOKO",
+        "anak_2": "BREA MARIELLE HATMOKO",
+        "anak_3": "",
+        "status_karyawan": "karyawan_tetap",
+        "tgl_lahir_istri": "1979-10-27",
+        "tgl_lahir_anak_1": "2009-07-03",
+        "tgl_lahir_anak_2": "2010-07-27",
+        "tgl_lahir_anak_3": "1900-10-10",
+        "email": "ndaru@plnnusantarapower.co.id",
+        "jenis_kelas": "2"
+    },
+    {
+        "id": "189",
         "tanggal_masuk_karyawan": "2014-01-01",
         "nama_karyawan": "NIA PUSPITA SARI",
         "nid": "9114096ZJY",
@@ -3885,7 +3969,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "186",
+        "id": "190",
         "tanggal_masuk_karyawan": "2014-01-01",
         "nama_karyawan": "NIKO LASTRADA",
         "nid": "8814089ZJY",
@@ -3906,7 +3990,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "187",
+        "id": "191",
         "tanggal_masuk_karyawan": "2010-09-01",
         "nama_karyawan": "NILUH GEDE SRI PUSPITA YUDHANTI",
         "nid": "8510078JA",
@@ -3927,7 +4011,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "188",
+        "id": "192",
         "tanggal_masuk_karyawan": "2017-09-01",
         "nama_karyawan": "NOVENDRARIZAL DENNY ANANTA",
         "nid": "9817096ZJY",
@@ -3948,7 +4032,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "189",
+        "id": "193",
         "tanggal_masuk_karyawan": "2011-09-01",
         "nama_karyawan": "NURSYAHID SUHARTO",
         "nid": "9111165JA",
@@ -3969,7 +4053,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "190",
+        "id": "194",
         "tanggal_masuk_karyawan": "1992-10-05",
         "nama_karyawan": "NURUL YANUAR",
         "nid": "7292112K3",
@@ -3990,7 +4074,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "191",
+        "id": "195",
         "tanggal_masuk_karyawan": "2015-12-01",
         "nama_karyawan": "NUZUL LUTHFIHADI",
         "nid": "9015221ZJY",
@@ -4011,7 +4095,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "192",
+        "id": "196",
         "tanggal_masuk_karyawan": "2014-01-01",
         "nama_karyawan": "OKTA VARID SAKTIAWAN",
         "nid": "8614076ZJY",
@@ -4032,7 +4116,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "193",
+        "id": "197",
         "tanggal_masuk_karyawan": "2016-11-01",
         "nama_karyawan": "OSLO JEFFRICHO MARULI SIMANJUNTAK",
         "nid": "9316099ZJY",
@@ -4053,7 +4137,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "194",
+        "id": "198",
         "tanggal_masuk_karyawan": "2017-01-01",
         "nama_karyawan": "PARAMITA ANGGRAENI",
         "nid": "9517054ZJY",
@@ -4074,7 +4158,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "195",
+        "id": "199",
         "tanggal_masuk_karyawan": "2016-11-01",
         "nama_karyawan": "PERMANA JAYA HIKMAT",
         "nid": "9216122ZJY",
@@ -4095,7 +4179,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "196",
+        "id": "200",
         "tanggal_masuk_karyawan": "2014-01-01",
         "nama_karyawan": "PRADANA PUTRADEWA JAYAWARDANA",
         "nid": "9014090ZJY",
@@ -4116,7 +4200,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "197",
+        "id": "201",
         "tanggal_masuk_karyawan": "2005-01-19",
         "nama_karyawan": "PRIYO WIJANARKO",
         "nid": "8305007JA",
@@ -4137,7 +4221,49 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "198",
+        "id": "202",
+        "tanggal_masuk_karyawan": "2024-02-01",
+        "nama_karyawan": "PRISTIAN DWI PUTRA",
+        "nid": "9424029ZJY",
+        "jabatan": "TECHNICIAN PEMELIHARAAN KONTROL & INSTRUMEN PLTU & PLTGU BLOK I",
+        "jenjang_jabatan": "F5",
+        "alamat": "Komplek Siaga Baru Blok A no 2 Pasar Minggu KOTA JAKARTA SELATAN",
+        "tanggal_lahir": "1994-09-21",
+        "istri": "ALULA HAWRA DANIA",
+        "anak_1": "FAYRUZ AQUILA",
+        "anak_2": "",
+        "anak_3": "",
+        "status_karyawan": "karyawan_tetap",
+        "tgl_lahir_istri": "2020-11-11",
+        "tgl_lahir_anak_1": "1996-11-07",
+        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_3": "1900-10-10",
+        "email": "pristian.dwi@plnnusantarapower.co.id",
+        "jenis_kelas": "3"
+    },
+    {
+        "id": "203",
+        "tanggal_masuk_karyawan": "2024-02-01",
+        "nama_karyawan": "PRISMA RIASHUDA PRAKOSO",
+        "nid": "0024028ZJY",
+        "jabatan": "TECHNICIAN PEMELIHARAAN LISTRIK PLTU & PLTGU BLOK I",
+        "jenjang_jabatan": "F5",
+        "alamat": "KUNCI RT 006 RW 001 KEL KUNCI KEC DAND KAB. BOJONEGORO",
+        "tanggal_lahir": "2000-03-26",
+        "istri": "",
+        "anak_1": "",
+        "anak_2": "",
+        "anak_3": "",
+        "status_karyawan": "karyawan_tetap",
+        "tgl_lahir_istri": "1900-10-10",
+        "tgl_lahir_anak_1": "1900-10-10",
+        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_3": "1900-10-10",
+        "email": "prisma.riashuda@plnnusantarapower.co.id",
+        "jenis_kelas": "3"
+    },
+    {
+        "id": "204",
         "tanggal_masuk_karyawan": "2015-03-01",
         "nama_karyawan": "QAASIM",
         "nid": "9015089ZJY",
@@ -4158,7 +4284,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "199",
+        "id": "205",
         "tanggal_masuk_karyawan": "2005-09-01",
         "nama_karyawan": "R. PANDU WIRA ATMAJA",
         "nid": "8605086JA",
@@ -4179,7 +4305,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "200",
+        "id": "206",
         "tanggal_masuk_karyawan": "2011-01-01",
         "nama_karyawan": "RAHMA KHARISMA",
         "nid": "8611019JA",
@@ -4200,7 +4326,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "201",
+        "id": "207",
         "tanggal_masuk_karyawan": "2010-03-01",
         "nama_karyawan": "RAHMAD JAINUL ABIDIN",
         "nid": "8810024JA",
@@ -4221,7 +4347,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "202",
+        "id": "208",
         "tanggal_masuk_karyawan": "2005-09-01",
         "nama_karyawan": "RAHMAN SYUPANGAT",
         "nid": "8405088JA",
@@ -4242,7 +4368,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "203",
+        "id": "209",
         "tanggal_masuk_karyawan": "1992-10-05",
         "nama_karyawan": "RAHMAT SOLEH",
         "nid": "7292134K3",
@@ -4263,7 +4389,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "204",
+        "id": "210",
         "tanggal_masuk_karyawan": "2011-01-01",
         "nama_karyawan": "RAKHMAD HIDAYATULLAH",
         "nid": "8811008JA",
@@ -4284,7 +4410,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "205",
+        "id": "211",
         "tanggal_masuk_karyawan": "2014-01-01",
         "nama_karyawan": "RAMA ANDHIKA SAPUTRA",
         "nid": "8714077ZJY",
@@ -4305,7 +4431,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "206",
+        "id": "212",
         "tanggal_masuk_karyawan": "2014-01-01",
         "nama_karyawan": "RANDY TIRTA PRADANA",
         "nid": "8914075ZJY",
@@ -4326,7 +4452,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "207",
+        "id": "213",
         "tanggal_masuk_karyawan": "2016-11-01",
         "nama_karyawan": "RAZDRIZAL RIZKI",
         "nid": "9216159ZJY",
@@ -4347,7 +4473,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "208",
+        "id": "214",
         "tanggal_masuk_karyawan": "2020-11-01",
         "nama_karyawan": "REINAL FASALINO",
         "nid": "9820017ZJY",
@@ -4368,7 +4494,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "209",
+        "id": "215",
         "tanggal_masuk_karyawan": "2016-11-01",
         "nama_karyawan": "RENDY KRISNANTA PUTRA",
         "nid": "9316156ZJY",
@@ -4389,7 +4515,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "210",
+        "id": "216",
         "tanggal_masuk_karyawan": "2010-09-01",
         "nama_karyawan": "RENOLD GUNAWAN SIRAIT",
         "nid": "8310071JA",
@@ -4410,7 +4536,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "211",
+        "id": "217",
         "tanggal_masuk_karyawan": "2015-03-01",
         "nama_karyawan": "REVITA DWI UTARI",
         "nid": "9115088ZJY",
@@ -4431,7 +4557,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "212",
+        "id": "218",
         "tanggal_masuk_karyawan": "2019-11-01",
         "nama_karyawan": "REZA ALFATHAN PURNADI",
         "nid": "9619072ZJY",
@@ -4452,7 +4578,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "213",
+        "id": "219",
         "tanggal_masuk_karyawan": "2017-12-19",
         "nama_karyawan": "REZKI MUHAMAD MR",
         "nid": "9417246ZJY",
@@ -4473,7 +4599,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "214",
+        "id": "220",
         "tanggal_masuk_karyawan": "2015-05-01",
         "nama_karyawan": "REZON ARIF BUDIMAN",
         "nid": "9015120ZJY",
@@ -4494,7 +4620,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "215",
+        "id": "221",
         "tanggal_masuk_karyawan": "2019-11-01",
         "nama_karyawan": "RIDHA MOULINA",
         "nid": "9519089ZJY",
@@ -4515,7 +4641,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "216",
+        "id": "222",
         "tanggal_masuk_karyawan": "2015-12-01",
         "nama_karyawan": "RIDWAN IRWANSYAH",
         "nid": "9015166ZJY",
@@ -4536,7 +4662,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "217",
+        "id": "223",
         "tanggal_masuk_karyawan": "2005-01-19",
         "nama_karyawan": "RIGO PURWANTO",
         "nid": "8305012JA",
@@ -4557,7 +4683,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "218",
+        "id": "224",
         "tanggal_masuk_karyawan": "2015-12-01",
         "nama_karyawan": "RIFONDA MONANDIKA",
         "nid": "9115348ZJY",
@@ -4578,7 +4704,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "219",
+        "id": "225",
         "tanggal_masuk_karyawan": "2015-12-01",
         "nama_karyawan": "RINALDI AL KAUTSAR",
         "nid": "9115371ZJY",
@@ -4599,7 +4725,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "220",
+        "id": "226",
         "tanggal_masuk_karyawan": "2015-12-01",
         "nama_karyawan": "RIO AFRIANDA",
         "nid": "9215222ZJY",
@@ -4620,7 +4746,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "221",
+        "id": "227",
         "tanggal_masuk_karyawan": "2011-01-01",
         "nama_karyawan": "RISKY ARIYO",
         "nid": "8811003JA",
@@ -4641,7 +4767,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "222",
+        "id": "228",
         "tanggal_masuk_karyawan": "2015-03-01",
         "nama_karyawan": "RISKI KURNIAWAN",
         "nid": "8915345ZY",
@@ -4662,7 +4788,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "223",
+        "id": "229",
         "tanggal_masuk_karyawan": "2014-07-21",
         "nama_karyawan": "RIZA KURNIAWAN",
         "nid": "9214220ZJY",
@@ -4683,7 +4809,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "224",
+        "id": "230",
         "tanggal_masuk_karyawan": "2019-12-01",
         "nama_karyawan": "RIZAL ADIRIANTO",
         "nid": "9419152ZJY",
@@ -4704,7 +4830,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "225",
+        "id": "231",
         "tanggal_masuk_karyawan": "2014-01-01",
         "nama_karyawan": "RIZAL MAHENDRA PRATAMA",
         "nid": "8914101ZJY",
@@ -4725,7 +4851,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "226",
+        "id": "232",
         "tanggal_masuk_karyawan": "1992-10-05",
         "nama_karyawan": "RIZKI DWI KUSWORO",
         "nid": "7492123K3",
@@ -4746,7 +4872,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "227",
+        "id": "233",
         "tanggal_masuk_karyawan": "2017-10-01",
         "nama_karyawan": "RIZKI YULIANTO",
         "nid": "9617120ZJY",
@@ -4767,7 +4893,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "228",
+        "id": "234",
         "tanggal_masuk_karyawan": "2014-01-01",
         "nama_karyawan": "ROBBY FIERDAUS",
         "nid": "9014091ZJY",
@@ -4788,7 +4914,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "229",
+        "id": "235",
         "tanggal_masuk_karyawan": "2010-09-01",
         "nama_karyawan": "ROBY FIRMANSYAH",
         "nid": "8610074JA",
@@ -4809,12 +4935,12 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "230",
+        "id": "236",
         "tanggal_masuk_karyawan": "2014-01-01",
         "nama_karyawan": "ROVIE MARTHA SUTEJO",
         "nid": "9014092ZJY",
         "jabatan": "ASSISTANT MANAGER PRODUKSI PLTGU BLOK II C",
-        "jenjang_jabatan": "F5",
+        "jenjang_jabatan": "SPV A",
         "alamat": "WAKUL RT 2 RW 1 KEL RENTENG KEC PRAYA",
         "tanggal_lahir": "1990-02-18",
         "istri": "",
@@ -4827,10 +4953,10 @@
         "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "rovie.martha@plnnusantarapower.co.id",
-        "jenis_kelas": "3"
+        "jenis_kelas": "2"
     },
     {
-        "id": "231",
+        "id": "237",
         "tanggal_masuk_karyawan": "2005-09-01",
         "nama_karyawan": "RUDIYANTO",
         "nid": "8405096JA",
@@ -4851,7 +4977,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "232",
+        "id": "238",
         "tanggal_masuk_karyawan": "2010-09-01",
         "nama_karyawan": "RULLY GUMILAR MUSTARI",
         "nid": "8210070JA",
@@ -4872,7 +4998,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "233",
+        "id": "239",
         "tanggal_masuk_karyawan": "2016-11-01",
         "nama_karyawan": "RUMIJO",
         "nid": "9216034ZJY",
@@ -4893,7 +5019,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "234",
+        "id": "240",
         "tanggal_masuk_karyawan": "1992-07-15",
         "nama_karyawan": "RUSMANTO",
         "nid": "7292120K3",
@@ -4914,12 +5040,12 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "235",
+        "id": "241",
         "tanggal_masuk_karyawan": "1992-10-05",
         "nama_karyawan": "SAFRIZAR",
         "nid": "7192121K3",
         "jabatan": "SPECIALIST KINERJA OPERASI",
-        "jenjang_jabatan": "SPV A",
+        "jenjang_jabatan": "F3",
         "alamat": "JL. GRILYA WARTAWAN RT No. 18 RT14/RW05 CIPINANG BESAR SEL",
         "tanggal_lahir": "1971-06-30",
         "istri": "RAHMAWITTA",
@@ -4935,7 +5061,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "236",
+        "id": "242",
         "tanggal_masuk_karyawan": "2005-09-01",
         "nama_karyawan": "SAIFUL ANWAR",
         "nid": "8505097JA",
@@ -4956,7 +5082,28 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "237",
+        "id": "243",
+        "tanggal_masuk_karyawan": "2010-03-01",
+        "nama_karyawan": "SAIFUL HADI CHUDERI",
+        "nid": "8710018JA",
+        "jabatan": "ASSISTANT MANAGER KIMIA & LABORATORIUM",
+        "jenjang_jabatan": "SPV A",
+        "alamat": "DUSUN SEMAWUT RT 09 RW 03 DESA BALONGBENDO KAB. SIDOARJO",
+        "tanggal_lahir": "1987-06-14",
+        "istri": "MAULIA EKA SEPTIANA",
+        "anak_1": "FARADIBA ANINDYA CANTIGIE",
+        "anak_2": "KINANDITA JENNAIRA LITUHAYU",
+        "anak_3": "",
+        "status_karyawan": "karyawan_tetap",
+        "tgl_lahir_istri": "1991-09-10",
+        "tgl_lahir_anak_1": "2017-07-14",
+        "tgl_lahir_anak_2": "2022-08-22",
+        "tgl_lahir_anak_3": "1900-10-10",
+        "email": "hadi.chuderi@plnnusantarapower.co.id",
+        "jenis_kelas": "2"
+    },
+    {
+        "id": "244",
         "tanggal_masuk_karyawan": "2015-12-01",
         "nama_karyawan": "SAMUEL SIHOTANG",
         "nid": "9215335ZJY",
@@ -4977,7 +5124,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "238",
+        "id": "245",
         "tanggal_masuk_karyawan": "1992-10-05",
         "nama_karyawan": "SANTOSA",
         "nid": "7092132K3",
@@ -4998,7 +5145,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "239",
+        "id": "246",
         "tanggal_masuk_karyawan": "2015-01-01",
         "nama_karyawan": "SARIKA APRIYENI GOPAR",
         "nid": "8915023ZJY",
@@ -5019,7 +5166,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "240",
+        "id": "247",
         "tanggal_masuk_karyawan": "2015-12-01",
         "nama_karyawan": "SETIANTO RAMAPUTRA",
         "nid": "8915283ZJY",
@@ -5040,7 +5187,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "241",
+        "id": "248",
         "tanggal_masuk_karyawan": "2017-04-01",
         "nama_karyawan": "SHEILA RESTI RAMLI",
         "nid": "9417078ZJY",
@@ -5061,7 +5208,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "242",
+        "id": "249",
         "tanggal_masuk_karyawan": "2005-01-19",
         "nama_karyawan": "SIGID DWI WIDODO",
         "nid": "8305017JA",
@@ -5082,7 +5229,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "243",
+        "id": "250",
         "tanggal_masuk_karyawan": "1992-10-05",
         "nama_karyawan": "SIGIT MUARAWAN",
         "nid": "7592105K3",
@@ -5103,7 +5250,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "244",
+        "id": "251",
         "tanggal_masuk_karyawan": "2016-11-01",
         "nama_karyawan": "SINAR ILHAM HARI SAPUTRA",
         "nid": "9416076ZJY",
@@ -5124,7 +5271,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "245",
+        "id": "252",
         "tanggal_masuk_karyawan": "2005-01-19",
         "nama_karyawan": "SUBROTO MULIAR WAHYONO",
         "nid": "8305019JA",
@@ -5145,7 +5292,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "246",
+        "id": "253",
         "tanggal_masuk_karyawan": "1992-07-15",
         "nama_karyawan": "SUGENG HARIJANTO",
         "nid": "6992119K3",
@@ -5166,7 +5313,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "247",
+        "id": "254",
         "tanggal_masuk_karyawan": "2005-01-19",
         "nama_karyawan": "SUGENG RIYANTO",
         "nid": "8305008JA",
@@ -5187,7 +5334,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "248",
+        "id": "255",
         "tanggal_masuk_karyawan": "1992-07-15",
         "nama_karyawan": "SUGIYANTO",
         "nid": "7192091K3",
@@ -5208,7 +5355,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "249",
+        "id": "256",
         "tanggal_masuk_karyawan": "2008-07-01",
         "nama_karyawan": "SUHARDIMAN NURKHOLIQ",
         "nid": "8308091JA",
@@ -5229,7 +5376,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "250",
+        "id": "257",
         "tanggal_masuk_karyawan": "2020-04-01",
         "nama_karyawan": "SUHENDRA AMKA PUTRA",
         "nid": "9320005ZJY",
@@ -5250,7 +5397,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "251",
+        "id": "258",
         "tanggal_masuk_karyawan": "2014-01-01",
         "nama_karyawan": "SUHESTIKA AJENG YOLANDA",
         "nid": "9114069ZJY",
@@ -5271,7 +5418,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "252",
+        "id": "259",
         "tanggal_masuk_karyawan": "1992-07-15",
         "nama_karyawan": "SUKIRMAN",
         "nid": "7392095K3",
@@ -5292,12 +5439,12 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "253",
+        "id": "260",
         "tanggal_masuk_karyawan": "1993-05-01",
         "nama_karyawan": "SUKIYO",
         "nid": "6893131K3",
         "jabatan": "SENIOR OFFICER KINERJA SDM, UMUM & CSR",
-        "jenjang_jabatan": "F5",
+        "jenjang_jabatan": "F4",
         "alamat": "JL.PLUIT DALAM RT.09/08 NO.27 0",
         "tanggal_lahir": "1968-07-10",
         "istri": "ASMINI",
@@ -5310,10 +5457,10 @@
         "tgl_lahir_anak_2": "1992-11-01",
         "tgl_lahir_anak_3": "2003-02-01",
         "email": "sukiyo@plnnusantarapower.co.id",
-        "jenis_kelas": "3"
+        "jenis_kelas": "2"
     },
     {
-        "id": "254",
+        "id": "261",
         "tanggal_masuk_karyawan": "1993-05-01",
         "nama_karyawan": "SUMARNA",
         "nid": "7193123K3",
@@ -5334,7 +5481,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "255",
+        "id": "262",
         "tanggal_masuk_karyawan": "1992-10-05",
         "nama_karyawan": "SUNARTO",
         "nid": "7292115K3",
@@ -5355,7 +5502,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "256",
+        "id": "263",
         "tanggal_masuk_karyawan": "2011-01-01",
         "nama_karyawan": "SUPRAPTO",
         "nid": "8711017JA",
@@ -5376,7 +5523,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "257",
+        "id": "264",
         "tanggal_masuk_karyawan": "1992-07-15",
         "nama_karyawan": "SUTISNA",
         "nid": "6892090K3",
@@ -5397,7 +5544,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "258",
+        "id": "265",
         "tanggal_masuk_karyawan": "2010-09-01",
         "nama_karyawan": "TANIA REVINA YASIN",
         "nid": "8710068JA",
@@ -5418,7 +5565,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "259",
+        "id": "266",
         "tanggal_masuk_karyawan": "2020-11-01",
         "nama_karyawan": "TOGAR DWI PUTRA SAGALA",
         "nid": "9720013ZJY",
@@ -5439,7 +5586,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "260",
+        "id": "267",
         "tanggal_masuk_karyawan": "2011-09-01",
         "nama_karyawan": "TOMY KURNIAWAN",
         "nid": "9111154JA",
@@ -5460,7 +5607,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "261",
+        "id": "268",
         "tanggal_masuk_karyawan": "2009-07-02",
         "nama_karyawan": "TONNY HERNANTO WIBOWO",
         "nid": "8409028JA",
@@ -5481,7 +5628,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "262",
+        "id": "269",
         "tanggal_masuk_karyawan": "2019-12-01",
         "nama_karyawan": "TRI NOFI NUR ANTORO",
         "nid": "9519119ZJY",
@@ -5502,7 +5649,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "263",
+        "id": "270",
         "tanggal_masuk_karyawan": "2005-09-01",
         "nama_karyawan": "TRI WAHYUDI",
         "nid": "8505099JA",
@@ -5523,7 +5670,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "264",
+        "id": "271",
         "tanggal_masuk_karyawan": "2018-03-05",
         "nama_karyawan": "VIENA RACHMANIA PRIYONO",
         "nid": "9418017ZJY",
@@ -5540,11 +5687,11 @@
         "tgl_lahir_anak_1": "2020-12-08",
         "tgl_lahir_anak_2": "2024-04-04",
         "tgl_lahir_anak_3": "1900-10-10",
-        "email": "",
+        "email": "viena.rp@plnnusantarapower.co.id",
         "jenis_kelas": "3"
     },
     {
-        "id": "265",
+        "id": "272",
         "tanggal_masuk_karyawan": "2016-11-01",
         "nama_karyawan": "WAHYU ANDI MARYADI",
         "nid": "9416063ZJY",
@@ -5561,11 +5708,11 @@
         "tgl_lahir_anak_1": "2021-06-28",
         "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1900-10-10",
-        "email": "",
+        "email": "wahyu.andi@plnnusantarapower.co.id",
         "jenis_kelas": "3"
     },
     {
-        "id": "266",
+        "id": "273",
         "tanggal_masuk_karyawan": "2015-12-01",
         "nama_karyawan": "WAHYU HANALDI",
         "nid": "9115224ZJY",
@@ -5582,11 +5729,11 @@
         "tgl_lahir_anak_1": "1900-10-10",
         "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1900-10-10",
-        "email": "",
+        "email": "wahyu.hanaldi@plnnusantarapower.co.id",
         "jenis_kelas": "3"
     },
     {
-        "id": "267",
+        "id": "274",
         "tanggal_masuk_karyawan": "2014-01-01",
         "nama_karyawan": "WAHYU JUNAEDI",
         "nid": "9014070ZJY",
@@ -5603,11 +5750,11 @@
         "tgl_lahir_anak_1": "2018-09-23",
         "tgl_lahir_anak_2": "2021-08-12",
         "tgl_lahir_anak_3": "1900-10-10",
-        "email": "",
+        "email": "w.junaedi@plnnusantarapower.co.id",
         "jenis_kelas": "3"
     },
     {
-        "id": "268",
+        "id": "275",
         "tanggal_masuk_karyawan": "2016-11-01",
         "nama_karyawan": "WAKHID ALHABSHI LUKMAN",
         "nid": "8916130ZJY",
@@ -5624,16 +5771,16 @@
         "tgl_lahir_anak_1": "2017-12-27",
         "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1900-10-10",
-        "email": "",
+        "email": "wakhid.alhabshi@plnnusantarapower.co.id",
         "jenis_kelas": "3"
     },
     {
-        "id": "269",
+        "id": "276",
         "tanggal_masuk_karyawan": "1993-05-01",
         "nama_karyawan": "WARNOTO",
         "nid": "7393126K3",
         "jabatan": "SENIOR OFFICER KINERJA KEUANGAN",
-        "jenjang_jabatan": "SPV A",
+        "jenjang_jabatan": "F4",
         "alamat": "Tmn Buah Blok C4 No.42 RT 5 RW 2 Cipondoh Makmur Cipondoh",
         "tanggal_lahir": "1973-08-07",
         "istri": "ROSIDAH",
@@ -5649,7 +5796,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "270",
+        "id": "277",
         "tanggal_masuk_karyawan": "1992-10-05",
         "nama_karyawan": "WIDIYANTO",
         "nid": "7392082K3",
@@ -5670,7 +5817,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "271",
+        "id": "278",
         "tanggal_masuk_karyawan": "2014-01-01",
         "nama_karyawan": "WILDAN MUJAHID",
         "nid": "8614094ZJY",
@@ -5687,11 +5834,11 @@
         "tgl_lahir_anak_1": "2016-09-11",
         "tgl_lahir_anak_2": "2018-11-09",
         "tgl_lahir_anak_3": "2022-06-12",
-        "email": "",
+        "email": "wildan.mujahid@plnnusantarapower.co.id",
         "jenis_kelas": "3"
     },
     {
-        "id": "272",
+        "id": "279",
         "tanggal_masuk_karyawan": "2005-01-19",
         "nama_karyawan": "WINARKO",
         "nid": "8405015JA",
@@ -5712,12 +5859,12 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "273",
+        "id": "280",
         "tanggal_masuk_karyawan": "2015-12-01",
         "nama_karyawan": "YAYANG RUSDIANA",
         "nid": "9115301ZJY",
         "jabatan": "ASSISTANT MANAGER PEMELIHARAAN MESIN & SIPIL PLTGU BLOK II",
-        "jenjang_jabatan": "F5",
+        "jenjang_jabatan": "SPV A",
         "alamat": "BUMI SETIA MATARAM RT 18 RW 08 KEL BUMI SETIA MATAR",
         "tanggal_lahir": "1991-06-28",
         "istri": "RIDHO HASYANAH",
@@ -5729,11 +5876,11 @@
         "tgl_lahir_anak_1": "2018-11-16",
         "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1900-10-10",
-        "email": "",
-        "jenis_kelas": "3"
+        "email": "yayang.rusdiana@plnnusantarapower.co.id",
+        "jenis_kelas": "2"
     },
     {
-        "id": "274",
+        "id": "281",
         "tanggal_masuk_karyawan": "2016-11-01",
         "nama_karyawan": "YOGI ARIF ROKHMAN",
         "nid": "9016215ZJY",
@@ -5750,11 +5897,11 @@
         "tgl_lahir_anak_1": "2001-07-01",
         "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1900-10-10",
-        "email": "",
+        "email": "yogi.arif@plnnusantarapower.co.id",
         "jenis_kelas": "3"
     },
     {
-        "id": "275",
+        "id": "282",
         "tanggal_masuk_karyawan": "2016-11-01",
         "nama_karyawan": "YOGIE ARISANDI TRISNAWAN",
         "nid": "9216191ZJY",
@@ -5771,11 +5918,11 @@
         "tgl_lahir_anak_1": "1900-10-10",
         "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1900-10-10",
-        "email": "",
+        "email": "yogie.arisandi@plnnusantarapower.co.id",
         "jenis_kelas": "3"
     },
     {
-        "id": "276",
+        "id": "283",
         "tanggal_masuk_karyawan": "2005-01-19",
         "nama_karyawan": "YUDI SETIAWAN",
         "nid": "8205013JA",
@@ -5792,11 +5939,11 @@
         "tgl_lahir_anak_1": "2010-06-09",
         "tgl_lahir_anak_2": "2015-05-20",
         "tgl_lahir_anak_3": "2017-04-11",
-        "email": "",
+        "email": "yudi.setiawan@plnnusantarapower.co.id",
         "jenis_kelas": "3"
     },
     {
-        "id": "277",
+        "id": "284",
         "tanggal_masuk_karyawan": "2005-09-01",
         "nama_karyawan": "YULIANTO",
         "nid": "8405100JA",
@@ -5817,7 +5964,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "278",
+        "id": "285",
         "tanggal_masuk_karyawan": "2017-01-01",
         "nama_karyawan": "YUSUF SATRIA PRIHARDANA",
         "nid": "9217018ZJY",
@@ -5834,11 +5981,32 @@
         "tgl_lahir_anak_1": "2021-09-23",
         "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1900-10-10",
-        "email": "",
+        "email": "yusuf.prihardana@plnnusantarapower.co.id",
         "jenis_kelas": "3"
     },
     {
-        "id": "279",
+        "id": "286",
+        "tanggal_masuk_karyawan": "2011-09-01",
+        "nama_karyawan": "ZET BAYU PURWOAJI",
+        "nid": "9011163JA",
+        "jabatan": "OFFICER PERMIT TO WORK",
+        "jenjang_jabatan": "F5",
+        "alamat": "JL. TEGAL SARI XII/234 RT 06/07 KEC. CANDISARI KOTA SEMARAN",
+        "tanggal_lahir": "1990-09-13",
+        "istri": "ALVIONITA ASTRIANA KARTIKASARI",
+        "anak_1": "KALANDRA ABITAH LABIBA",
+        "anak_2": "KANINDRA ILAKU LAGUNA",
+        "anak_3": "",
+        "status_karyawan": "karyawan_tetap",
+        "tgl_lahir_istri": "1992-01-31",
+        "tgl_lahir_anak_1": "2014-11-27",
+        "tgl_lahir_anak_2": "2016-11-10",
+        "tgl_lahir_anak_3": "1900-10-10",
+        "email": "zet.bayu@plnnusantarapower.co.id",
+        "jenis_kelas": "3"
+    },
+    {
+        "id": "287",
         "tanggal_masuk_karyawan": "1982-01-04",
         "nama_karyawan": "SUKIMAN",
         "nid": "4782694K3",
@@ -5859,7 +6027,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "280",
+        "id": "288",
         "tanggal_masuk_karyawan": "1982-06-01",
         "nama_karyawan": "RM. DJOKO MARDIYO",
         "nid": "4882704K3",
@@ -5880,7 +6048,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "281",
+        "id": "289",
         "tanggal_masuk_karyawan": "1977-04-15",
         "nama_karyawan": "M. BACHRUDIN",
         "nid": "5677148K3",
@@ -5901,7 +6069,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "282",
+        "id": "290",
         "tanggal_masuk_karyawan": "1980-07-01",
         "nama_karyawan": "SUPARYADI",
         "nid": "5880035K3",
@@ -5922,7 +6090,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "283",
+        "id": "291",
         "tanggal_masuk_karyawan": "1982-04-05",
         "nama_karyawan": "DIDI SURYADI",
         "nid": "5882695K3",
@@ -5943,7 +6111,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "284",
+        "id": "292",
         "tanggal_masuk_karyawan": "1974-09-24",
         "nama_karyawan": "Drs. MATSUM HARIS",
         "nid": "5174335K3",
@@ -5964,7 +6132,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "285",
+        "id": "293",
         "tanggal_masuk_karyawan": "1980-01-15",
         "nama_karyawan": "SUDARMA WIJAYA",
         "nid": "5880021K3",
@@ -5985,7 +6153,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "286",
+        "id": "294",
         "tanggal_masuk_karyawan": "1971-05-01",
         "nama_karyawan": "SUKIRMAN. BE",
         "nid": "5071042M",
@@ -6000,13 +6168,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1953-10-04",
         "tgl_lahir_anak_1": "1982-09-06",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "1987-05-26",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "287",
+        "id": "295",
         "tanggal_masuk_karyawan": "1976-11-01",
         "nama_karyawan": "IMAM SUROSO",
         "nid": "5676139K3",
@@ -6021,13 +6189,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1961-12-17",
         "tgl_lahir_anak_1": "1989-01-06",
-        "tgl_lahir_anak_2": "2002-05-16",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "288",
+        "id": "296",
         "tanggal_masuk_karyawan": "1976-11-04",
         "nama_karyawan": "UJANG SUHANDI",
         "nid": "5476153K3",
@@ -6042,13 +6210,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1958-07-14",
         "tgl_lahir_anak_1": "1984-01-24",
-        "tgl_lahir_anak_2": "1987-05-26",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1990-09-11",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "289",
+        "id": "297",
         "tanggal_masuk_karyawan": "1982-01-04",
         "nama_karyawan": "TUMPAL SIREGAR",
         "nid": "5782698K3",
@@ -6069,7 +6237,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "290",
+        "id": "298",
         "tanggal_masuk_karyawan": "1979-05-01",
         "nama_karyawan": "BM SIREGAR",
         "nid": "5579007K3",
@@ -6090,7 +6258,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "291",
+        "id": "299",
         "tanggal_masuk_karyawan": "1977-03-01",
         "nama_karyawan": "KUNCORO HENDARTO",
         "nid": "5777123K3",
@@ -6111,7 +6279,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "292",
+        "id": "300",
         "tanggal_masuk_karyawan": "1984-12-01",
         "nama_karyawan": "SUMARNO K",
         "nid": "5984798K3",
@@ -6126,13 +6294,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1962-02-17",
         "tgl_lahir_anak_1": "1992-11-25",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "1984-01-26",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "293",
+        "id": "301",
         "tanggal_masuk_karyawan": "1984-11-13",
         "nama_karyawan": "ENDANG DJUNAEDI",
         "nid": "6084392K3",
@@ -6153,7 +6321,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "294",
+        "id": "302",
         "tanggal_masuk_karyawan": "1982-04-05",
         "nama_karyawan": "MUHAMMAD NUR",
         "nid": "5082699K3",
@@ -6168,13 +6336,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1953-12-11",
         "tgl_lahir_anak_1": "1980-05-25",
-        "tgl_lahir_anak_2": "1984-01-26",
+        "tgl_lahir_anak_2": "1991-06-06",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "295",
+        "id": "303",
         "tanggal_masuk_karyawan": "1986-03-01",
         "nama_karyawan": "WASTUR",
         "nid": "5486074K3",
@@ -6195,7 +6363,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "296",
+        "id": "304",
         "tanggal_masuk_karyawan": "1977-06-13",
         "nama_karyawan": "SUDARSO",
         "nid": "4777214K3",
@@ -6210,13 +6378,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1958-12-31",
         "tgl_lahir_anak_1": "1988-02-23",
-        "tgl_lahir_anak_2": "1991-06-06",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1997-09-20",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "297",
+        "id": "305",
         "tanggal_masuk_karyawan": "1981-06-01",
         "nama_karyawan": "HARTONO",
         "nid": "5781394K3",
@@ -6231,13 +6399,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1962-01-14",
         "tgl_lahir_anak_1": "1990-05-06",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "1996-05-12",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "298",
+        "id": "306",
         "tanggal_masuk_karyawan": "1970-02-09",
         "nama_karyawan": "KARDIJANTO",
         "nid": "4870011M",
@@ -6258,7 +6426,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "299",
+        "id": "307",
         "tanggal_masuk_karyawan": "1981-06-30",
         "nama_karyawan": "SURYANTO",
         "nid": "5981038K3",
@@ -6273,13 +6441,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1965-12-10",
         "tgl_lahir_anak_1": "1992-06-05",
-        "tgl_lahir_anak_2": "1996-05-12",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "300",
+        "id": "308",
         "tanggal_masuk_karyawan": "1972-03-01",
         "nama_karyawan": "MUHADJI",
         "nid": "4972012K3",
@@ -6294,13 +6462,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1953-05-12",
         "tgl_lahir_anak_1": "1900-10-10",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "NULL",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "301",
+        "id": "309",
         "tanggal_masuk_karyawan": "1981-10-13",
         "nama_karyawan": "AMIR SYAFAWI",
         "nid": "5081223K3",
@@ -6315,13 +6483,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1957-01-21",
         "tgl_lahir_anak_1": "1900-10-10",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "1992-06-04",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "302",
+        "id": "310",
         "tanggal_masuk_karyawan": "1970-08-18",
         "nama_karyawan": "SUMARTO W.",
         "nid": "5070034K3",
@@ -6331,18 +6499,18 @@
         "tanggal_lahir": "1950-12-31",
         "istri": "Ny. M.F. Sri Susiloningsih",
         "anak_1": "Lucilla Chrisantina",
-        "anak_2": "",
+        "anak_2": "NULL",
         "anak_3": "",
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1957-06-22",
         "tgl_lahir_anak_1": "1981-12-08",
         "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1900-10-10",
-        "email": "",
+        "email": "NULL",
         "jenis_kelas": "2"
     },
     {
-        "id": "303",
+        "id": "311",
         "tanggal_masuk_karyawan": "1982-08-16",
         "nama_karyawan": "AHMAD RASYID",
         "nid": "6182108K3",
@@ -6357,13 +6525,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1968-04-17",
         "tgl_lahir_anak_1": "1990-09-06",
-        "tgl_lahir_anak_2": "1992-06-04",
+        "tgl_lahir_anak_2": "1984-07-11",
         "tgl_lahir_anak_3": "1995-02-06",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "304",
+        "id": "312",
         "tanggal_masuk_karyawan": "1974-09-24",
         "nama_karyawan": "TJIPTODINOENG",
         "nid": "5074310K3",
@@ -6378,13 +6546,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1959-11-30",
         "tgl_lahir_anak_1": "1991-04-03",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "1997-11-08",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "305",
+        "id": "313",
         "tanggal_masuk_karyawan": "1982-01-04",
         "nama_karyawan": "SARJU",
         "nid": "5282693K3",
@@ -6399,13 +6567,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1958-07-06",
         "tgl_lahir_anak_1": "1983-09-09",
-        "tgl_lahir_anak_2": "1984-07-11",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "306",
+        "id": "314",
         "tanggal_masuk_karyawan": "1977-03-15",
         "nama_karyawan": "ASMANI",
         "nid": "5377050K3",
@@ -6420,13 +6588,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1963-01-17",
         "tgl_lahir_anak_1": "1986-04-04",
-        "tgl_lahir_anak_2": "1997-11-08",
+        "tgl_lahir_anak_2": "2005-06-06",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "307",
+        "id": "315",
         "tanggal_masuk_karyawan": "1977-05-12",
         "nama_karyawan": "M. YUSUF YACOB",
         "nid": "5377160K3",
@@ -6447,7 +6615,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "308",
+        "id": "316",
         "tanggal_masuk_karyawan": "1976-05-31",
         "nama_karyawan": "SUROSO MK.",
         "nid": "5376049K3",
@@ -6462,13 +6630,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1968-11-10",
         "tgl_lahir_anak_1": "2001-08-23",
-        "tgl_lahir_anak_2": "2005-06-06",
+        "tgl_lahir_anak_2": "1990-10-19",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "309",
+        "id": "317",
         "tanggal_masuk_karyawan": "1979-05-15",
         "nama_karyawan": "SUKAMTO",
         "nid": "5379041K3",
@@ -6483,13 +6651,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1962-07-16",
         "tgl_lahir_anak_1": "1987-12-05",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "1993-06-14",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "310",
+        "id": "318",
         "tanggal_masuk_karyawan": "1984-05-07",
         "nama_karyawan": "SUPARNO",
         "nid": "5484799K3",
@@ -6504,13 +6672,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1962-06-16",
         "tgl_lahir_anak_1": "1982-09-30",
-        "tgl_lahir_anak_2": "1990-10-19",
+        "tgl_lahir_anak_2": "1987-08-21",
         "tgl_lahir_anak_3": "1995-09-29",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "311",
+        "id": "319",
         "tanggal_masuk_karyawan": "1976-11-01",
         "nama_karyawan": "KUNTORO",
         "nid": "5476150K3",
@@ -6525,13 +6693,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1963-03-10",
         "tgl_lahir_anak_1": "1985-11-12",
-        "tgl_lahir_anak_2": "1993-06-14",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1996-09-30",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "312",
+        "id": "320",
         "tanggal_masuk_karyawan": "1979-12-17",
         "nama_karyawan": "HERI WIBOWO",
         "nid": "5479106K3",
@@ -6546,13 +6714,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1956-05-12",
         "tgl_lahir_anak_1": "1986-05-24",
-        "tgl_lahir_anak_2": "1987-08-21",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1990-09-03",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "313",
+        "id": "321",
         "tanggal_masuk_karyawan": "1977-03-09",
         "nama_karyawan": "SUNOTO",
         "nid": "5477152K3",
@@ -6567,13 +6735,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1954-10-17",
         "tgl_lahir_anak_1": "1900-10-10",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "1990-11-09",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "314",
+        "id": "322",
         "tanggal_masuk_karyawan": "1977-04-15",
         "nama_karyawan": "WIWIN SUHAYA",
         "nid": "5477155K3",
@@ -6588,13 +6756,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1962-06-04",
         "tgl_lahir_anak_1": "1989-01-23",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "1998-09-07",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "315",
+        "id": "323",
         "tanggal_masuk_karyawan": "1980-02-01",
         "nama_karyawan": "TAMURI",
         "nid": "6080014K3",
@@ -6609,13 +6777,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1972-09-17",
         "tgl_lahir_anak_1": "1989-09-22",
-        "tgl_lahir_anak_2": "1990-11-09",
+        "tgl_lahir_anak_2": "2003-03-31",
         "tgl_lahir_anak_3": "1993-10-15",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "316",
+        "id": "324",
         "tanggal_masuk_karyawan": "1979-10-08",
         "nama_karyawan": "SOETOMO",
         "nid": "5979074K3",
@@ -6630,13 +6798,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1961-05-25",
         "tgl_lahir_anak_1": "1992-12-04",
-        "tgl_lahir_anak_2": "1998-09-07",
+        "tgl_lahir_anak_2": "1986-09-21",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "317",
+        "id": "325",
         "tanggal_masuk_karyawan": "1981-05-01",
         "nama_karyawan": "TIYONO",
         "nid": "5881027K3",
@@ -6651,13 +6819,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1975-08-24",
         "tgl_lahir_anak_1": "2001-03-25",
-        "tgl_lahir_anak_2": "2003-03-31",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "318",
+        "id": "326",
         "tanggal_masuk_karyawan": "1976-11-01",
         "nama_karyawan": "MAWARDI",
         "nid": "5576136K3",
@@ -6672,13 +6840,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1961-07-31",
         "tgl_lahir_anak_1": "1983-05-07",
-        "tgl_lahir_anak_2": "1986-09-21",
+        "tgl_lahir_anak_2": "1999-03-22",
         "tgl_lahir_anak_3": "1990-03-13",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "319",
+        "id": "327",
         "tanggal_masuk_karyawan": "1976-11-04",
         "nama_karyawan": "AZWAR",
         "nid": "5576134K3",
@@ -6693,13 +6861,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1955-06-28",
         "tgl_lahir_anak_1": "1987-12-23",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "1993-12-30",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "320",
+        "id": "328",
         "tanggal_masuk_karyawan": "1979-10-08",
         "nama_karyawan": "SUKENDAR",
         "nid": "5579080K3",
@@ -6714,13 +6882,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1967-03-01",
         "tgl_lahir_anak_1": "1998-01-17",
-        "tgl_lahir_anak_2": "1999-03-22",
+        "tgl_lahir_anak_2": "1996-02-02",
         "tgl_lahir_anak_3": "2000-07-02",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "321",
+        "id": "329",
         "tanggal_masuk_karyawan": "1977-05-12",
         "nama_karyawan": "YUSRONI BADRUN",
         "nid": "5577157K3",
@@ -6735,13 +6903,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1965-04-07",
         "tgl_lahir_anak_1": "1988-08-14",
-        "tgl_lahir_anak_2": "1993-12-30",
+        "tgl_lahir_anak_2": "1998-10-24",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "322",
+        "id": "330",
         "tanggal_masuk_karyawan": "1976-12-16",
         "nama_karyawan": "TUGIMAN",
         "nid": "5576162K3",
@@ -6756,13 +6924,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1960-11-11",
         "tgl_lahir_anak_1": "1996-02-02",
-        "tgl_lahir_anak_2": "1996-02-02",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "323",
+        "id": "331",
         "tanggal_masuk_karyawan": "1977-04-15",
         "nama_karyawan": "SRI GUNADI",
         "nid": "5577150K3",
@@ -6777,13 +6945,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1962-04-02",
         "tgl_lahir_anak_1": "1992-06-09",
-        "tgl_lahir_anak_2": "1998-10-24",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "324",
+        "id": "332",
         "tanggal_masuk_karyawan": "1977-03-01",
         "nama_karyawan": "SLAMET YUHARDI",
         "nid": "5577126K3",
@@ -6798,13 +6966,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1959-07-20",
         "tgl_lahir_anak_1": "1993-01-12",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "1994-12-23",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "325",
+        "id": "333",
         "tanggal_masuk_karyawan": "1976-11-09",
         "nama_karyawan": "CECEP RAMDANI",
         "nid": "5576141K3",
@@ -6825,7 +6993,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "326",
+        "id": "334",
         "tanggal_masuk_karyawan": "1984-10-01",
         "nama_karyawan": "HARI SETYANTO",
         "nid": "6584318K3",
@@ -6840,13 +7008,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1970-05-08",
         "tgl_lahir_anak_1": "1993-09-24",
-        "tgl_lahir_anak_2": "1994-12-23",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "2001-02-13",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "327",
+        "id": "335",
         "tanggal_masuk_karyawan": "1976-11-01",
         "nama_karyawan": "IDG SUDIRAWAN",
         "nid": "5676118K3",
@@ -6867,7 +7035,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "328",
+        "id": "336",
         "tanggal_masuk_karyawan": "1979-05-15",
         "nama_karyawan": "BAMBANG TJAHJONO",
         "nid": "5679027K3",
@@ -6888,7 +7056,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "329",
+        "id": "337",
         "tanggal_masuk_karyawan": "1976-12-18",
         "nama_karyawan": "NANO SUDIONO",
         "nid": "5676128K3",
@@ -6909,7 +7077,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "330",
+        "id": "338",
         "tanggal_masuk_karyawan": "1977-04-20",
         "nama_karyawan": "SUKIRMIN HARYANTO",
         "nid": "5677133K3",
@@ -6930,7 +7098,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "331",
+        "id": "339",
         "tanggal_masuk_karyawan": "1981-06-30",
         "nama_karyawan": "JHONI SIAHAAN",
         "nid": "5681041K3",
@@ -6945,13 +7113,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1961-11-01",
         "tgl_lahir_anak_1": "1993-06-25",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "1995-06-27",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "332",
+        "id": "340",
         "tanggal_masuk_karyawan": "1977-04-16",
         "nama_karyawan": "MUDJIONO",
         "nid": "5677135K3",
@@ -6972,7 +7140,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "333",
+        "id": "341",
         "tanggal_masuk_karyawan": "1981-04-15",
         "nama_karyawan": "M. KAMAL",
         "nid": "5681008K3",
@@ -6987,13 +7155,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1959-11-24",
         "tgl_lahir_anak_1": "1989-09-13",
-        "tgl_lahir_anak_2": "1995-06-27",
+        "tgl_lahir_anak_2": "1994-04-02",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "334",
+        "id": "342",
         "tanggal_masuk_karyawan": "1979-03-15",
         "nama_karyawan": "AGUS SURYANA",
         "nid": "5679004K3",
@@ -7014,7 +7182,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "335",
+        "id": "343",
         "tanggal_masuk_karyawan": "1979-03-15",
         "nama_karyawan": "DAELAMI",
         "nid": "5679003K3",
@@ -7029,13 +7197,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1962-11-04",
         "tgl_lahir_anak_1": "1988-06-13",
-        "tgl_lahir_anak_2": "1994-04-02",
+        "tgl_lahir_anak_2": "1995-08-12",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "336",
+        "id": "344",
         "tanggal_masuk_karyawan": "1977-03-01",
         "nama_karyawan": "AGUS SUGIARTO",
         "nid": "5677128K3",
@@ -7056,7 +7224,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "337",
+        "id": "345",
         "tanggal_masuk_karyawan": "1979-02-01",
         "nama_karyawan": "NGATNO",
         "nid": "5679131K3",
@@ -7071,13 +7239,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1961-01-01",
         "tgl_lahir_anak_1": "1991-09-02",
-        "tgl_lahir_anak_2": "1995-08-12",
+        "tgl_lahir_anak_2": "1999-02-11",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "338",
+        "id": "346",
         "tanggal_masuk_karyawan": "1981-12-14",
         "nama_karyawan": "EDUARD TAMPUBOLON",
         "nid": "5681095K3",
@@ -7092,13 +7260,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1960-09-29",
         "tgl_lahir_anak_1": "1989-02-24",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "1991-10-01",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "339",
+        "id": "347",
         "tanggal_masuk_karyawan": "1975-09-01",
         "nama_karyawan": "SYARIFUDIN",
         "nid": "5675221K3",
@@ -7113,13 +7281,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1961-10-29",
         "tgl_lahir_anak_1": "1988-03-27",
-        "tgl_lahir_anak_2": "1999-02-11",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "340",
+        "id": "348",
         "tanggal_masuk_karyawan": "1980-03-15",
         "nama_karyawan": "ANDA DJUANDA",
         "nid": "5680019K3",
@@ -7134,13 +7302,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1968-06-21",
         "tgl_lahir_anak_1": "1989-07-11",
-        "tgl_lahir_anak_2": "1991-10-01",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1995-07-22",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "341",
+        "id": "349",
         "tanggal_masuk_karyawan": "1977-03-01",
         "nama_karyawan": "M. YANI TAUFIK",
         "nid": "5777122K3",
@@ -7155,13 +7323,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1960-04-11",
         "tgl_lahir_anak_1": "1996-12-27",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "1997-09-11",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "342",
+        "id": "350",
         "tanggal_masuk_karyawan": "1980-07-01",
         "nama_karyawan": "B. SUHARTONO T.",
         "nid": "5780037K3",
@@ -7182,7 +7350,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "343",
+        "id": "351",
         "tanggal_masuk_karyawan": "1977-03-01",
         "nama_karyawan": "NOOR RACHMAN",
         "nid": "5777151K3",
@@ -7197,13 +7365,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1965-10-12",
         "tgl_lahir_anak_1": "1996-02-15",
-        "tgl_lahir_anak_2": "1997-09-11",
+        "tgl_lahir_anak_2": "1993-12-06",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "344",
+        "id": "352",
         "tanggal_masuk_karyawan": "1977-04-18",
         "nama_karyawan": "BAMBANG WURYANTO",
         "nid": "5777156K3",
@@ -7218,13 +7386,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1958-10-25",
         "tgl_lahir_anak_1": "1997-06-04",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "1989-12-10",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "345",
+        "id": "353",
         "tanggal_masuk_karyawan": "1980-03-15",
         "nama_karyawan": "SURYANA",
         "nid": "5780026K3",
@@ -7239,13 +7407,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1960-03-08",
         "tgl_lahir_anak_1": "1985-05-12",
-        "tgl_lahir_anak_2": "1993-12-06",
+        "tgl_lahir_anak_2": "1994-12-09",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "346",
+        "id": "354",
         "tanggal_masuk_karyawan": "1980-02-01",
         "nama_karyawan": "SYACHRUDIN",
         "nid": "5780102K3",
@@ -7260,13 +7428,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1958-09-07",
         "tgl_lahir_anak_1": "1988-11-11",
-        "tgl_lahir_anak_2": "1989-12-10",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "347",
+        "id": "355",
         "tanggal_masuk_karyawan": "1981-12-14",
         "nama_karyawan": "HARIYADI",
         "nid": "5781103K3",
@@ -7281,13 +7449,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1964-03-07",
         "tgl_lahir_anak_1": "1991-08-16",
-        "tgl_lahir_anak_2": "1994-12-09",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "348",
+        "id": "356",
         "tanggal_masuk_karyawan": "1981-06-09",
         "nama_karyawan": "KUSNA",
         "nid": "5781300K3",
@@ -7308,7 +7476,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "349",
+        "id": "357",
         "tanggal_masuk_karyawan": "1979-09-17",
         "nama_karyawan": "BINUR SIMBOLON",
         "nid": "5779132K3",
@@ -7323,13 +7491,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1963-11-01",
         "tgl_lahir_anak_1": "1991-12-24",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "1996-10-27",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "350",
+        "id": "358",
         "tanggal_masuk_karyawan": "1981-07-01",
         "nama_karyawan": "WINARTO",
         "nid": "5781294K3",
@@ -7344,13 +7512,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1964-05-06",
         "tgl_lahir_anak_1": "1900-10-10",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "1996-09-13",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "351",
+        "id": "359",
         "tanggal_masuk_karyawan": "1977-05-12",
         "nama_karyawan": "M. ARUM",
         "nid": "5777159K3",
@@ -7365,13 +7533,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1970-05-17",
         "tgl_lahir_anak_1": "1991-07-05",
-        "tgl_lahir_anak_2": "1996-10-27",
+        "tgl_lahir_anak_2": "1997-10-14",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "352",
+        "id": "360",
         "tanggal_masuk_karyawan": "1980-07-01",
         "nama_karyawan": "RUMATA PARINDURI",
         "nid": "5880031K3",
@@ -7386,13 +7554,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1967-01-18",
         "tgl_lahir_anak_1": "1991-09-23",
-        "tgl_lahir_anak_2": "1996-09-13",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1998-04-22",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "353",
+        "id": "361",
         "tanggal_masuk_karyawan": "1984-03-07",
         "nama_karyawan": "SUHARTO",
         "nid": "5880127K3",
@@ -7407,13 +7575,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1964-01-08",
         "tgl_lahir_anak_1": "1991-11-03",
-        "tgl_lahir_anak_2": "1997-10-14",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "2000-12-25",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "354",
+        "id": "362",
         "tanggal_masuk_karyawan": "1985-05-01",
         "nama_karyawan": "TUNGGUL NAINGGOLAN",
         "nid": "5885560K3",
@@ -7434,7 +7602,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "355",
+        "id": "363",
         "tanggal_masuk_karyawan": "1980-07-01",
         "nama_karyawan": "IRIANTO",
         "nid": "5880041K3",
@@ -7455,7 +7623,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "356",
+        "id": "364",
         "tanggal_masuk_karyawan": "1979-05-01",
         "nama_karyawan": "SARIYATNO",
         "nid": "5879025K3",
@@ -7470,13 +7638,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1955-11-26",
         "tgl_lahir_anak_1": "1900-10-10",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "1995-06-01",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "357",
+        "id": "365",
         "tanggal_masuk_karyawan": "1979-05-01",
         "nama_karyawan": "WIWIK ASTUTI",
         "nid": "5879021K3",
@@ -7491,13 +7659,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1953-12-10",
         "tgl_lahir_anak_1": "1900-10-10",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "2001-02-24",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "358",
+        "id": "366",
         "tanggal_masuk_karyawan": "1987-07-20",
         "nama_karyawan": "SUPANGAT IWAN SANTOSO",
         "nid": "5887001JA",
@@ -7512,13 +7680,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1964-06-22",
         "tgl_lahir_anak_1": "1993-04-28",
-        "tgl_lahir_anak_2": "1995-06-01",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1996-12-24",
         "email": "",
         "jenis_kelas": "1"
     },
     {
-        "id": "359",
+        "id": "367",
         "tanggal_masuk_karyawan": "1982-05-04",
         "nama_karyawan": "ENDANG",
         "nid": "5982696K3",
@@ -7533,13 +7701,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1973-06-07",
         "tgl_lahir_anak_1": "1994-12-12",
-        "tgl_lahir_anak_2": "2001-02-24",
+        "tgl_lahir_anak_2": "1996-08-28",
         "tgl_lahir_anak_3": "2007-12-25",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "360",
+        "id": "368",
         "tanggal_masuk_karyawan": "1980-09-22",
         "nama_karyawan": "GATOT PRIYADI",
         "nid": "5980103K3",
@@ -7560,7 +7728,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "361",
+        "id": "369",
         "tanggal_masuk_karyawan": "1982-02-15",
         "nama_karyawan": "YUSWARMIN SUKIN",
         "nid": "5982054K3",
@@ -7575,13 +7743,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1964-12-13",
         "tgl_lahir_anak_1": "1994-02-15",
-        "tgl_lahir_anak_2": "1996-08-28",
+        "tgl_lahir_anak_2": "1996-09-21",
         "tgl_lahir_anak_3": "2000-11-30",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "362",
+        "id": "370",
         "tanggal_masuk_karyawan": "1984-03-07",
         "nama_karyawan": "WITO",
         "nid": "5984077K3",
@@ -7602,7 +7770,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "363",
+        "id": "371",
         "tanggal_masuk_karyawan": "1985-10-01",
         "nama_karyawan": "MUSATRIO WIBOWO",
         "nid": "5985680K3",
@@ -7617,13 +7785,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1965-09-17",
         "tgl_lahir_anak_1": "1992-10-07",
-        "tgl_lahir_anak_2": "1996-09-21",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "364",
+        "id": "372",
         "tanggal_masuk_karyawan": "1981-12-14",
         "nama_karyawan": "ANDANG SUHERMAN",
         "nid": "5981096K3",
@@ -7644,7 +7812,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "365",
+        "id": "373",
         "tanggal_masuk_karyawan": "1980-07-01",
         "nama_karyawan": "NURSAL",
         "nid": "5980039K3",
@@ -7665,7 +7833,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "366",
+        "id": "374",
         "tanggal_masuk_karyawan": "1980-02-01",
         "nama_karyawan": "PONIMAN",
         "nid": "5980009K3",
@@ -7686,7 +7854,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "367",
+        "id": "375",
         "tanggal_masuk_karyawan": "1980-03-17",
         "nama_karyawan": "MURTITUSLI",
         "nid": "5980016K3",
@@ -7707,7 +7875,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "368",
+        "id": "376",
         "tanggal_masuk_karyawan": "1984-03-07",
         "nama_karyawan": "SLAMET SUKARYADI",
         "nid": "5984076K3",
@@ -7722,13 +7890,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1961-10-29",
         "tgl_lahir_anak_1": "1999-07-25",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "2007-10-23",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "369",
+        "id": "377",
         "tanggal_masuk_karyawan": "1984-11-12",
         "nama_karyawan": "SALMAN",
         "nid": "5984383K3",
@@ -7749,7 +7917,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "370",
+        "id": "378",
         "tanggal_masuk_karyawan": "1984-09-07",
         "nama_karyawan": "EDY WAWANTORO",
         "nid": "5984061K3",
@@ -7764,13 +7932,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1966-04-27",
         "tgl_lahir_anak_1": "1995-08-03",
-        "tgl_lahir_anak_2": "2007-10-23",
+        "tgl_lahir_anak_2": "1999-06-03",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "371",
+        "id": "379",
         "tanggal_masuk_karyawan": "1982-05-04",
         "nama_karyawan": "SUPRIYADI",
         "nid": "5982350K3",
@@ -7791,7 +7959,7 @@
         "jenis_kelas": "3"
     },
     {
-        "id": "372",
+        "id": "380",
         "tanggal_masuk_karyawan": "1981-12-14",
         "nama_karyawan": "LUKITO HADI",
         "nid": "6081102K3",
@@ -7806,13 +7974,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1968-04-13",
         "tgl_lahir_anak_1": "1995-09-12",
-        "tgl_lahir_anak_2": "1999-06-03",
+        "tgl_lahir_anak_2": "1998-06-08",
         "tgl_lahir_anak_3": "2003-04-25",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "373",
+        "id": "381",
         "tanggal_masuk_karyawan": "1981-05-15",
         "nama_karyawan": "M JUFRI A.",
         "nid": "6081037K3",
@@ -7827,13 +7995,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1963-04-26",
         "tgl_lahir_anak_1": "1900-10-10",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "1995-04-29",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "374",
+        "id": "382",
         "tanggal_masuk_karyawan": "1984-03-07",
         "nama_karyawan": "SALEH WIYADI",
         "nid": "6084074K3",
@@ -7848,13 +8016,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1970-12-21",
         "tgl_lahir_anak_1": "1995-05-24",
-        "tgl_lahir_anak_2": "1998-06-08",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "375",
+        "id": "383",
         "tanggal_masuk_karyawan": "1982-02-15",
         "nama_karyawan": "AGUS SUNARYONO",
         "nid": "6082038K3",
@@ -7869,13 +8037,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1971-05-18",
         "tgl_lahir_anak_1": "1993-06-27",
-        "tgl_lahir_anak_2": "1995-04-29",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "2002-11-23",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "376",
+        "id": "384",
         "tanggal_masuk_karyawan": "1979-11-01",
         "nama_karyawan": "TIURMA",
         "nid": "6079101K3",
@@ -7896,7 +8064,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "377",
+        "id": "385",
         "tanggal_masuk_karyawan": "1981-12-14",
         "nama_karyawan": "SUDIYATMOKO",
         "nid": "6081100K3",
@@ -7917,7 +8085,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "378",
+        "id": "386",
         "tanggal_masuk_karyawan": "1980-07-01",
         "nama_karyawan": "KASMIRAN",
         "nid": "6080036K3",
@@ -7932,13 +8100,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1967-05-02",
         "tgl_lahir_anak_1": "2003-12-30",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "2000-07-25",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "379",
+        "id": "387",
         "tanggal_masuk_karyawan": "1984-03-07",
         "nama_karyawan": "SEDYO LAKSONO",
         "nid": "6184066K3",
@@ -7953,13 +8121,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1967-05-02",
         "tgl_lahir_anak_1": "2003-12-30",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "1992-11-16",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "380",
+        "id": "388",
         "tanggal_masuk_karyawan": "1981-06-01",
         "nama_karyawan": "DADI",
         "nid": "6181299K3",
@@ -7974,13 +8142,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1977-01-01",
         "tgl_lahir_anak_1": "1997-11-09",
-        "tgl_lahir_anak_2": "2000-07-25",
+        "tgl_lahir_anak_2": "1985-02-14",
         "tgl_lahir_anak_3": "2009-06-13",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "381",
+        "id": "389",
         "tanggal_masuk_karyawan": "1984-11-12",
         "nama_karyawan": "ACHMAD Ali",
         "nid": "6184381K3",
@@ -7995,13 +8163,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1970-08-14",
         "tgl_lahir_anak_1": "1991-09-23",
-        "tgl_lahir_anak_2": "1992-11-16",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1995-12-02",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "382",
+        "id": "390",
         "tanggal_masuk_karyawan": "1981-05-15",
         "nama_karyawan": "HARMANTO",
         "nid": "6181029K3",
@@ -8016,13 +8184,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1965-12-21",
         "tgl_lahir_anak_1": "1965-12-21",
-        "tgl_lahir_anak_2": "1985-02-14",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1986-12-23",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "383",
+        "id": "391",
         "tanggal_masuk_karyawan": "1981-06-30",
         "nama_karyawan": "BAKTI PRAPDANU",
         "nid": "6181047K3",
@@ -8043,7 +8211,7 @@
         "jenis_kelas": "2"
     },
     {
-        "id": "384",
+        "id": "392",
         "tanggal_masuk_karyawan": "1984-11-12",
         "nama_karyawan": "EDI SUDONO",
         "nid": "6184476K3",
@@ -8058,13 +8226,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1966-06-22",
         "tgl_lahir_anak_1": "2004-03-12",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "1994-11-09",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "385",
+        "id": "393",
         "tanggal_masuk_karyawan": "1984-07-06",
         "nama_karyawan": "PRAYITNO",
         "nid": "6184797K3",
@@ -8079,13 +8247,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1972-09-28",
         "tgl_lahir_anak_1": "1996-11-22",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "1989-10-29",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "386",
+        "id": "394",
         "tanggal_masuk_karyawan": "1982-09-01",
         "nama_karyawan": "HASANUDIN",
         "nid": "6182107K3",
@@ -8100,13 +8268,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1966-10-09",
         "tgl_lahir_anak_1": "1990-12-19",
-        "tgl_lahir_anak_2": "1994-11-09",
+        "tgl_lahir_anak_2": "1996-01-18",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "387",
+        "id": "395",
         "tanggal_masuk_karyawan": "1991-05-01",
         "nama_karyawan": "KOESPRATINI RIA",
         "nid": "6191048Z",
@@ -8121,13 +8289,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1956-04-26",
         "tgl_lahir_anak_1": "1987-02-13",
-        "tgl_lahir_anak_2": "1989-10-29",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "388",
+        "id": "396",
         "tanggal_masuk_karyawan": "1992-02-03",
         "nama_karyawan": "GEDE YUDHARMA",
         "nid": "6292004Z",
@@ -8142,13 +8310,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1969-09-03",
         "tgl_lahir_anak_1": "1994-02-02",
-        "tgl_lahir_anak_2": "1996-01-18",
+        "tgl_lahir_anak_2": "1991-11-28",
         "tgl_lahir_anak_3": "2001-10-24",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "389",
+        "id": "397",
         "tanggal_masuk_karyawan": "1984-11-12",
         "nama_karyawan": "MARKUS BAMBANG IRIANTO",
         "nid": "6284384K3",
@@ -8163,13 +8331,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1969-06-16",
         "tgl_lahir_anak_1": "2004-05-29",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "2008-10-25",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "390",
+        "id": "398",
         "tanggal_masuk_karyawan": "1984-08-01",
         "nama_karyawan": "R. DEWI ROSFITASARI",
         "nid": "6284172K3",
@@ -8184,13 +8352,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1962-12-20",
         "tgl_lahir_anak_1": "1987-10-21",
-        "tgl_lahir_anak_2": "1991-11-28",
+        "tgl_lahir_anak_2": "1992-06-01",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "391",
+        "id": "399",
         "tanggal_masuk_karyawan": "1984-03-07",
         "nama_karyawan": "HARI SUNARNO",
         "nid": "6284068K3",
@@ -8205,13 +8373,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1963-08-11",
         "tgl_lahir_anak_1": "2000-08-23",
-        "tgl_lahir_anak_2": "2008-10-25",
+        "tgl_lahir_anak_2": "2008-10-22",
         "tgl_lahir_anak_3": "2012-02-12",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "392",
+        "id": "400",
         "tanggal_masuk_karyawan": "1984-03-14",
         "nama_karyawan": "PARNUJI",
         "nid": "6284078K3",
@@ -8226,13 +8394,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1967-05-22",
         "tgl_lahir_anak_1": "1989-08-26",
-        "tgl_lahir_anak_2": "1992-06-01",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1996-01-07",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "393",
+        "id": "401",
         "tanggal_masuk_karyawan": "1982-08-19",
         "nama_karyawan": "SARIMUDIN SIREGAR",
         "nid": "6282109K3",
@@ -8247,13 +8415,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1970-07-05",
         "tgl_lahir_anak_1": "1994-09-16",
-        "tgl_lahir_anak_2": "2008-10-22",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "394",
+        "id": "402",
         "tanggal_masuk_karyawan": "1984-12-08",
         "nama_karyawan": "AMRIANTO",
         "nid": "6284391K3",
@@ -8268,13 +8436,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1967-02-18",
         "tgl_lahir_anak_1": "1993-11-14",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "2003-06-21",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "395",
+        "id": "403",
         "tanggal_masuk_karyawan": "1984-11-12",
         "nama_karyawan": "RAMDANI",
         "nid": "6284379K3",
@@ -8289,13 +8457,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1964-08-12",
         "tgl_lahir_anak_1": "1995-04-12",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "1991-11-28",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "396",
+        "id": "404",
         "tanggal_masuk_karyawan": "1984-03-07",
         "nama_karyawan": "SUTIRTO",
         "nid": "6284064K3",
@@ -8310,13 +8478,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1967-06-11",
         "tgl_lahir_anak_1": "1998-03-12",
-        "tgl_lahir_anak_2": "2003-06-21",
+        "tgl_lahir_anak_2": "2008-06-14",
         "tgl_lahir_anak_3": "2011-10-11",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "397",
+        "id": "405",
         "tanggal_masuk_karyawan": "1984-10-01",
         "nama_karyawan": "ALPA ALMINO",
         "nid": "6284326K3",
@@ -8331,13 +8499,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1962-05-16",
         "tgl_lahir_anak_1": "1987-10-21",
-        "tgl_lahir_anak_2": "1991-11-28",
+        "tgl_lahir_anak_2": "1992-10-18",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "398",
+        "id": "406",
         "tanggal_masuk_karyawan": "1984-03-07",
         "nama_karyawan": "BAMBANG SATRIO",
         "nid": "6384082K3",
@@ -8352,13 +8520,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1976-12-22",
         "tgl_lahir_anak_1": "2002-12-25",
-        "tgl_lahir_anak_2": "2008-06-14",
+        "tgl_lahir_anak_2": "1991-03-21",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "399",
+        "id": "407",
         "tanggal_masuk_karyawan": "1984-11-12",
         "nama_karyawan": "NANA SUKARNA",
         "nid": "6384388K3",
@@ -8373,13 +8541,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1962-04-07",
         "tgl_lahir_anak_1": "1987-10-09",
-        "tgl_lahir_anak_2": "1992-10-18",
+        "tgl_lahir_anak_2": "1995-12-16",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "400",
+        "id": "408",
         "tanggal_masuk_karyawan": "1984-10-01",
         "nama_karyawan": "SUTARYAT",
         "nid": "6384316K3",
@@ -8394,13 +8562,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1966-07-06",
         "tgl_lahir_anak_1": "1987-11-17",
-        "tgl_lahir_anak_2": "1991-03-21",
+        "tgl_lahir_anak_2": "1996-06-01",
         "tgl_lahir_anak_3": "1993-10-25",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "401",
+        "id": "409",
         "tanggal_masuk_karyawan": "1984-11-12",
         "nama_karyawan": "IWAN IRAWAN",
         "nid": "6384389K3",
@@ -8415,13 +8583,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1968-08-08",
         "tgl_lahir_anak_1": "1989-12-30",
-        "tgl_lahir_anak_2": "1995-12-16",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1999-05-16",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "402",
+        "id": "410",
         "tanggal_masuk_karyawan": "1984-11-12",
         "nama_karyawan": "IDA SUHIAT",
         "nid": "6384374K3",
@@ -8436,13 +8604,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1968-06-08",
         "tgl_lahir_anak_1": "1992-02-25",
-        "tgl_lahir_anak_2": "1996-06-01",
+        "tgl_lahir_anak_2": "1996-06-07",
         "tgl_lahir_anak_3": "2000-04-16",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "403",
+        "id": "411",
         "tanggal_masuk_karyawan": "1984-10-01",
         "nama_karyawan": "SANTOSA",
         "nid": "6384310K3",
@@ -8457,13 +8625,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1968-10-04",
         "tgl_lahir_anak_1": "1998-03-13",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "1990-04-24",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "404",
+        "id": "412",
         "tanggal_masuk_karyawan": "1984-10-01",
         "nama_karyawan": "IR. AMIRUDDIN",
         "nid": "6384314K3",
@@ -8478,13 +8646,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1970-09-25",
         "tgl_lahir_anak_1": "1995-02-27",
-        "tgl_lahir_anak_2": "1996-06-07",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1998-07-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "405",
+        "id": "413",
         "tanggal_masuk_karyawan": "1982-08-02",
         "nama_karyawan": "SAMINI",
         "nid": "6482112K3",
@@ -8499,13 +8667,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1961-03-10",
         "tgl_lahir_anak_1": "1987-03-27",
-        "tgl_lahir_anak_2": "1990-04-24",
+        "tgl_lahir_anak_2": "1993-09-23",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "406",
+        "id": "414",
         "tanggal_masuk_karyawan": "1994-03-27",
         "nama_karyawan": "RULY FIRMANSYAH",
         "nid": "6494338K3",
@@ -8520,13 +8688,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1900-10-10",
         "tgl_lahir_anak_1": "1900-10-10",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "1996-06-25",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "1"
     },
     {
-        "id": "407",
+        "id": "415",
         "tanggal_masuk_karyawan": "1984-11-12",
         "nama_karyawan": "HENRIKUS HATMANTO",
         "nid": "6484365K3",
@@ -8541,13 +8709,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1964-02-06",
         "tgl_lahir_anak_1": "1988-08-27",
-        "tgl_lahir_anak_2": "1993-09-23",
+        "tgl_lahir_anak_2": "2000-09-30",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "408",
+        "id": "416",
         "tanggal_masuk_karyawan": "1984-03-07",
         "nama_karyawan": "MARYONO",
         "nid": "6484081K3",
@@ -8562,13 +8730,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1966-06-12",
         "tgl_lahir_anak_1": "1991-04-14",
-        "tgl_lahir_anak_2": "1996-06-25",
+        "tgl_lahir_anak_2": "2010-03-12",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "409",
+        "id": "417",
         "tanggal_masuk_karyawan": "1994-08-01",
         "nama_karyawan": "RACHMATULLAH",
         "nid": "6494985JA",
@@ -8583,13 +8751,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1967-06-05",
         "tgl_lahir_anak_1": "1999-08-24",
-        "tgl_lahir_anak_2": "2000-09-30",
+        "tgl_lahir_anak_2": "2000-01-02",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "1"
     },
     {
-        "id": "410",
+        "id": "418",
         "tanggal_masuk_karyawan": "1994-08-01",
         "nama_karyawan": "RUDI HENDRA PRASTOWO",
         "nid": "6494991JA",
@@ -8604,13 +8772,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1972-05-12",
         "tgl_lahir_anak_1": "2007-04-29",
-        "tgl_lahir_anak_2": "2010-03-12",
+        "tgl_lahir_anak_2": "1997-02-25",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "1"
     },
     {
-        "id": "411",
+        "id": "419",
         "tanggal_masuk_karyawan": "1993-10-01",
         "nama_karyawan": "USFARMADA HARAHAP",
         "nid": "6993331K3",
@@ -8625,13 +8793,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1900-10-10",
         "tgl_lahir_anak_1": "2000-01-01",
-        "tgl_lahir_anak_2": "2000-01-02",
+        "tgl_lahir_anak_2": "1996-11-26",
         "tgl_lahir_anak_3": "2000-01-03",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "412",
+        "id": "420",
         "tanggal_masuk_karyawan": "1984-10-01",
         "nama_karyawan": "SUKONO",
         "nid": "6584313K3",
@@ -8646,13 +8814,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1966-04-04",
         "tgl_lahir_anak_1": "1992-12-12",
-        "tgl_lahir_anak_2": "1997-02-25",
+        "tgl_lahir_anak_2": "1993-05-09",
         "tgl_lahir_anak_3": "1999-09-27",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "413",
+        "id": "421",
         "tanggal_masuk_karyawan": "1984-11-12",
         "nama_karyawan": "SUYADI",
         "nid": "6584371K3",
@@ -8667,13 +8835,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1962-05-05",
         "tgl_lahir_anak_1": "1993-04-07",
-        "tgl_lahir_anak_2": "1996-11-26",
+        "tgl_lahir_anak_2": "1995-12-08",
         "tgl_lahir_anak_3": "1995-06-30",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "414",
+        "id": "422",
         "tanggal_masuk_karyawan": "1988-02-01",
         "nama_karyawan": "HERIYANTO",
         "nid": "6588063K3",
@@ -8688,13 +8856,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1967-04-22",
         "tgl_lahir_anak_1": "1990-04-26",
-        "tgl_lahir_anak_2": "1993-05-09",
+        "tgl_lahir_anak_2": "1996-06-16",
         "tgl_lahir_anak_3": "1996-11-08",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "415",
+        "id": "423",
         "tanggal_masuk_karyawan": "1984-11-12",
         "nama_karyawan": "ADANG SURYANA",
         "nid": "6584387K3",
@@ -8709,13 +8877,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1965-07-29",
         "tgl_lahir_anak_1": "1994-08-16",
-        "tgl_lahir_anak_2": "1995-12-08",
+        "tgl_lahir_anak_2": "1996-02-22",
         "tgl_lahir_anak_3": "2002-07-31",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "416",
+        "id": "424",
         "tanggal_masuk_karyawan": "1984-11-12",
         "nama_karyawan": "SURYANA",
         "nid": "6584386K3",
@@ -8730,13 +8898,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1965-05-15",
         "tgl_lahir_anak_1": "1991-10-27",
-        "tgl_lahir_anak_2": "1996-06-16",
+        "tgl_lahir_anak_2": "2000-12-14",
         "tgl_lahir_anak_3": "1999-08-31",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "417",
+        "id": "425",
         "tanggal_masuk_karyawan": "1984-11-12",
         "nama_karyawan": "SUBUR",
         "nid": "6584385K3",
@@ -8751,13 +8919,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1965-09-08",
         "tgl_lahir_anak_1": "1992-06-07",
-        "tgl_lahir_anak_2": "1996-02-22",
+        "tgl_lahir_anak_2": "1992-08-14",
         "tgl_lahir_anak_3": "1998-12-03",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "418",
+        "id": "426",
         "tanggal_masuk_karyawan": "1984-11-12",
         "nama_karyawan": "KAMIRAN",
         "nid": "6584377K3",
@@ -8772,13 +8940,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1971-02-27",
         "tgl_lahir_anak_1": "1998-02-09",
-        "tgl_lahir_anak_2": "2000-12-14",
+        "tgl_lahir_anak_2": "2000-02-17",
         "tgl_lahir_anak_3": "2005-09-10",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "419",
+        "id": "427",
         "tanggal_masuk_karyawan": "1984-11-12",
         "nama_karyawan": "M. AGUS BUDIANSYAH",
         "nid": "6584372K3",
@@ -8793,13 +8961,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1960-04-11",
         "tgl_lahir_anak_1": "1989-09-10",
-        "tgl_lahir_anak_2": "1992-08-14",
+        "tgl_lahir_anak_2": "2000-06-07",
         "tgl_lahir_anak_3": "1997-11-06",
         "email": "",
         "jenis_kelas": "3"
     },
     {
-        "id": "420",
+        "id": "428",
         "tanggal_masuk_karyawan": "1984-11-12",
         "nama_karyawan": "PADMONO",
         "nid": "6584380K3",
@@ -8814,13 +8982,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1965-09-12",
         "tgl_lahir_anak_1": "1993-07-16",
-        "tgl_lahir_anak_2": "2000-02-17",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "2003-08-06",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "421",
+        "id": "429",
         "tanggal_masuk_karyawan": "1988-02-01",
         "nama_karyawan": "HAMDANI",
         "nid": "6688065K3",
@@ -8835,13 +9003,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1964-12-02",
         "tgl_lahir_anak_1": "1995-03-11",
-        "tgl_lahir_anak_2": "2000-06-07",
+        "tgl_lahir_anak_2": "1999-07-21",
         "tgl_lahir_anak_3": "2004-09-23",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "422",
+        "id": "430",
         "tanggal_masuk_karyawan": "1992-07-15",
         "nama_karyawan": "BASWARDI",
         "nid": "6692108K3",
@@ -8856,13 +9024,13 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1967-01-01",
         "tgl_lahir_anak_1": "1997-03-16",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "2011-01-10",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "423",
+        "id": "431",
         "tanggal_masuk_karyawan": "1992-10-16",
         "nama_karyawan": "ATO DARYAN",
         "nid": "6892116K3",
@@ -8877,13 +9045,13 @@
         "status_karyawan": "karyawan_tetap",
         "tgl_lahir_istri": "1974-01-17",
         "tgl_lahir_anak_1": "1995-02-28",
-        "tgl_lahir_anak_2": "1999-07-21",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "ato.daryan@ptplnnusantarapower.com",
         "jenis_kelas": "2"
     },
     {
-        "id": "54",
+        "id": "432",
         "tanggal_masuk_karyawan": "1992-07-15",
         "nama_karyawan": "CHORIB",
         "nid": "7292081K3",
@@ -8898,13 +9066,13 @@
         "status_karyawan": "karyawan_tetap",
         "tgl_lahir_istri": "1978-10-19",
         "tgl_lahir_anak_1": "2008-12-16",
-        "tgl_lahir_anak_2": "2011-01-10",
+        "tgl_lahir_anak_2": "2001-08-09",
         "tgl_lahir_anak_3": "2012-10-06",
         "email": "chorib@ptplnnusantarapower.com",
         "jenis_kelas": "2"
     },
     {
-        "id": "60",
+        "id": "433",
         "tanggal_masuk_karyawan": "1992-07-15",
         "nama_karyawan": "DENDI SUHERMAN",
         "nid": "6792101K3",
@@ -8919,13 +9087,13 @@
         "status_karyawan": "karyawan_tetap",
         "tgl_lahir_istri": "1970-04-17",
         "tgl_lahir_anak_1": "1996-09-12",
-        "tgl_lahir_anak_2": "1900-10-10",
+        "tgl_lahir_anak_2": "2004-08-11",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "dendi.suherman@ptplnnusantarapower.com",
         "jenis_kelas": "2"
     },
     {
-        "id": "259",
+        "id": "434",
         "tanggal_masuk_karyawan": "1992-07-15",
         "nama_karyawan": "TARYANA",
         "nid": "6992096K3",
@@ -8940,13 +9108,13 @@
         "status_karyawan": "karyawan_tetap",
         "tgl_lahir_istri": "1972-06-30",
         "tgl_lahir_anak_1": "1998-01-09",
-        "tgl_lahir_anak_2": "2001-08-09",
+        "tgl_lahir_anak_2": "2003-06-09",
         "tgl_lahir_anak_3": "2005-10-28",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "120",
+        "id": "435",
         "tanggal_masuk_karyawan": "1992-10-05",
         "nama_karyawan": "HEROE DJATMIKO",
         "nid": "6792122K3",
@@ -8961,13 +9129,13 @@
         "status_karyawan": "karyawan_tetap",
         "tgl_lahir_istri": "1973-05-04",
         "tgl_lahir_anak_1": "2001-07-03",
-        "tgl_lahir_anak_2": "2004-08-11",
+        "tgl_lahir_anak_2": "2001-02-06",
         "tgl_lahir_anak_3": "2008-05-05",
         "email": "heroe.djatmiko@ptplnnusantarapower.com",
         "jenis_kelas": "2"
     },
     {
-        "id": "265",
+        "id": "436",
         "tanggal_masuk_karyawan": "1992-07-15",
         "nama_karyawan": "WAGITO",
         "nid": "6892089K3",
@@ -8982,13 +9150,13 @@
         "status_karyawan": "karyawan_tetap",
         "tgl_lahir_istri": "1977-05-19",
         "tgl_lahir_anak_1": "2000-01-13",
-        "tgl_lahir_anak_2": "2003-06-09",
+        "tgl_lahir_anak_2": "2019-11-22",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "269",
+        "id": "437",
         "tanggal_masuk_karyawan": "1992-07-15",
         "nama_karyawan": "WANTA",
         "nid": "6792083K3",
@@ -9003,13 +9171,13 @@
         "status_karyawan": "karyawan_tetap",
         "tgl_lahir_istri": "1972-11-11",
         "tgl_lahir_anak_1": "1995-05-09",
-        "tgl_lahir_anak_2": "2001-02-06",
+        "tgl_lahir_anak_2": "",
         "tgl_lahir_anak_3": "2009-03-03",
         "email": "",
         "jenis_kelas": "2"
     },
     {
-        "id": "223",
+        "id": "438",
         "tanggal_masuk_karyawan": "2015-03-01",
         "nama_karyawan": "RITA MONICA",
         "nid": "9215090ZJY",
@@ -9024,7 +9192,7 @@
         "status_karyawan": "karyawan_tetap",
         "tgl_lahir_istri": "1986-02-01",
         "tgl_lahir_anak_1": "2018-10-05",
-        "tgl_lahir_anak_2": "2019-11-22",
+        "tgl_lahir_anak_2": "",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
