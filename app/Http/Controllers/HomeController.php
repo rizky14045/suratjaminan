@@ -44,31 +44,16 @@ class HomeController extends Controller
     public function json(){
 
         $json = file_get_contents(public_path('karyawan.json'));
-       
+        $count = 0;
         $json_data =  json_decode( preg_replace('/[\x00-\x1F\x80-\xFF]/', '', $json), true );
 
         foreach ($json_data as $item){
    
-            Karyawan::create([
-                    'nama_karyawan' => $item['nama_karyawan'],
-                    'nid' => $item['nid'],
-                    'jenjang_jabatan' => $item['jenjang_jabatan'],
-                    'alamat' => $item['alamat'],
-                    'tanggal_lahir' => $item['tanggal_lahir'],
-                    'istri' => $item['istri'],
-                    'anak_1' => $item['anak_1'],
-                    'anak_2' => $item['anak_2'],
-                    'anak_3' => $item['anak_3'],
-                    'status_karyawan' => $item['status_karyawan'],
-                    'tgl_lahir_istri' => $item['tgl_lahir_istri'],
-                    'tgl_lahir_anak_1' => $item['tgl_lahir_anak_1'],
-                    'tgl_lahir_anak_2' => $item['tgl_lahir_anak_2'],
-                    'tgl_lahir_anak_3' => $item['tgl_lahir_anak_3'],
-                    'email' => $item['email'],
-                    'id_kelas_rawat_inap' => $item['jenis_kelas'],
+            Karyawan::where('nid',$item['nid'])->update([
+                    'jabatan' => $item['jabatan'],
                 ]);
+            $count = 1 + $count;
         }
-
         alert()->success('New ' . 'Announcement'. ' Created!' );
 
         return redirect('admin');
