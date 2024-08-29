@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title> Login : Surat Jaminan</title>
+    <title> Login : Surat SDM</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('vendor/lakers') }}/img/new-logo.ico">
 
     <!-- vendor css -->
@@ -34,7 +34,7 @@
                 <div class="signin-logo tx-center tx-28 tx-bold tx-white">
                     <img src="{{asset('vendor/lakers/img/logo-pjb.png')}}" style="width:200px;" alt="">
                 </div>
-                <div class="tx-white-5 tx-center mg-b-60">Silahkan Login <br> Selamat Datang Di Aplikasi Surat Jaminan</div>
+                <div class="tx-white-5 tx-center mg-b-60">Silahkan Login <br> Selamat Datang Di Aplikasi Surat SDM</div>
                 @if (\Session::has('error'))
                     <div class="alert alert-danger">
                             {!! \Session::get('error') !!}
