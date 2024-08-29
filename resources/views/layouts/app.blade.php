@@ -40,7 +40,7 @@
                     <ul class="nav navbar-nav">
                         &nbsp;
                     </ul>
-
+                    {{-- test --}}
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
