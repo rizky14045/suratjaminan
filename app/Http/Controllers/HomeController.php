@@ -53,7 +53,14 @@ class HomeController extends Controller
                 $karyawan->jenjang_jabatan = $item['jenjang_jabatan'];
                 $karyawan->jabatan = $item['jabatan'];
                 $karyawan->id_kelas_rawat_inap = $item['jenis_kelas'];
-                $karyawan->tanggal_masuk_karyawan = $item['tanggal_masuk_karyawan'];
+                $karyawan->istri = $item['istri'];
+                $karyawan->anak_1 = $item['anak_1'];
+                $karyawan->anak_2 = $item['anak_2'];
+                $karyawan->anak_3 = $item['anak_3'];
+                $karyawan->tgl_lahir_istri = $item['tgl_lahir_istri'];
+                $karyawan->tgl_lahir_anak_1 = $item['tgl_lahir_anak_1'];
+                $karyawan->tgl_lahir_anak_2 = $item['tgl_lahir_anak_2'];
+                $karyawan->tgl_lahir_anak_3 = $item['tgl_lahir_anak_3'];
                 $karyawan->save();
             }else{
                 Karyawan::create([

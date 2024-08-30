@@ -6462,7 +6462,7 @@
         "status_karyawan": "pensiunan",
         "tgl_lahir_istri": "1953-05-12",
         "tgl_lahir_anak_1": "1900-10-10",
-        "tgl_lahir_anak_2": "NULL",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "2"
@@ -9171,7 +9171,7 @@
         "status_karyawan": "karyawan_tetap",
         "tgl_lahir_istri": "1972-11-11",
         "tgl_lahir_anak_1": "1995-05-09",
-        "tgl_lahir_anak_2": "",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "2009-03-03",
         "email": "",
         "jenis_kelas": "2"
@@ -9192,7 +9192,7 @@
         "status_karyawan": "karyawan_tetap",
         "tgl_lahir_istri": "1986-02-01",
         "tgl_lahir_anak_1": "2018-10-05",
-        "tgl_lahir_anak_2": "",
+        "tgl_lahir_anak_2": "1900-10-10",
         "tgl_lahir_anak_3": "1900-10-10",
         "email": "",
         "jenis_kelas": "3"
