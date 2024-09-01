@@ -6,12 +6,14 @@ use PDF;
 use Mail;
 use Alert;
 use App\User;
+use App\Models\Visa;
 use App\Models\Karyawan;
 use App\Models\RumahSakit;
 use App\Models\FormJaminan;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Models\KelasRawatInap;
+use App\Models\SuratKeterangan;
 use App\Models\JenisPemeriksaan;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
@@ -34,6 +36,10 @@ class SMController extends Controller
         $formjaminan['sudah'] =FormJaminan::where('rangking','=' , 5)->latest()->limit(3)->get();
         $formjaminan['count_menunggu'] = FormJaminan::where('rangking','=', 4)->count();
         $formjaminan['count_sudah'] = FormJaminan::where('rangking','=' , 5)->count();
+        $formjaminan['keterangan'] =SuratKeterangan::where('rangking','=', 3)->OrWhere('rangking','=', 4)->latest()->limit(3)->get();
+        $formjaminan['visa'] =Visa::where('rangking','=', 3)->OrWhere('rangking','=', 4)->latest()->limit(3)->get();
+        $formjaminan['count_keterangan'] = SuratKeterangan::where('rangking','=', 3)->OrWhere('rangking','=', 4)->count();
+        $formjaminan['count_visa'] = Visa::where('rangking','=', 3)->OrWhere('rangking','=', 4)->count();
         return view('sm.dashboard', $formjaminan);
     }
 

@@ -27,6 +27,12 @@
                                                     class="d-none d-lg-inline">Ubah Password</span>
                                             </a>
                                         </li>
+                                        <li class="mr-1">
+                                            <a href="{{ route('logout') }}"
+                                                class="btn-ctm-space text-dark header_class"><span
+                                                    class="fa fa-power-off pr-0 pr-lg-2"></span><span
+                                                    class="d-none d-lg-inline">Logout</span></a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>

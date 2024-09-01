@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
 use App\User;
-use Illuminate\Http\Request;
+use App\Models\Visa;
 use App\Models\FormJaminan;
+use Illuminate\Http\Request;
+use App\Models\SuratKeterangan;
 use App\Models\MonitoringTagihan;
+use App\Http\Controllers\Controller;
 
 
 class AdminController extends Controller
@@ -26,6 +28,10 @@ class AdminController extends Controller
         $formjaminan['sudah'] =FormJaminan::latest()->limit(3)->get();
         $formjaminan['count_monitoring'] = MonitoringTagihan::count();
         $formjaminan['count_sudah'] = FormJaminan::count();
+        $formjaminan['keterangan'] =SuratKeterangan::latest()->limit(3)->get();
+        $formjaminan['visa'] =Visa::latest()->limit(3)->get();
+        $formjaminan['count_keterangan'] = SuratKeterangan::count();
+        $formjaminan['count_visa'] = Visa::count();
     
         return view('admin.dashboard', $formjaminan);
     }

@@ -1,4 +1,4 @@
-@extends('layouts.backend-mkad')
+@extends('layouts.backend-sm')
 
 @section('content')
     <div class="page-wrapper">
@@ -14,7 +14,7 @@
                                             <div class="custom-breadcrumb">
                                                 <ol class="breadcrumb no-bg-color d-inline-block p-0 m-0 mb-2">
                                                     <li class="breadcrumb-item d-inline-block"><a
-                                                            href="{{ url('/admin') }}" class="text-dark">Home</a></li>
+                                                            href="{{ url('/sm') }}" class="text-dark">Home</a></li>
                                                     <li class="breadcrumb-item d-inline-block active">Form Jaminan</li>
                                                 </ol>
                                                 <h4 class="text-dark">Form Jaminan Detail</h4>
