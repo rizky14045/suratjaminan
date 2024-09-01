@@ -76,17 +76,17 @@
                                                 </thead>
                                                 <tbody>
                                                     @foreach ($visas as $i => $item)
-                                                        <tr>
-                                                            <td>{{ $i + 1  }}</td>
-                                                            <td>{{ $item->karyawan->nama_karyawan ?? '' }}</td>
-                                                            <td>{{ $item->karyawan->nid ?? '' }}</td>
-                                                            <td class="text-ck">{{ $item->jenis }}</td>
-                                                            <td class="text-ck">{{ $item->negara_tujuan }}</td>
-                                                            <td class="text-ck">{{ $item->keperluan }}</td>
-                                                            <td class="text-ck">{{ $item->tujuan }}</td>
-                                                            <td class="text-ck">{{ $item->alamat }}</td>
-                                                            <td class="text-ck">{{ $item->tanggal_mulai  }} s/d {{$item->tanggal_selesai}}</td>
-                                                            <td class="text-ck">{{ $item->status  }}</td>
+                                                        <tr class={{$item->rangking == 1 ? 'bg-danger' :''}}>
+                                                            <td class={{$item->rangking == 1 ? 'text-white' :''}}>{{ $i + 1  }}</td>
+                                                            <td class={{$item->rangking == 1 ? 'text-white' :''}}>{{ $item->karyawan->nama_karyawan ?? '' }}</td>
+                                                            <td class={{$item->rangking == 1 ? 'text-white' :''}}>{{ $item->karyawan->nid ?? '' }}</td>
+                                                            <td class="text-ck {{$item->rangking == 1 ? 'text-white' :''}}">{{ $item->jenis }}</td>
+                                                            <td class="text-ck {{$item->rangking == 1 ? 'text-white' :''}}">{{ $item->negara_tujuan }}</td>
+                                                            <td class="text-ck {{$item->rangking == 1 ? 'text-white' :''}}">{{ $item->keperluan }}</td>
+                                                            <td class="text-ck {{$item->rangking == 1 ? 'text-white' :''}}">{{ $item->tujuan }}</td>
+                                                            <td class="text-ck {{$item->rangking == 1 ? 'text-white' :''}}">{{ $item->alamat }}</td>
+                                                            <td class="text-ck {{$item->rangking == 1 ? 'text-white' :''}}">{{ $item->tanggal_mulai  }} s/d {{$item->tanggal_selesai}}</td>
+                                                            <td class="text-ck {{$item->rangking == 1 ? 'text-white' :''}}">{{ $item->status  }}</td>
 
                                                             <td class="text-right" align="center">
                                                                 <div class="table-action">

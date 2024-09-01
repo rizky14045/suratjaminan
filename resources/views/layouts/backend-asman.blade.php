@@ -27,14 +27,14 @@
                     <div class="row align-items-center">
                         <div class="col-lg-3 col-md-3 col-sm-3 col-6">
                             <div class="logo my-3 my-sm-0">
-                                <a href="{{url('asman')}}">
+                                <div class=" my-3 my-sm-0">
                                     <img src="{{ asset('vendor/lakers') }}/img/logo-pjb.png" alt="logo image"
-                                        class="img-fluid" width="100">
-                                </a>
+                                        class="img-fluid" width="300">            
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-9 col-md-9 col-sm-9 col-6 text-right">
-                            <div class="user-block d-none d-lg-block">
+                            {{-- <div class="user-block d-none d-lg-block">
                                 <div class="row align-items-center">
                                     <div class="col-lg-12 col-md-12 col-sm-12">
                                         <!-- user info-->
@@ -63,7 +63,7 @@
                                         <!-- /User info-->
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="d-block d-lg-none">
                                 <a href="javascript:void(0)">
                                     <span class="lnr lnr-user d-block display-5 text-white" id="open_navSidebar"></span>

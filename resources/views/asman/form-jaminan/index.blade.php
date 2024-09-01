@@ -4,7 +4,7 @@
     <div class="page-wrapper">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xl-3 col-lg-4 col-md-12 theiaStickySidebar">
+                <div class="col-xl-2 col-lg-4 col-md-12 theiaStickySidebar">
                     <aside class="sidebar sidebar-user">
                         <div class="card ctm-border-radius shadow-sm">
                             <div class="card-body py-4">
@@ -40,7 +40,7 @@
                     </aside>
                 </div>
 
-                <div class="col-xl-9 col-lg-8  col-md-12">
+                <div class="col-xl-10 col-lg-8  col-md-12">
                     <div class="card shadow-sm ctm-border-radius">
                         <div class="card-body align-center">
                             <div class="card-body align-center">
@@ -74,27 +74,36 @@
                                                             <th>Jenis Surat</th>
                                                             <th>Nama Karyawan</th>
                                                             <th>NID</th>
-                                                            <th>Jenis Pemeriksaan</th>
+                                                            <th>Detail</th>
+                                                            {{-- <th>Jenis Pemeriksaan</th>
                                                             <th>Rumah Sakit</th>
-                                                            <th>Kelas Rawat Inap</th>
+                                                            <th>Kelas Rawat Inap</th> --}}
                                                             <th>Status Pengajuan</th>
                                                             <th>Actions</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         @foreach ($formjaminan_personal as $i => $item)
-                                                            <tr>
-                                                                <td>{{ $i + 1 }}</td>
-                                                                <td>{{ $item->nomor_surat }}</td>
-                                                                <td>{{ $item->jenis_surat }}</td>
-                                                                <td>{{ $item->karyawan['nama_karyawan'] }}</td>
-                                                                <td>{{ $item->karyawan['nid'] }}</td>
-                                                                <td>{{ $item->jenisPemeriksaan['jenis_pemeriksaan'] }}
+                                                            <tr class="{{$item->rangking == 2 ? 'bg-danger' :''}}">
+                                                                <td class="{{$item->rangking == 2 ? 'text-white' :''}}">{{ $i + 1 }}</td>
+                                                                <td class="{{$item->rangking == 2 ? 'text-white' :''}}">{{ $item->nomor_surat }}</td>
+                                                                <td class="{{$item->rangking == 2 ? 'text-white' :''}}">{{ $item->jenis_surat }}</td>
+                                                                <td class="{{$item->rangking == 2 ? 'text-white' :''}}">{{ $item->karyawan['nama_karyawan'] }}</td>
+                                                                <td class="{{$item->rangking == 2 ? 'text-white' :''}}">{{ $item->karyawan['nid'] }}</td>
+                                                                <td class="{{$item->rangking == 2 ? 'text-white' :''}}">
+                                                                    <span>Jenis Pemeriksaan : {{ $item->jenisPemeriksaan['jenis_pemeriksaan'] }} </span>
+                                                                    <br>
+                                                                    <span>Rumah Sakit : {{ $item->rumahSakit['nama_rumah_sakit'] }}</span>
+                                                                    <br>
+                                                                    <span>Kelas Rawat Inap : {{ $item->jenis_kelas }} /
+                                                                        {{ number_format($item->harga) }}</span>
                                                                 </td>
-                                                                <td>{{ $item->rumahSakit['nama_rumah_sakit'] }}</td>
-                                                                <td>{{ $item->jenis_kelas }} /
-                                                                    {{ number_format($item->harga) }}</td>
-                                                                <td>{{ $item->status_pengajuan }}</td>
+                                                                {{-- <td class="{{$item->rangking == 2 ? 'text-white' :''}}">{{ $item->jenisPemeriksaan['jenis_pemeriksaan'] }}
+                                                                </td>
+                                                                <td class="{{$item->rangking == 2 ? 'text-white' :''}}">{{ $item->rumahSakit['nama_rumah_sakit'] }}</td>
+                                                                <td class="{{$item->rangking == 2 ? 'text-white' :''}}">{{ $item->jenis_kelas }} /
+                                                                    {{ number_format($item->harga) }}</td> --}}
+                                                                <td class="{{$item->rangking == 2 ? 'text-white' :''}}">{{ $item->status_pengajuan }}</td>
                                                                 <td class="text-right" align="center">
                                                                     <div class="table-action">
                                                                         <a href="{{ url('/asman/form-jaminan/' . $item->id) }}"
@@ -142,29 +151,40 @@
                                                             <th>Jenis Surat</th>
                                                             <th>Nama Karyawan</th>
                                                             <th>NID</th>
-                                                            <th>Nama Pasien</th>
+                                                            <th>Detail</th>
+                                                            {{-- <th>Nama Pasien</th>
                                                             <th>Jenis Pemeriksaan</th>
                                                             <th>Rumah Sakit</th>
-                                                            <th>Kelas Rawat Inap</th>
+                                                            <th>Kelas Rawat Inap</th> --}}
                                                             <th>Status Pengajuan</th>
                                                             <th>Actions</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         @foreach ($formjaminan_keluarga as $i => $item)
-                                                            <tr>
-                                                                <td>{{ $i + 1 }}</td>
-                                                                <td>{{ $item->nomor_surat }}</td>
-                                                                <td>{{ $item->jenis_surat }}</td>
-                                                                <td>{{ $item->karyawan['nama_karyawan'] }}</td>
-                                                                <td>{{ $item->karyawan['nid'] }}</td>
-                                                                <td>{{ $item->nama_pasien }}</td>
-                                                                <td>{{ $item->jenisPemeriksaan['jenis_pemeriksaan'] }}
+                                                            <tr class="{{$item->rangking == 2 ? 'bg-danger' :''}}">
+                                                                <td class="{{$item->rangking == 2 ? 'text-white' :''}}">{{ $i + 1 }}</td>
+                                                                <td class="{{$item->rangking == 2 ? 'text-white' :''}}">{{ $item->nomor_surat }}</td>
+                                                                <td class="{{$item->rangking == 2 ? 'text-white' :''}}">{{ $item->jenis_surat }}</td>
+                                                                <td class="{{$item->rangking == 2 ? 'text-white' :''}}">{{ $item->karyawan['nama_karyawan'] }}</td>
+                                                                <td class="{{$item->rangking == 2 ? 'text-white' :''}}">{{ $item->karyawan['nid'] }}</td>
+                                                                <td class="{{$item->rangking == 2 ? 'text-white' :''}}">
+                                                                    <span>Nama Pasien : {{ $item->nama_pasien }}</span>
+                                                                    <br>
+                                                                    <span>Jenis Pemeriksaan : {{ $item->jenisPemeriksaan['jenis_pemeriksaan'] }} </span>
+                                                                    <br>
+                                                                    <span>Rumah Sakit : {{ $item->rumahSakit['nama_rumah_sakit'] }}</span>
+                                                                    <br>
+                                                                    <span>Kelas Rawat Inap : {{ $item->jenis_kelas }} /
+                                                                        {{ number_format($item->harga) }}</span>
                                                                 </td>
-                                                                <td>{{ $item->rumahSakit['nama_rumah_sakit'] }}</td>
-                                                                <td>{{ $item->jenis_kelas }} /
-                                                                    {{ number_format($item->harga) }}</td>
-                                                                <td>{{ $item->status_pengajuan }}</td>
+                                                                {{-- <td class="{{$item->rangking == 2 ? 'text-white' :''}}">{{ $item->nama_pasien }}</td>
+                                                                <td class="{{$item->rangking == 2 ? 'text-white' :''}}">{{ $item->jenisPemeriksaan['jenis_pemeriksaan'] }}
+                                                                </td>
+                                                                <td class="{{$item->rangking == 2 ? 'text-white' :''}}">{{ $item->rumahSakit['nama_rumah_sakit'] }}</td>
+                                                                <td class="{{$item->rangking == 2 ? 'text-white' :''}}">{{ $item->jenis_kelas }} /
+                                                                    {{ number_format($item->harga) }}</td> --}}
+                                                                <td class="{{$item->rangking == 2 ? 'text-white' :''}}">{{ $item->status_pengajuan }}</td>
                                                                 <td class="text-right" align="center">
                                                                     <div class="table-action">
                                                                         <a href="{{ url('/asman/form-jaminan/' . $item->id) }}"

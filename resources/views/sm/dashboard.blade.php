@@ -4,7 +4,7 @@
     <div class="page-wrapper">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xl-3 col-lg-4 col-md-12 theiaStickySidebar">
+                {{-- <div class="col-xl-3 col-lg-4 col-md-12 theiaStickySidebar">
                     <aside class="sidebar sidebar-user">
                         <div class="card ctm-border-radius shadow-sm">
                             <div class="card-body py-4">
@@ -41,13 +41,13 @@
                             </div>
                         </div>
                     </aside>
-                </div>
+                </div> --}}
 
-                <div class="col-xl-9 col-lg-8 col-md-12">
+                <div class="col-xl-12 col-lg-12 col-md-12">
 
                     <!-- Widget -->
                     <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-sm-3">
                             <div class="card dash-widget ctm-border-radius shadow-sm">
                                 <div class="card-body">
                                     <div class="card-icon bg-warning">
@@ -60,7 +60,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-3">
                             <div class="card dash-widget ctm-border-radius shadow-sm">
                                 <div class="card-body">
                                     <div class="card-icon bg-secondary">
@@ -73,12 +73,38 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-sm-3">
+                            <div class="card dash-widget ctm-border-radius shadow-sm">
+                                <div class="card-body">
+                                    <div class="card-icon bg-danger">
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                    <div class="card-right">
+                                        <h4 class="card-title">SURAT KETERANGAN</h4>
+                                        <p class="card-text">{{ $count_keterangan }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card dash-widget ctm-border-radius shadow-sm">
+                                <div class="card-body">
+                                    <div class="card-icon bg-primary">
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                    <div class="card-right">
+                                        <h4 class="card-title">SURAT VISA</h4>
+                                        <p class="card-text">{{ $count_visa }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="mt-2">
                         <!-- Widget -->
                         {{-- sudah dibuat --}}
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-3">
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="card-right">
@@ -110,7 +136,7 @@
                                 </div>
                             </div>
                             {{-- menunggu persetujuan --}}
-                            <div class="col-sm-6">
+                            <div class="col-sm-3">
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="card-right">
@@ -133,6 +159,70 @@
                                                         <span>{{ $item->karyawan['nama_karyawan'] ?? '' }} | <span
                                                                 class="border bg-danger p-sm-1 font-weight-bold text-light">Belum
                                                                 Disetujui</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-right">
+                                            <h4 class="card-title mr-auto float-right">SURAT KETERANGAN <span
+                                                    class="border bg-success p-sm-1 text-light">{{ $count_keterangan }}</span>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        @foreach ($keterangan as $item)
+                                            <li class="list-group-item">
+                                                <div class="card-body">
+                                                    <div class="card-icon bg-danger">
+                                                        <i class="fa fa-envelope"></i>
+                                                    </div>
+                                                    <div class="card-right">
+                                                        {{-- <h4 class="card-title font-weight-bold">{{ $item->nomor_surat }} --}}
+                                                        {{-- </h4> --}}
+                                                        <a href="#" style="pointer-events: none"
+                                                            class="card-title font-weight-bold">{{ $item->nomor_surat ?? '' }}
+                                                        </a>
+                                                        <span>{{ $item->karyawan->nama_karyawan ?? '' }} | <span
+                                                                class="border bg-success font-weight-bold text-light" style="font-size: 10px;">{{$item->status}}</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-right">
+                                            <h4 class="card-title mr-auto float-right">SURAT VISA <span
+                                                    class="border bg-success p-sm-1 text-light">{{ $count_visa }}</span>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        @foreach ($visa as $item)
+                                            <li class="list-group-item">
+                                                <div class="card-body">
+                                                    <div class="card-icon bg-primary">
+                                                        <i class="fa fa-envelope"></i>
+                                                    </div>
+                                                    <div class="card-right">
+                                                        {{-- <h4 class="card-title font-weight-bold">{{ $item->nomor_surat }} --}}
+                                                        {{-- </h4> --}}
+                                                        <a href="#" style="pointer-events: none"
+                                                            class="card-title font-weight-bold">{{ $item->nomor_surat ?? '' }}
+                                                        </a>
+                                                        <span>{{ $item->karyawan->nama_karyawan ?? '' }} | <span
+                                                                class="border bg-success p-sm-1 font-weight-bold text-light" style="font-size: 12px;">{{$item->status}}</span>
                                                         </span>
                                                     </div>
                                                 </div>

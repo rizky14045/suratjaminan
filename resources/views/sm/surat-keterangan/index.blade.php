@@ -75,15 +75,15 @@
                                                 </thead>
                                                 <tbody>
                                                     @foreach ($surats as $i => $item)
-                                                        <tr>
-                                                            <td>{{ $i + 1 }}</td>
-                                                            <td>{{ $item->nomor_surat }}</td>
-                                                            <td>{{ $item->karyawan->nama_karyawan ?? ''}}</td>
-                                                            <td>{{ $item->karyawan->nid  ?? ''}}</td>
-                                                            <td class="text-ck">{{ $item->penerima }}</td>
-                                                            <td class="text-ck">{{ $item->keperluan }}</td>
+                                                        <tr class={{$item->rangking == 3 ? 'bg-danger' :''}}>
+                                                            <td class={{$item->rangking == 3 ? 'text-white' :''}}>{{ $i + 1 }}</td>
+                                                            <td class={{$item->rangking == 3 ? 'text-white' :''}}>{{ $item->nomor_surat }}</td>
+                                                            <td class={{$item->rangking == 3 ? 'text-white' :''}}>{{ $item->karyawan->nama_karyawan ?? ''}}</td>
+                                                            <td class={{$item->rangking == 3 ? 'text-white' :''}}>{{ $item->karyawan->nid  ?? ''}}</td>
+                                                            <td class="text-ck {{$item->rangking == 3 ? 'text-white' :''}}">{{ $item->penerima }}</td>
+                                                            <td class="text-ck {{$item->rangking == 3 ? 'text-white' :''}}">{{ $item->keperluan }}</td>
                                                             {{-- <td class="text-ck">{{ $item->tanggal_masuk_karyawan }}</td> --}}
-                                                            <td class="text-ck">{{ $item->status }}</td>
+                                                            <td class="text-ck {{$item->rangking == 3 ? 'text-white' :''}}">{{ $item->status }}</td>
 
                                                             <td class="text-right" align="center">
                                                                 <div class="table-action">
