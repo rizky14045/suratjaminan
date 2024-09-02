@@ -109,8 +109,9 @@
                                     <div class="card-body">
                                         <div class="card-right">
                                             <h4 class="card-title mr-auto float-right">SURAT JAMINAN YANG SUDAH
-                                                DIAPPROVE <span class="border bg-primary p-sm-1">{{ $count_sudah }}</span>
+                                                DIAPPROVE
                                             </h4>
+                                            <div class="border bg-primary div-sm-1 text-light p-2 text-center w-25">{{ $count_sudah }}</div>
                                         </div>
                                     </div>
                                     <ul class="list-group list-group-flush">
@@ -121,14 +122,12 @@
                                                     <div class="card-icon bg-warning">
                                                         <i class="fa fa-envelope"></i>
                                                     </div>
-                                                    <div class="card-right"  style="font-size: 10px;">
+                                                    <div class="card-right">
                                                         <a href="{{ url('form-jaminans/' . $item->id) }}"
                                                             class="card-title font-weight-bold text-primary">{{ $item->nomor_surat ?? '' }}
                                                         </a>
-                                                        <div class="d-flex justify-content-between">
-                                                            <div class="text">{{ $item->karyawan['nama_karyawan'] ??'' }} |</div>
-                                                            <div class="border bg-primary p-sm-1 font-weight-bold text-white">Disetujui</div>
-                                                        </div>
+                                                        <div class="text">{{ $item->karyawan['nama_karyawan'] ??'' }} |</div>
+                                                        <div class="border bg-primary p-sm-1 font-weight-bold text-white w-75 text-center" style="font-size:12px;">DISETUJUI</div>   
                                                     </div>
                                                 </div>
                                             </li>
@@ -141,9 +140,9 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="card-right">
-                                            <h4 class="card-title mr-auto float-right">MENUNGGU PERSETUJUAN ASISTEN MANAGER<span
-                                                    class="border bg-danger p-sm-1 text-light">{{ $count_menunggu }}</span>
+                                            <h4 class="card-title mr-auto float-right">MENUNGGU PERSETUJUAN SENIOR MANAGER
                                             </h4>
+                                            <div class="border bg-danger div-sm-1 text-light p-2 text-center w-25">{{ $count_menunggu }}</div>
                                         </div>
                                     </div>
                                     <ul class="list-group list-group-flush">
@@ -153,14 +152,12 @@
                                                     <div class="card-icon bg-secondary">
                                                         <i class="fa fa-clock-o"></i>
                                                     </div>
-                                                    <div class="card-right"  style="font-size: 10px;">
+                                                    <div class="card-right">
                                                         <a href="{{ url('form-jaminans/' . $item->id) }}"
                                                             class="card-title font-weight-bold text-primary">{{ $item->nomor_surat ?? '' }}
                                                         </a>
-                                                        <div class="d-flex justify-content-between">
-                                                            <div class="text">{{ $item->karyawan['nama_karyawan'] ??'' }} |</div>
-                                                            <div class="border bg-danger p-sm-1 font-weight-bold text-white">Belum Disetujui</div>
-                                                        </div>
+                                                        <div class="text">{{ $item->karyawan['nama_karyawan'] ??'' }} |</div>
+                                                        <div class="border bg-danger p-sm-1 font-weight-bold text-white w-75 text-center" style="font-size:12px;"> BELUM DISETUJUI</div>
                                                     </div>
                                                 </div>
                                             </li>
@@ -172,9 +169,9 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="card-right">
-                                            <h4 class="card-title mr-auto float-right">SURAT KETERANGAN <span
-                                                    class="border bg-success p-sm-1 text-light">{{ $count_keterangan }}</span>
+                                            <h4 class="card-title mr-auto float-right">SURAT KETERANGAN
                                             </h4>
+                                            <div class="border bg-primary div-sm-1 text-light p-2 text-center w-25">{{ $count_keterangan }}</div>
                                         </div>
                                     </div>
                                     <ul class="list-group list-group-flush">
@@ -184,15 +181,14 @@
                                                     <div class="card-icon bg-danger">
                                                         <i class="fa fa-envelope"></i>
                                                     </div>
-                                                    <div class="card-right"  style="font-size: 10px;">
+                                                    <div class="card-right">
                                                         {{-- <h4 class="card-title font-weight-bold">{{ $item->nomor_surat }} --}}
                                                         {{-- </h4> --}}
                                                         <a href="#" style="pointer-events: none"
                                                             class="card-title font-weight-bold">{{ $item->nomor_surat ?? '' }}
                                                         </a>
-                                                        <span>{{ $item->karyawan->nama_karyawan ?? '' }} | <span
-                                                                class="border bg-success font-weight-bold text-light" style="font-size: 10px;">{{$item->status}}</span>
-                                                        </span>
+                                                        <div class="text">{{ $item->karyawan->nama_karyawan ?? '' }} |</div>
+                                                        <div class="border bg-success p-sm-1 font-weight-bold text-white text-center text-uppercase" style="font-size:10px;">{{$item->status}}</div>
                                                     </div>
                                                 </div>
                                             </li>
@@ -204,9 +200,9 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="card-right">
-                                            <h4 class="card-title mr-auto float-right">SURAT VISA <span
-                                                    class="border bg-success p-sm-1 text-light">{{ $count_visa }}</span>
+                                            <h4 class="card-title mr-auto float-right"> SURAT VISA
                                             </h4>
+                                            <div class="border bg-primary div-sm-1 text-light p-2 text-center w-25">{{ $count_visa }}</div>
                                         </div>
                                     </div>
                                     <ul class="list-group list-group-flush">
@@ -216,15 +212,14 @@
                                                     <div class="card-icon bg-primary">
                                                         <i class="fa fa-envelope"></i>
                                                     </div>
-                                                    <div class="card-right"  style="font-size: 10px;">
+                                                    <div class="card-right">
                                                         {{-- <h4 class="card-title font-weight-bold">{{ $item->nomor_surat }} --}}
                                                         {{-- </h4> --}}
                                                         <a href="#" style="pointer-events: none"
                                                             class="card-title font-weight-bold">{{ $item->nomor_surat ?? '' }}
                                                         </a>
-                                                        <span>{{ $item->karyawan->nama_karyawan ?? '' }} | <span
-                                                                class="border bg-success p-sm-1 font-weight-bold text-light" style="font-size: 12px;">{{$item->status}}</span>
-                                                        </span>
+                                                        <div class="text">{{ $item->karyawan->nama_karyawan ?? '' }} |</div>
+                                                        <div class="border bg-success p-sm-1 font-weight-bold text-white text-center text-uppercase" style="font-size:10px;">{{$item->status}}</div>
                                                     </div>
                                                 </div>
                                             </li>
