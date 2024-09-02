@@ -99,9 +99,10 @@
                                                         <a href="{{ url('form-jaminans/' . $item->id) }}"
                                                             class="card-title font-weight-bold">{{ $item->nomor_surat ?? '' }}
                                                         </a>
-                                                        <span style="font-size: 10px;" >{{ $item->karyawan['nama_karyawan'] ??'' }} | <span
-                                                                class="border bg-primary p-sm-1 font-weight-bold text-primary">Disetujui</span>
-                                                        </span>
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="text">{{ $item->karyawan['nama_karyawan'] ??'' }} |</div>
+                                                            <div class="border bg-primary p-sm-1 font-weight-bold text-white">Disetujui</div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </li>
@@ -130,10 +131,10 @@
                                                         <a href="{{ url('form-jaminans/' . $item->id) }}"
                                                             class="card-title font-weight-bold text-primary">{{ $item->nomor_surat ?? '' }}
                                                         </a>
-                                                        <span>{{ $item->karyawan['nama_karyawan'] ?? '' }} | <span
-                                                                class="border bg-danger p-sm-1 font-weight-bold text-light">Belum
-                                                                Disetujui</span>
-                                                        </span>
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="text">{{ $item->karyawan['nama_karyawan'] ??'' }} |</div>
+                                                            <div class="border bg-danger p-sm-1 font-weight-bold text-white">Belum Disetujui</div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </li>
