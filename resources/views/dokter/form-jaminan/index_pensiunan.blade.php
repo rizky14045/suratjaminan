@@ -70,8 +70,8 @@
                                                     <thead>
                                                         <tr>
                                                             <th>No</th>
-                                                            <th>Nomor Surat</th>
-                                                            <th>Jenis Surat</th>
+                                                            {{-- <th>Nomor Surat</th>
+                                                            <th>Jenis Surat</th> --}}
                                                             <th>Nama Karyawan</th>
                                                             <th>NID</th>
                                                             <th>Detail</th>
@@ -86,11 +86,13 @@
                                                         @foreach ($formjaminan_personal as $i => $item)
                                                             <tr class="{{$item->rangking == 1 ? 'bg-danger' :''}}">
                                                                 <td class="{{$item->rangking == 1 ? 'text-white' :''}}">{{ $i + 1 }}</td>
-                                                                <td class="{{$item->rangking == 1 ? 'text-white' :''}}">{{ $item->nomor_surat }}</td>
-                                                                <td class="{{$item->rangking == 1 ? 'text-white' :''}}">{{ $item->jenis_surat }}</td>
+                                                                {{-- <td class="{{$item->rangking == 1 ? 'text-white' :''}}">{{ $item->nomor_surat }}</td>
+                                                                <td class="{{$item->rangking == 1 ? 'text-white' :''}}">{{ $item->jenis_surat }}</td> --}}
                                                                 <td class="{{$item->rangking == 1 ? 'text-white' :''}}">{{ $item->karyawan['nama_karyawan'] }}</td>
                                                                 <td class="{{$item->rangking == 1 ? 'text-white' :''}}">{{ $item->karyawan['nid'] }}</td>
                                                                 <td class="{{$item->rangking == 1 ? 'text-white' :''}}">
+                                                                    <span>Nomor Surat : {{ $item->nomor_surat }}</span>
+                                                                    <br>
                                                                     <span>Jenis Pemeriksaan : {{ $item->jenisPemeriksaan['jenis_pemeriksaan'] }} </span>
                                                                     <br>
                                                                     <span>Rumah Sakit : {{ $item->rumahSakit['nama_rumah_sakit'] }}</span>
@@ -147,8 +149,8 @@
                                                     <thead>
                                                         <tr>
                                                             <th>No</th>
-                                                            <th>Nomor Surat</th>
-                                                            <th>Jenis Surat</th>
+                                                            {{-- <th>Nomor Surat</th>
+                                                            <th>Jenis Surat</th> --}}
                                                             <th>Nama Karyawan</th>
                                                             <th>NID</th>
                                                             <th>Detail</th>
@@ -164,11 +166,13 @@
                                                         @foreach ($formjaminan_keluarga as $i => $item)
                                                             <tr class="{{$item->rangking == 1 ? 'bg-danger' :''}}">
                                                                 <td class="{{$item->rangking == 1 ? 'text-white' :''}}">{{ $i + 1 }}</td>
-                                                                <td class="{{$item->rangking == 1 ? 'text-white' :''}}">{{ $item->nomor_surat }}</td>
-                                                                <td class="{{$item->rangking == 1 ? 'text-white' :''}}">{{ $item->jenis_surat }}</td>
+                                                                {{-- <td class="{{$item->rangking == 1 ? 'text-white' :''}}">{{ $item->nomor_surat }}</td>
+                                                                <td class="{{$item->rangking == 1 ? 'text-white' :''}}">{{ $item->jenis_surat }}</td> --}}
                                                                 <td class="{{$item->rangking == 1 ? 'text-white' :''}}">{{ $item->karyawan['nama_karyawan'] }}</td>
                                                                 <td class="{{$item->rangking == 1 ? 'text-white' :''}}">{{ $item->karyawan['nid'] }}</td>
                                                                 <td class="{{$item->rangking == 1 ? 'text-white' :''}}">
+                                                                    <span>Nomor Surat : {{ $item->nomor_surat }}</span>
+                                                                    <br>
                                                                     <span>Nama Pasien : {{ $item->nama_pasien }}</span>
                                                                     <br>
                                                                     <span>Jenis Pemeriksaan : {{ $item->jenisPemeriksaan['jenis_pemeriksaan'] }} </span>
