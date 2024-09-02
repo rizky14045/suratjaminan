@@ -95,11 +95,11 @@
                                                     <div class="card-icon bg-warning">
                                                         <i class="fa fa-envelope"></i>
                                                     </div>
-                                                    <div class="card-right">
+                                                    <div class="card-right"  style="font-size: 10px;">
                                                         <a href="{{ url('form-jaminans/' . $item->id) }}"
                                                             class="card-title font-weight-bold">{{ $item->nomor_surat ?? '' }}
                                                         </a>
-                                                        <span>{{ $item->karyawan['nama_karyawan'] ??'' }} | <span
+                                                        <span style="font-size: 10px;" >{{ $item->karyawan['nama_karyawan'] ??'' }} | <span
                                                                 class="border bg-primary p-sm-1 font-weight-bold text-primary">Disetujui</span>
                                                         </span>
                                                     </div>
@@ -126,7 +126,7 @@
                                                     <div class="card-icon bg-secondary">
                                                         <i class="fa fa-clock-o"></i>
                                                     </div>
-                                                    <div class="card-right">
+                                                    <div class="card-right"  style="font-size: 10px;">
                                                         <a href="{{ url('form-jaminans/' . $item->id) }}"
                                                             class="card-title font-weight-bold text-primary">{{ $item->nomor_surat ?? '' }}
                                                         </a>

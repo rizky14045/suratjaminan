@@ -121,7 +121,7 @@
                                                     <div class="card-icon bg-warning">
                                                         <i class="fa fa-envelope"></i>
                                                     </div>
-                                                    <div class="card-right">
+                                                    <div class="card-right"  style="font-size: 10px;">
                                                         <a href="{{ url('form-jaminans/' . $item->id) }}"
                                                             class="card-title font-weight-bold text-primary">{{ $item->nomor_surat ?? '' }}
                                                         </a>
@@ -152,11 +152,11 @@
                                                     <div class="card-icon bg-secondary">
                                                         <i class="fa fa-clock-o"></i>
                                                     </div>
-                                                    <div class="card-right">
+                                                    <div class="card-right"  style="font-size: 10px;">
                                                         <a href="{{ url('form-jaminans/' . $item->id) }}"
                                                             class="card-title font-weight-bold text-primary">{{ $item->nomor_surat ?? '' }}
                                                         </a>
-                                                        <span>{{ $item->karyawan['nama_karyawan'] ?? '' }} | <span
+                                                        <span  style="font-size: 10px;">{{ $item->karyawan['nama_karyawan'] ?? '' }} | <span
                                                                 class="border bg-danger p-sm-1 font-weight-bold text-light">Belum
                                                                 Disetujui</span>
                                                         </span>
@@ -183,13 +183,13 @@
                                                     <div class="card-icon bg-danger">
                                                         <i class="fa fa-envelope"></i>
                                                     </div>
-                                                    <div class="card-right">
+                                                    <div class="card-right"  style="font-size: 10px;">
                                                         {{-- <h4 class="card-title font-weight-bold">{{ $item->nomor_surat }} --}}
                                                         {{-- </h4> --}}
                                                         <a href="#" style="pointer-events: none"
                                                             class="card-title font-weight-bold">{{ $item->nomor_surat ?? '' }}
                                                         </a>
-                                                        <span>{{ $item->karyawan->nama_karyawan ?? '' }} | <span
+                                                        <span  style="font-size: 10px;">{{ $item->karyawan->nama_karyawan ?? '' }} | <span
                                                                 class="border bg-success font-weight-bold text-light" style="font-size: 10px;">{{$item->status}}</span>
                                                         </span>
                                                     </div>
@@ -215,14 +215,14 @@
                                                     <div class="card-icon bg-primary">
                                                         <i class="fa fa-envelope"></i>
                                                     </div>
-                                                    <div class="card-right">
+                                                    <div class="card-right"  style="font-size: 10px;">
                                                         {{-- <h4 class="card-title font-weight-bold">{{ $item->nomor_surat }} --}}
                                                         {{-- </h4> --}}
                                                         <a href="#" style="pointer-events: none"
                                                             class="card-title font-weight-bold">{{ $item->nomor_surat ?? '' }}
                                                         </a>
                                                         <span>{{ $item->karyawan->nama_karyawan ?? '' }} | <span
-                                                                class="border bg-success p-sm-1 font-weight-bold text-light" style="font-size: 12px;">{{$item->status}}</span>
+                                                                class="border bg-success p-sm-1 font-weight-bold text-light">{{$item->status}}</span>
                                                         </span>
                                                     </div>
                                                 </div>
