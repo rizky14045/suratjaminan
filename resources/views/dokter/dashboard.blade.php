@@ -83,8 +83,9 @@
                                     <div class="card-body">
                                         <div class="card-right">
                                             <h4 class="card-title mr-auto float-right">SURAT JAMINAN YANG SUDAH
-                                                DIAPPROVE <span class="border bg-primary p-sm-1">{{ $count_sudah }}</span>
+                                                DIAPPROVE
                                             </h4>
+                                            <div class="border bg-primary div-sm-1 text-light p-2 text-center w-25">{{ $count_sudah }}</div>
                                         </div>
                                     </div>
                                     <ul class="list-group list-group-flush">
@@ -99,10 +100,8 @@
                                                         <a href="{{ url('form-jaminans/' . $item->id) }}"
                                                             class="card-title font-weight-bold">{{ $item->nomor_surat ?? '' }}
                                                         </a>
-                                                        <div class="d-flex justify-content-between">
-                                                            <div class="text">{{ $item->karyawan['nama_karyawan'] ??'' }} |</div>
-                                                            <div class="border bg-primary p-sm-1 font-weight-bold text-white">Disetujui</div>
-                                                        </div>
+                                                        <div class="text">{{ $item->karyawan['nama_karyawan'] ??'' }} |</div>
+                                                        <div class="border bg-primary p-sm-1 font-weight-bold text-white col-md-6 text-center" style="font-size:12px;">DISETUJUI</div>
                                                     </div>
                                                 </div>
                                             </li>
@@ -115,9 +114,10 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="card-right">
-                                            <h4 class="card-title mr-auto float-right">MENUNGGU PERSETUJUAN DOKTER<span
-                                                    class="border bg-danger p-sm-1 text-light">{{ $count_menunggu }}</span>
+                                            <h4 class="card-title mr-auto float-right">MENUNGGU PERSETUJUAN DOKTER
                                             </h4>
+                                            <div class="border bg-danger div-sm-1 text-light p-2 text-center w-25">{{ $count_menunggu }}</div>
+                                            
                                         </div>
                                     </div>
                                     <ul class="list-group list-group-flush">
@@ -131,10 +131,8 @@
                                                         <a href="{{ url('form-jaminans/' . $item->id) }}"
                                                             class="card-title font-weight-bold text-primary">{{ $item->nomor_surat ?? '' }}
                                                         </a>
-                                                        <div class="d-flex justify-content-between">
-                                                            <div class="text">{{ $item->karyawan['nama_karyawan'] ??'' }} |</div>
-                                                            <div class="border bg-danger p-sm-1 font-weight-bold text-white">Belum Disetujui</div>
-                                                        </div>
+                                                        <div class="text">{{ $item->karyawan['nama_karyawan'] ??'' }} |</div>
+                                                        <div class="border bg-danger p-sm-1 font-weight-bold text-white col-md-6 text-center" style="font-size:12px;"> BELUM DISETUJUI</div>
                                                     </div>
                                                 </div>
                                             </li>
