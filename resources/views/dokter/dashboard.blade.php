@@ -100,7 +100,7 @@
                                                             class="card-title font-weight-bold">{{ $item->nomor_surat ?? '' }}
                                                         </a>
                                                         <span>{{ $item->karyawan['nama_karyawan'] ??'' }} | <span
-                                                                class="border bg-primary p-sm-1 font-weight-bold">Disetujui</span>
+                                                                class="border bg-primary p-sm-1 font-weight-bold text-primary">Disetujui</span>
                                                         </span>
                                                     </div>
                                                 </div>
@@ -128,7 +128,7 @@
                                                     </div>
                                                     <div class="card-right">
                                                         <a href="{{ url('form-jaminans/' . $item->id) }}"
-                                                            class="card-title font-weight-bold">{{ $item->nomor_surat ?? '' }}
+                                                            class="card-title font-weight-bold text-primary">{{ $item->nomor_surat ?? '' }}
                                                         </a>
                                                         <span>{{ $item->karyawan['nama_karyawan'] ?? '' }} | <span
                                                                 class="border bg-danger p-sm-1 font-weight-bold text-light">Belum
