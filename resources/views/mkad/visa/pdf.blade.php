@@ -65,7 +65,7 @@
     <div class="content">
         <div style="display: inline">
             <span style="float-left">Number <span style="margin-left:34px">:</span> {{$visa->nomor_surat}}</span>
-            <span style="float-right;margin-left:250px">Jakarta, {{date('d F Y')}}</span>
+            <span style="float-right;margin-left:220px">Jakarta, {{date('d F Y')}}</span>
         </div>
         <div style="line-height: 1">
             <p>Type <span style="margin-left: 50px;">:</span> {{$visa->jenis}}</p>

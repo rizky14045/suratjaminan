@@ -74,7 +74,7 @@
     <div class="content">
         <div style="display: inline">
             <span style="float-left">Nomor <span style="margin-left:30px">:</span> {{$suratketerangan->nomor_surat}}</span>
-            <span style="float-right;margin-left:250px">Jakarta, {{date('d F Y')}}</span>
+            <span style="float-right;margin-left:220px">Jakarta, {{date('d F Y')}}</span>
         </div>
         <p>Sifat <span style="margin-left: 42px;">:</span> {{$suratketerangan->sifat}}</p>
         <p>Lampiran <span style="margin-left:16px">:</span> - </p>
