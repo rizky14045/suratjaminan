@@ -127,7 +127,7 @@
                                                         <a href="{{ url('form-jaminans/' . $item->id) }}"
                                                             class="card-title font-weight-bold">{{ $item->nomor_surat }}
                                                         </a>
-                                                        <span>{{ $item->karyawan['nama_karyawan'] }} | <span
+                                                        <span>{{ $item->karyawan['nama_karyawan'] }} <span
                                                                 class="border bg-primary font-weight-bold" style="font-size: 10px;color:white;">{{$item->status_pengajuan}}</span>
                                                         </span>
                                                     </div>
@@ -160,7 +160,7 @@
                                                         <a href="{{ url('admin/detail-monitoring/' . $item->id) }}"
                                                             class="card-title font-weight-bold">{{ $item->formJaminan->nomor_surat ?? '' }}
                                                         </a>
-                                                        <span>{{ $item->formJaminan->karyawan->nama_karyawan ?? '' }} | <span
+                                                        <span>{{ $item->formJaminan->karyawan->nama_karyawan ?? '' }} <span
                                                                 class="border bg-success p-sm-1 font-weight-bold text-light" style="font-size: 12px;">{{$item->status_pembayaran}}</span>
                                                         </span>
                                                     </div>
@@ -192,7 +192,7 @@
                                                         <a href="#" style="pointer-events: none"
                                                             class="card-title font-weight-bold">{{ $item->nomor_surat ?? '' }}
                                                         </a>
-                                                        <span>{{ $item->karyawan->nama_karyawan ?? '' }} | <span
+                                                        <span>{{ $item->karyawan->nama_karyawan ?? '' }} <span
                                                                 class="border bg-success font-weight-bold text-light" style="font-size: 10px;">{{$item->status}}</span>
                                                         </span>
                                                     </div>
@@ -224,7 +224,7 @@
                                                         <a href="#" style="pointer-events: none"
                                                             class="card-title font-weight-bold">{{ $item->nomor_surat ?? '' }}
                                                         </a>
-                                                        <span>{{ $item->karyawan->nama_karyawan ?? '' }} | <span
+                                                        <span>{{ $item->karyawan->nama_karyawan ?? '' }} <span
                                                                 class="border bg-success p-sm-1 font-weight-bold text-light" style="font-size: 12px;">{{$item->status}}</span>
                                                         </span>
                                                     </div>

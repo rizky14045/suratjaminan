@@ -126,7 +126,7 @@
                                                         <a href="{{ url('form-jaminans/' . $item->id) }}"
                                                             class="card-title font-weight-bold text-primary">{{ $item->nomor_surat ?? '' }}
                                                         </a>
-                                                        <div class="text">{{ $item->karyawan['nama_karyawan'] ??'' }} |</div>
+                                                        <div class="text">{{ $item->karyawan['nama_karyawan'] ??'' }} </div>
                                                         <div class="border bg-primary p-sm-1 font-weight-bold text-white w-75 text-center" style="font-size:12px;">DISETUJUI</div>   
                                                     </div>
                                                 </div>
@@ -156,7 +156,7 @@
                                                         <a href="{{ url('form-jaminans/' . $item->id) }}"
                                                             class="card-title font-weight-bold text-primary">{{ $item->nomor_surat ?? '' }}
                                                         </a>
-                                                        <div class="text">{{ $item->karyawan['nama_karyawan'] ??'' }} |</div>
+                                                        <div class="text">{{ $item->karyawan['nama_karyawan'] ??'' }} </div>
                                                         <div class="border bg-danger p-sm-1 font-weight-bold text-white w-75 text-center" style="font-size:12px;"> BELUM DISETUJUI</div>
                                                     </div>
                                                 </div>
@@ -187,7 +187,7 @@
                                                         <a href="#" style="pointer-events: none"
                                                             class="card-title font-weight-bold">{{ $item->nomor_surat ?? '' }}
                                                         </a>
-                                                        <div class="text">{{ $item->karyawan->nama_karyawan ?? '' }} |</div>
+                                                        <div class="text">{{ $item->karyawan->nama_karyawan ?? '' }} </div>
                                                         <div class="border bg-success p-sm-1 font-weight-bold text-white text-center text-uppercase" style="font-size:10px;">{{$item->status}}</div>
                                                     </div>
                                                 </div>
@@ -218,7 +218,7 @@
                                                         <a href="#" style="pointer-events: none"
                                                             class="card-title font-weight-bold">{{ $item->nomor_surat ?? '' }}
                                                         </a>
-                                                        <div class="text">{{ $item->karyawan->nama_karyawan ?? '' }} |</div>
+                                                        <div class="text">{{ $item->karyawan->nama_karyawan ?? '' }} </div>
                                                         <div class="border bg-success p-sm-1 font-weight-bold text-white text-center text-uppercase" style="font-size:10px;">{{$item->status}}</div>
                                                     </div>
                                                 </div>
