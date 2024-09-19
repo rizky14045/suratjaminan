@@ -100,7 +100,7 @@
                                                         <a href="{{ url('form-jaminans/' . $item->id) }}"
                                                             class="card-title font-weight-bold">{{ $item->nomor_surat ?? '' }}
                                                         </a>
-                                                        <div class="text">{{ $item->karyawan['nama_karyawan'] ??'' }} |</div>
+                                                        <div class="text">{{ $item->karyawan['nama_karyawan'] ??'' }} </div>
                                                         <div class="border bg-primary p-sm-1 font-weight-bold text-white col-md-6 text-center" style="font-size:12px;">DISETUJUI</div>
                                                     </div>
                                                 </div>
@@ -131,7 +131,7 @@
                                                         <a href="{{ url('form-jaminans/' . $item->id) }}"
                                                             class="card-title font-weight-bold text-primary">{{ $item->nomor_surat ?? '' }}
                                                         </a>
-                                                        <div class="text">{{ $item->karyawan['nama_karyawan'] ??'' }} |</div>
+                                                        <div class="text">{{ $item->karyawan['nama_karyawan'] ??'' }} </div>
                                                         <div class="border bg-danger p-sm-1 font-weight-bold text-white col-md-6 text-center" style="font-size:12px;"> BELUM DISETUJUI</div>
                                                     </div>
                                                 </div>
