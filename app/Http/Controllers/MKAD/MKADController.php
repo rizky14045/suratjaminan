@@ -41,10 +41,10 @@ class MKADController extends Controller
         ->where('rangking','!=', 2)
         ->where('rangking','!=', 1)
         ->count();
-        $formjaminan['keterangan'] =SuratKeterangan::where('rangking','=', 3)->OrWhere('rangking','=', 2)->latest()->limit(3)->get();
-        $formjaminan['visa'] =Visa::where('rangking','=', 3)->OrWhere('rangking','=', 2)->latest()->limit(3)->get();
-        $formjaminan['count_keterangan'] = SuratKeterangan::where('rangking','=', 3)->OrWhere('rangking','=', 2)->count();
-        $formjaminan['count_visa'] = Visa::where('rangking','=', 3)->OrWhere('rangking','=', 2)->count();
+        $formjaminan['keterangan'] =SuratKeterangan::where('rangking','=', 2)->latest()->limit(3)->get();
+        $formjaminan['visa'] =Visa::where('rangking','=', 2)->latest()->limit(3)->get();
+        $formjaminan['count_keterangan'] = SuratKeterangan::where('rangking','=', 2)->count();
+        $formjaminan['count_visa'] = Visa::where('rangking','=', 2)->count();
         return view('mkad.dashboard', $formjaminan);
     }
 

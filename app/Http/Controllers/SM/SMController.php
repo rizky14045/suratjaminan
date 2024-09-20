@@ -36,10 +36,10 @@ class SMController extends Controller
         $formjaminan['sudah'] =FormJaminan::where('rangking','=' , 5)->latest()->limit(3)->get();
         $formjaminan['count_menunggu'] = FormJaminan::where('rangking','=', 4)->count();
         $formjaminan['count_sudah'] = FormJaminan::where('rangking','=' , 5)->count();
-        $formjaminan['keterangan'] =SuratKeterangan::where('rangking','=', 3)->OrWhere('rangking','=', 4)->latest()->limit(3)->get();
-        $formjaminan['visa'] =Visa::where('rangking','=', 3)->OrWhere('rangking','=', 4)->latest()->limit(3)->get();
-        $formjaminan['count_keterangan'] = SuratKeterangan::where('rangking','=', 3)->OrWhere('rangking','=', 4)->count();
-        $formjaminan['count_visa'] = Visa::where('rangking','=', 3)->OrWhere('rangking','=', 4)->count();
+        $formjaminan['keterangan'] =SuratKeterangan::where('rangking','=', 3)->latest()->limit(3)->get();
+        $formjaminan['visa'] =Visa::where('rangking','=', 3)->latest()->limit(3)->get();
+        $formjaminan['count_keterangan'] = SuratKeterangan::where('rangking','=', 3)->count();
+        $formjaminan['count_visa'] = Visa::where('rangking','=', 3)->count();
         return view('sm.dashboard', $formjaminan);
     }
 

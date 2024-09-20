@@ -38,10 +38,10 @@ class AsmanController extends Controller
         ->latest()->limit(3)->get();
         $formjaminan['count_menunggu'] = FormJaminan::where('rangking',2)->count();
         $formjaminan['count_sudah'] = FormJaminan::where('rangking','!=',2)->where('rangking','!=' ,1 )->count();
-        $formjaminan['keterangan'] =SuratKeterangan::where('rangking','=', 1)->OrWhere('rangking','=', 2)->latest()->limit(3)->get();
-        $formjaminan['visa'] =Visa::where('rangking','=', 1)->OrWhere('rangking','=', 2)->latest()->limit(3)->get();
-        $formjaminan['count_keterangan'] = SuratKeterangan::where('rangking','=', 1)->OrWhere('rangking','=', 2)->count();
-        $formjaminan['count_visa'] = Visa::where('rangking','=', 1)->OrWhere('rangking','=', 2)->count();
+        $formjaminan['keterangan'] =SuratKeterangan::where('rangking','=', 1)->latest()->limit(3)->get();
+        $formjaminan['visa'] =Visa::where('rangking','=', 1)->latest()->limit(3)->get();
+        $formjaminan['count_keterangan'] = SuratKeterangan::where('rangking','=', 1)->count();
+        $formjaminan['count_visa'] = Visa::where('rangking','=', 1)->count();
         return view('asman.dashboard', $formjaminan);
     }
 
