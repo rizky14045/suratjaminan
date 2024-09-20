@@ -53,7 +53,7 @@
                                     <div class="card-icon bg-warning">
                                         <i class="fa fa-envelope" aria-hidden="true"></i>
                                     </div>
-                                    <div class="card-right">
+                                    <div class="card-right mx-auto text-center">
                                         <h4 class="card-title">SURAT JAMINAN YANG SUDAH DI APPROVE</h4>
                                         <p class="card-text">{{ $count_sudah }}</p>
                                     </div>
@@ -63,10 +63,10 @@
                         <div class="col-sm-6">
                             <div class="card dash-widget ctm-border-radius shadow-sm">
                                 <div class="card-body">
-                                    <div class="card-icon bg-secondary">
+                                    <div class="card-icon bg-success">
                                         <i class="fa fa-clock-o"></i>
                                     </div>
-                                    <div class="card-right">
+                                    <div class="card-right mx-auto text-center">
                                         <h4 class="card-title">MENUNGGU PERSETUJUAN DOKTER</h4>
                                         <p class="card-text">{{ $count_menunggu }}</p>
                                     </div>
@@ -82,10 +82,10 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="card-right">
-                                            <h4 class="card-title mr-auto float-right">SURAT JAMINAN YANG SUDAH
+                                            <h4 class="card-title mr-auto mx-auto">SURAT JAMINAN YANG SUDAH
                                                 DIAPPROVE
                                             </h4>
-                                            <div class="border bg-primary div-sm-1 text-light p-2 text-center w-25">{{ $count_sudah }}</div>
+                                            <div class="border bg-primary div-sm-1 text-light p-2 text-center w-25 mx-auto">{{ $count_sudah }}</div>
                                         </div>
                                     </div>
                                     <ul class="list-group list-group-flush">
@@ -114,9 +114,9 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="card-right">
-                                            <h4 class="card-title mr-auto float-right">MENUNGGU PERSETUJUAN DOKTER
+                                            <h4 class="card-title mr-auto mx-auto">MENUNGGU PERSETUJUAN DOKTER
                                             </h4>
-                                            <div class="border bg-danger div-sm-1 text-light p-2 text-center w-25">{{ $count_menunggu }}</div>
+                                            <div class="border bg-success div-sm-1 text-light p-2 text-center w-25 mx-auto">{{ $count_menunggu }}</div>
                                             
                                         </div>
                                     </div>
@@ -124,7 +124,7 @@
                                         @foreach ($menunggu as $item)
                                             <li class="list-group-item">
                                                 <div class="card-body">
-                                                    <div class="card-icon bg-secondary">
+                                                    <div class="card-icon bg-success">
                                                         <i class="fa fa-clock-o"></i>
                                                     </div>
                                                     <div class="card-right"  style="font-size: 10px;">

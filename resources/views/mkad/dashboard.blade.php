@@ -50,7 +50,7 @@
                     <div class="row">
                         <div class="col-sm-3">
                             <div class="card dash-widget ctm-border-radius shadow-sm">
-                                <div class="card-body">
+                                <div class="card-body text-center">
                                     <div class="card-icon bg-warning">
                                         <i class="fa fa-envelope" aria-hidden="true"></i>
                                     </div>
@@ -64,23 +64,36 @@
                         <div class="col-sm-3">
                             <div class="card dash-widget ctm-border-radius shadow-sm">
                                 <div class="card-body">
-                                    <div class="card-icon bg-secondary">
-                                        <i class="fa fa-clock-o"></i>
+                                    <div class="card-icon bg-success">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
                                     </div>
-                                    <div class="card-right">
-                                        <h4 class="card-title">MENUNGGU PERSETUJUAN MBS</h4>
+                                    <div class="card-right mx-auto text-center">
+                                        <h4 class="card-title">SURAT JAMINAN</h4>
                                         <p class="card-text">{{ $count_menunggu }}</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        {{-- <div class="col-sm-3">
+                            <div class="card dash-widget ctm-border-radius shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="card-icon bg-success">
+                                        <i class="fa fa-clock-o"></i>
+                                    </div>
+                                    <div class="card-right">
+                                        <h4 class="card-title text-center">SURAT JAMINAN</h4>
+                                        <p class="card-text">{{ $count_menunggu }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> --}}
                         <div class="col-sm-3">
                             <div class="card dash-widget ctm-border-radius shadow-sm">
-                                <div class="card-body">
+                                <div class="card-body ">
                                     <div class="card-icon bg-danger">
                                         <i class="fa fa-envelope"></i>
                                     </div>
-                                    <div class="card-right">
+                                    <div class="card-right mx-auto text-center">
                                         <h4 class="card-title">SURAT KETERANGAN</h4>
                                         <p class="card-text">{{ $count_keterangan }}</p>
                                     </div>
@@ -89,11 +102,11 @@
                         </div>
                         <div class="col-sm-3">
                             <div class="card dash-widget ctm-border-radius shadow-sm">
-                                <div class="card-body">
+                                <div class="card-body text-center">
                                     <div class="card-icon bg-primary">
                                         <i class="fa fa-envelope"></i>
                                     </div>
-                                    <div class="card-right">
+                                    <div class="card-right mx-auto text-center">
                                         <h4 class="card-title">SURAT VISA</h4>
                                         <p class="card-text">{{ $count_visa }}</p>
                                     </div>
@@ -109,10 +122,10 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="card-right">
-                                            <h4 class="card-title mr-auto float-right">SURAT JAMINAN YANG SUDAH
+                                            <h4 class="card-title mr-auto mx-auto">SURAT JAMINAN YANG SUDAH
                                                 DIAPPROVE
                                             </h4>
-                                            <div class="border bg-primary div-sm-1 text-light p-2 text-center w-25">{{ $count_sudah }}</div>
+                                            <div class="border bg-primary div-sm-1 text-light p-2 text-center w-25 mx-auto">{{ $count_sudah }}</div>
                                         </div>
                                     </div>
                                     <ul class="list-group list-group-flush">
@@ -141,16 +154,16 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="card-right">
-                                            <h4 class="card-title mr-auto float-right">MENUNGGU PERSETUJUAN SENIOR MANAGER
+                                            <h4 class="card-title mr-auto mx-auto">MENUNGGU PERSETUJUAN MBS
                                             </h4>
-                                            <div class="border bg-danger div-sm-1 text-light p-2 text-center w-25">{{ $count_menunggu }}</div>
+                                            <div class="border bg-primary div-sm-1 text-light p-2 text-center w-25 mx-auto">{{ $count_menunggu }}</div>
                                         </div>
                                     </div>
                                     <ul class="list-group list-group-flush">
                                         @foreach ($menunggu as $item)
                                             <li class="list-group-item">
                                                 <div class="card-body">
-                                                    <div class="card-icon bg-secondary">
+                                                    <div class="card-icon bg-success">
                                                         <i class="fa fa-clock-o"></i>
                                                     </div>
                                                     <div class="card-right">
@@ -170,9 +183,9 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="card-right">
-                                            <h4 class="card-title mr-auto float-right">SURAT KETERANGAN
+                                            <h4 class="card-title mr-auto mx-auto">MENUNGGU PERSETUJUAN MBS
                                             </h4>
-                                            <div class="border bg-primary div-sm-1 text-light p-2 text-center w-25">{{ $count_keterangan }}</div>
+                                            <div class="border bg-primary div-sm-1 text-light p-2 text-center w-25 mx-auto">{{ $count_keterangan }}</div>
                                         </div>
                                     </div>
                                     <ul class="list-group list-group-flush">
@@ -201,9 +214,9 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="card-right">
-                                            <h4 class="card-title mr-auto float-right"> SURAT VISA
+                                            <h4 class="card-title mr-auto mx-auto"> MENUNGGU PERSETUJUAN MBS
                                             </h4>
-                                            <div class="border bg-primary div-sm-1 text-light p-2 text-center w-25">{{ $count_visa }}</div>
+                                            <div class="border bg-primary div-sm-1 text-light p-2 text-center w-25 mx-auto">{{ $count_visa }}</div>
                                         </div>
                                     </div>
                                     <ul class="list-group list-group-flush">
