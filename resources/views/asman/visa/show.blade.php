@@ -23,10 +23,10 @@
                                             <div class="custom-breadcrumb">
                                                 <ol class="breadcrumb no-bg-color d-inline-block p-0 m-0 mb-2">
                                                     <li class="breadcrumb-item d-inline-block"><a
-                                                            href="{{ url('/admin') }}" class="text-dark">Home</a></li>
-                                                    <li class="breadcrumb-item d-inline-block active">Karyawan</li>
+                                                            href="{{ url('/asman') }}" class="text-dark">Home</a></li>
+                                                    <li class="breadcrumb-item d-inline-block active">Visa</li>
                                                 </ol>
-                                                <h4 class="text-dark">Karyawan Detail</h4>
+                                                <h4 class="text-dark">Visa Detail</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -39,7 +39,7 @@
                 <div class="col-xl-9 col-lg-8  col-md-12">
                     <div class="card shadow-sm ctm-border-radius">
                         <div class="card-body align-center">
-                            <h4 class="card-title float-left mb-0 mt-2">Karyawan Detail</h4>
+                            <h4 class="card-title float-left mb-0 mt-2">Visa Detail</h4>
                             <ul class="nav nav-tabs float-right border-0 tab-list-emp">
                             </ul>
                         </div>
@@ -53,6 +53,10 @@
                                     <table class="table custom-table table-hover table-hover">
                                         <tbody>
                                             <tr>
+                                                <th> Nomor Surat </th>
+                                                <td> {{ $record->nomor_surat }} </td>
+                                            </tr>
+                                            <tr>
                                                 <th> Nama Karyawan </th>
                                                 <td> {{ $record->karyawan->nama_karyawan }} </td>
                                             </tr>
@@ -61,28 +65,62 @@
                                                 <td> {{ $record->karyawan->nid }} </td>
                                             </tr>
                                             <tr>
-                                                <th> Riwayat Penyakit </th>
-                                                <td> {{ $record->riwayat_penyakit }} </td>
+                                                <th> Jenis </th>
+                                                <td> {{ $record->jenis }} </td>
                                             </tr>
                                             <tr>
-                                                <th> Jenis Pengobatan / Tindakan </th>
-                                                <td> {{ $record->jenis_pengobatan}} </td>
+                                                <th> Tujuan </th>
+                                                <td> {{ $record->tujuan }} </td>
                                             </tr>
                                             <tr>
-                                                <th> Riwayat Obat </th>
-                                                <td> {{ $record->riwayat_obat }} </td>
+                                                <th> Alamat </th>
+                                                <td> {{ $record->alamat }} </td>
                                             </tr>
                                             <tr>
-                                                <th> Resume Medis </th>
-                                                <td> {{ $record->resume_medis }} </td>
+                                                <th> Tanggal Mulai </th>
+                                                <td> {{ $record->tanggal_mulai }} </td>
                                             </tr>
+                                            <tr>
+                                                <th> Tanggal Selesai </th>
+                                                <td> {{ $record->tanggal_selesai }} </td>
+                                            </tr>
+                                            <tr>
+                                                <th> Negara </th>
+                                                <td> {{ $record->negara_tujuan }} </td>
+                                            </tr>
+                                            <tr>
+                                                <th> Keperluan </th>
+                                                <td> {{ $record->keperluan }} </td>
+                                            </tr>
+                                            <tr>
+                                                <th> Keluarga </th>
+                                                <td class="w-50" style="width: 50% !important">
+                                                    <ul type="1">
+                                                        @foreach ($keluargas as $keluarga)
+                                                            <li> {{$keluarga->nama }} - {{$keluarga->hubungan}} - {{$keluarga->nomor_passport}}</li>
+                                                      
+                                                        @endforeach
+                                                    </ul>
+                                                   
+                                                    
+                                                </td>
+                                            </tr>
+                                        </tbody>
+
                                             <tr>
                                                 <td colspan="10" align="center">
-                                                    <a href="{{ url('/admin/history-record') }}"><button
-                                                            class="btn btn-sm btn-warning"><span
-                                                                class="lnr lnr-arrow-left">Back</span>
+                                                    <a href="{{ url('/asman') }}"><button
+                                                        class="btn btn-sm btn-warning"><span
+                                                            class="lnr lnr-arrow-left"> Back</span>
+                                                        </button>
+                                                </a>
+                                                @if ($record->rangking == 1)
+                                                    <a href="{{ url('/asman/visa/approve/' . $record->id) }}"><button
+                                                            class="btn btn-sm btn-success"><span
+                                                                class="lnr lnr-checkmark-circle"> Approve</span>
                                                             </button>
-                                                            </a>
+                                                    </a>
+                                                @endif
                                             </tr>
                                         </tbody>
                                     </table>

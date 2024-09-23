@@ -81,7 +81,7 @@
                                     </div>
                                     <div class="card-right">
                                         <h4 class="card-title">SURAT KETERANGAN</h4>
-                                        <p class="card-text">{{ $count_monitoring }}</p>
+                                        <p class="card-text">{{ $count_keterangan }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -94,7 +94,7 @@
                                     </div>
                                     <div class="card-right">
                                         <h4 class="card-title">SURAT VISA</h4>
-                                        <p class="card-text">{{ $count_monitoring }}</p>
+                                        <p class="card-text">{{ $count_visa }}</p>
                                     </div>
                                 </div>
                             </div>

@@ -184,8 +184,8 @@
                                                     <div class="card-right">
                                                         {{-- <h4 class="card-title font-weight-bold">{{ $item->nomor_surat }} --}}
                                                         {{-- </h4> --}}
-                                                        <a href="#" style="pointer-events: none"
-                                                            class="card-title font-weight-bold">{{ $item->nomor_surat ?? '' }}
+                                                        <a href="{{url('sm/surat-keterangan/'.$item->id)}}"
+                                                            class="card-title font-weight-bold text-primary">{{ $item->nomor_surat ?? '' }}
                                                         </a>
                                                         <div class="text">{{ $item->karyawan->nama_karyawan ?? '' }} </div>
                                                         <div class="border bg-success p-sm-1 font-weight-bold text-white text-center text-uppercase" style="font-size:10px;">{{$item->status}}</div>
@@ -215,8 +215,8 @@
                                                     <div class="card-right">
                                                         {{-- <h4 class="card-title font-weight-bold">{{ $item->nomor_surat }} --}}
                                                         {{-- </h4> --}}
-                                                        <a href="#" style="pointer-events: none"
-                                                            class="card-title font-weight-bold">{{ $item->nomor_surat ?? '' }}
+                                                        <a href="{{url('sm/visa/detail/'.$item->id)}}"
+                                                            class="card-title font-weight-bold text-primary">{{ $item->nomor_surat ?? '' }}
                                                         </a>
                                                         <div class="text">{{ $item->karyawan->nama_karyawan ?? '' }} </div>
                                                         <div class="border bg-success p-sm-1 font-weight-bold text-white text-center text-uppercase" style="font-size:10px;">{{$item->status}}</div>

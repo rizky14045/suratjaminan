@@ -116,9 +116,9 @@ class VisaController extends Controller
      */
     public function show($id)
     {
-        $formjaminan = FormJaminan::findOrFail($id);
-
-        return view('mkad.form-jaminan.show', compact('formjaminan'));
+        $record = Visa::findOrFail($id);
+        $keluargas = VisaKeluarga::where('visa_id', $record->id)->get();
+        return view('mkad.visa.show', compact('record','keluargas'));
     }
 
     /**
