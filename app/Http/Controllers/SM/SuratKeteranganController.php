@@ -84,9 +84,10 @@ class SuratKeteranganController extends Controller
      */
     public function show($id)
     {
-        $formjaminan = FormJaminan::findOrFail($id);
+        $record = Visa::findOrFail($id);
+        $keluargas = VisaKeluarga::where('visa_id', $record->id)->get();
 
-        return view('sm.form-jaminan.show', compact('formjaminan'));
+        return view('sm.visa.show', compact('record','keluargas'));
     }
 
     /**

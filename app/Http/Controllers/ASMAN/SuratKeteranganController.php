@@ -83,9 +83,9 @@ class SuratKeteranganController extends Controller
      */
     public function show($id)
     {
-        $formjaminan = FormJaminan::findOrFail($id);
+        $record = SuratKeterangan::findOrFail($id);
 
-        return view('asman.form-jaminan.show', compact('formjaminan'));
+        return view('asman.surat-keterangan.show', compact('record'));
     }
 
     /**
