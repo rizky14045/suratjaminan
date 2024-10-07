@@ -47,7 +47,7 @@
 
                     <!-- Widget -->
                     <div class="row">
-                        <div class="col-sm-3">
+                        <div class="col-xl-3">
                             <div class="card dash-widget ctm-border-radius shadow-sm">
                                 <div class="card-body text-center">
                                     <div class="card-icon bg-warning">
@@ -60,7 +60,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-xl-3">
                             <div class="card dash-widget ctm-border-radius shadow-sm">
                                 <div class="card-body">
                                     <div class="card-icon bg-success">
@@ -73,7 +73,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-xl-3">
                             <div class="card dash-widget ctm-border-radius shadow-sm">
                                 <div class="card-body">
                                     <div class="card-icon bg-danger">
@@ -86,7 +86,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-xl-3">
                             <div class="card dash-widget ctm-border-radius shadow-sm">
                                 <div class="card-body">
                                     <div class="card-icon bg-primary">
@@ -104,7 +104,7 @@
                         <!-- Widget -->
                         {{-- sudah dibuat --}}
                         <div class="row">
-                            <div class="col-sm-3">
+                            <div class="col-xl-3">
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="card-right">
@@ -136,7 +136,7 @@
                                 </div>
                             </div>
                             {{-- menunggu persetujuan --}}
-                            <div class="col-sm-3">
+                            <div class="col-xl-3">
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="card-right">
@@ -165,7 +165,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-xl-3">
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="card-right">
@@ -196,7 +196,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-xl-3">
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="card-right">

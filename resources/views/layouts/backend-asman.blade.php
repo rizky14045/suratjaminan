@@ -99,9 +99,17 @@
                                                 </span>
                                             </span>
                                         </a>
-                                        <a class="px-0 pb-2 pt-0 mt-5" href="{{ url('/asman/surat') }}">
+                                        <a class="px-0 pb-2 pt-0 mt-5" href="{{ url('/asman/ubah-password') }}">
                                             <span class="media align-items-center">
-                                                <span class="fa fa-list mr-3"></span>
+                                                <span class="fa fa-key mr-3"></span>
+                                                <span class="media-body text-truncate text-left">
+                                                    <span class="text-truncate text-left">Ubah Password</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                        <a class="px-0 pb-2 pt-0 mt-5" href="{{ url('/asman/surat-keterangan') }}">
+                                            <span class="media align-items-center">
+                                                <span class="fa fa-envelope mr-3"></span>
                                                 <span class="media-body text-truncate text-left">
                                                     <span class="text-truncate text-left">Surat</span>
                                                 </span>
