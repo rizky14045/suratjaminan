@@ -83,19 +83,35 @@
                                     </div>
                                     <hr>
                                     <div class="user-menu-items px-3 m-0">
-                                        <a class="px-0 pb-2 pt-0 mb-5" href="{{ url('/mkad') }}">
+                                        <a class="px-0 pb-2 pt-0 mb-5" href="{{ url('/sm') }}">
                                             <span class="media align-items-center">
                                                 <span class="lnr lnr-home mr-3"></span>
                                                 <span class="media-body text-truncate text-left">
                                                     <span class="text-truncate text-left">Dashboard</span>
                                                 </span>
                                             </span>
-                                        </a>
-                                        <a class="px-0 pb-2 pt-0 mt-5" href="{{ url('/mkad/form-jaminan') }}">
+                                        </a>   
+                                        <a class="px-0 pb-2 pt-0 mt-5" href="{{ url('/sm/form-jaminan') }}">
                                             <span class="media align-items-center">
                                                 <span class="fa fa-list mr-3"></span>
                                                 <span class="media-body text-truncate text-left">
                                                     <span class="text-truncate text-left">Form Jaminan</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                        <a class="px-0 pb-2 pt-0 mt-5" href="{{ url('/sm/ubah-password') }}">
+                                            <span class="media align-items-center">
+                                                <span class="fa fa-key mr-3"></span>
+                                                <span class="media-body text-truncate text-left">
+                                                    <span class="text-truncate text-left">Ubah Password</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                        <a class="px-0 pb-2 pt-0 mt-5" href="{{ url('/sm/surat-keterangan') }}">
+                                            <span class="media align-items-center">
+                                                <span class="fa fa-envelope mr-3"></span>
+                                                <span class="media-body text-truncate text-left">
+                                                    <span class="text-truncate text-left">Surat</span>
                                                 </span>
                                             </span>
                                         </a>

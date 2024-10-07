@@ -1,4 +1,4 @@
-@extends('layouts.backend')
+@extends('layouts.backend-asman')
 
 @section('content')
 <div class="header bg-primary pb-6">

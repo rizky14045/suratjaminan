@@ -1,4 +1,4 @@
-@extends('layouts.backend')
+@extends('layouts.backend-mkad')
 
 @section('content')
 <div class="header bg-primary pb-6">

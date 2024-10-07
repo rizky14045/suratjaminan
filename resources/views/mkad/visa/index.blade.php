@@ -1,4 +1,4 @@
-@extends('layouts.backend')
+@extends('layouts.backend-mkad')
 @section('styles')
     <style>
         .text-ck ul li{
