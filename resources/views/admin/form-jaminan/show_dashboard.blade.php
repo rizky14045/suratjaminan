@@ -124,7 +124,7 @@
 
                                                     @endif
                                                     @if (Auth::user()->role == 'sm')
-                                                        @if ($formjaminan->status_pengajuan == 'Sudah Di setujui MKAD')
+                                                        @if ($formjaminan->rangking == 4)
                                                             <a href="{{ url('/sm/form-jaminan/approve/' . $formjaminan->id) }}"
                                                                 title="Approve FormJaminan">
                                                                 <button class="btn btn-sm btn-success">
@@ -134,7 +134,7 @@
                                                         @endif
                                                     @endif
                                                     @if (Auth::user()->role == 'mkad')
-                                                        @if ($formjaminan->status_pengajuan == 'Menunggu Persetujuan MKAD')
+                                                        @if ($formjaminan->rangking == 3)
                                                             <a href="{{ url('/mkad/form-jaminan/approve/' . $formjaminan->id) }}"
                                                                 title="Approve FormJaminan">
                                                                 <button class="btn btn-sm btn-success">
@@ -144,7 +144,7 @@
                                                         @endif
                                                     @endif
                                                     @if (Auth::user()->role == 'asman')
-                                                        @if ($formjaminan->status_pengajuan == 'Menunggu Persetujuan Asisten Manager')
+                                                        @if ($formjaminan->rangking == 2)
                                                             <a href="{{ url('/asman/form-jaminan/approve/' . $formjaminan->id) }}"
                                                                 title="Approve FormJaminan">
                                                                 <button class="btn btn-sm btn-success">
@@ -154,7 +154,7 @@
                                                         @endif
                                                     @endif
                                                     @if (Auth::user()->role == 'dokter')
-                                                        @if ($formjaminan->status_pengajuan == 'Menunggu Persetujuan Dokter')
+                                                        @if ($formjaminan->rangking == 1)
                                                             <a href="{{ url('/dokter/form-jaminan/approve/' . $formjaminan->id) }}"
                                                                 title="Approve FormJaminan">
                                                                 <button class="btn btn-sm btn-success">
