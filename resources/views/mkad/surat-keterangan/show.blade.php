@@ -73,6 +73,10 @@
                                             <td> {{ $record->keperluan }} </td>
                                         </tr>
                                         <tr>
+                                            <th> Tanggal Masuk Karyawan </th>
+                                            <td> {{ $record->karyawan->tanggal_masuk_karyawan ?? $record->tanggal_masuk_karyawan }} </td>
+                                        </tr>
+                                        <tr>
                                             <td colspan="10" align="center">
                                                 <a href="{{ url('/mkad') }}"><button
                                                         class="btn btn-sm btn-warning"><span

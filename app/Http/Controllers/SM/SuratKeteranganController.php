@@ -84,10 +84,9 @@ class SuratKeteranganController extends Controller
      */
     public function show($id)
     {
-        $record = Visa::findOrFail($id);
-        $keluargas = VisaKeluarga::where('visa_id', $record->id)->get();
+        $record = SuratKeterangan::findOrFail($id);
 
-        return view('sm.visa.show', compact('record','keluargas'));
+        return view('sm.surat-keterangan.show', compact('record'));
     }
 
     /**
