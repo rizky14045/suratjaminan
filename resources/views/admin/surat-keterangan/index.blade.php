@@ -82,7 +82,7 @@
                                                             <td>{{ $item->karyawan->nid  ?? ''}}</td>
                                                             <td class="text-ck">{{ $item->penerima }}</td>
                                                             <td class="text-ck">{{ $item->keperluan }}</td>
-                                                            <td class="text-ck">{{ $item->tanggal_masuk_karyawan }}</td>
+                                                            <td class="text-ck">{{ $item->tanggal_masuk_karyawan ?? $item->karyawan->tanggal_masuk_karyawan }}</td>
                                                             <td class="text-ck">{{ $item->status }}</td>
 
                                                             <td class="text-right" align="center">
