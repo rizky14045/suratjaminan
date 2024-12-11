@@ -119,7 +119,7 @@
             </tr>
             <tr>
                 <td>Tanggal Masuk</td>
-                <td>: {{ date('d F Y', strtotime($suratketerangan->tanggal_masuk_karyawan))}}</td>
+                <td>: {{ $suratketerangan->tanggal_masuk_karyawan ?  date('d F Y', strtotime($suratketerangan->tanggal_masuk_karyawan)) : date('d F Y', strtotime($suratketerangan->karyawan->tanggal_masuk_karyawan)) }}</td>
             </tr>
         </table>
 
