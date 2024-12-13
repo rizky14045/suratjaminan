@@ -97,31 +97,34 @@
                                                                 <span class="lnr lnr-arrow-left">Back</span>
                                                             </button>
                                                         </a>
-                                                    @elseif(Auth::user()->role == 'sm')
-                                                    <a href="{{ url('/sm') }}"><button
-                                                            class="btn btn-sm btn-warning">
-                                                            <span class="lnr lnr-arrow-left">Back</span>
-                                                        </button>
-                                                    </a> 
-                                                    @elseif(Auth::user()->role == 'dokter')
-                                                    <a href="{{ url('/dokter') }}"><button
-                                                            class="btn btn-sm btn-warning">
-                                                            <span class="lnr lnr-arrow-left">Back</span>
-                                                        </button>
-                                                    </a> 
-                                                    @elseif(Auth::user()->role == 'asman')
-                                                    <a href="{{ url('/asman') }}"><button
-                                                            class="btn btn-sm btn-warning">
-                                                            <span class="lnr lnr-arrow-left">Back</span>
-                                                        </button>
-                                                    </a> 
-                                                    @else
-                                                    <a href="{{ url('/admin') }}"><button
-                                                            class="btn btn-sm btn-warning">
-                                                            <span class="lnr lnr-arrow-left">Back</span>
-                                                        </button>
-                                                    </a> 
-
+                                                    @endif
+                                                    @if(Auth::user()->role == 'sm')
+                                                        <a href="{{ url('/sm') }}"><button
+                                                                class="btn btn-sm btn-warning">
+                                                                <span class="lnr lnr-arrow-left">Back</span>
+                                                            </button>
+                                                        </a> 
+                                                    @endif
+                                                    @if(Auth::user()->role == 'dokter')
+                                                        <a href="{{ url('/dokter') }}"><button
+                                                                class="btn btn-sm btn-warning">
+                                                                <span class="lnr lnr-arrow-left">Back</span>
+                                                            </button>
+                                                        </a> 
+                                                    @endif
+                                                    @if(Auth::user()->role == 'asman')
+                                                        <a href="{{ url('/asman') }}"><button
+                                                                class="btn btn-sm btn-warning">
+                                                                <span class="lnr lnr-arrow-left">Back</span>
+                                                            </button>
+                                                        </a> 
+                                                    @endif
+                                                    @if(Auth::user()->role == 'admin')
+                                                        <a href="{{ url('/admin') }}"><button
+                                                                class="btn btn-sm btn-warning">
+                                                                <span class="lnr lnr-arrow-left">Back</span>
+                                                            </button>
+                                                        </a> 
                                                     @endif
                                                     @if (Auth::user()->role == 'sm')
                                                         @if ($formjaminan->rangking == 4)
