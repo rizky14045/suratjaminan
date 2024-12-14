@@ -20,6 +20,11 @@
             <input class="form-control" name="penerima" type="text" id="penerima" value="{{ $suratketerangan->penerima or '' }}" placeholder="Bank BNI">
             {!! $errors->first('penerima', '<p class="help-block">:message</p>') !!}
         </div>
+        <div class="form-group{{ $errors->has('alamat_penerima') ? 'has-error' : '' }}">
+            <label for="alamat_penerima" class="control-label">{{ 'Alamat Penerima' }}</label>
+            <input class="form-control" name="alamat_penerima" type="text" id="alamat_penerima" value="{{ $suratketerangan->alamat_penerima or '' }}" placeholder="Bank BNI">
+            {!! $errors->first('alamat_penerima', '<p class="help-block">:message</p>') !!}
+        </div>
         <div class="form-group{{ $errors->has('keperluan') ? 'has-error' : '' }}">
             <label for="keperluan" class="control-label">{{ 'Keperluan' }}</label>
             <input class="form-control" name="keperluan" type="text" id="keperluan" value="{{ $suratketerangan->keperluan or '' }}" placeholder="ex . Administrasi KTA BNI Flexi">

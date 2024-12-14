@@ -67,6 +67,7 @@
                                                         <th>Nama Karyawan</th>
                                                         <th>Nid</th>
                                                         <th>Penerima</th>
+                                                        <th>Alamat Penerima</th>
                                                         <th>Keperluan</th>
                                                         <th>Tanggal Masuk Karyawan</th>
                                                         <th>Status</th>
@@ -81,6 +82,7 @@
                                                             <td>{{ $item->karyawan->nama_karyawan ?? ''}}</td>
                                                             <td>{{ $item->karyawan->nid  ?? ''}}</td>
                                                             <td class="text-ck">{{ $item->penerima }}</td>
+                                                            <td class="text-ck">{{ $item->alamat_penerima }}</td>
                                                             <td class="text-ck">{{ $item->keperluan }}</td>
                                                             <td class="text-ck">{{ $item->tanggal_masuk_karyawan ?? $item->karyawan->tanggal_masuk_karyawan }}</td>
                                                             <td class="text-ck">{{ $item->status }}</td>

@@ -80,7 +80,7 @@
         <p>Lampiran <span style="margin-left:16px">:</span> - </p>
         <div style="margon-top:20px;margin-bottom: 20px;">
 
-            <p>Kepada Yth,<br>{{$suratketerangan->penerima}}</p>
+            <p style="padding-right:200px; ">Kepada Yth,<br>{{$suratketerangan->penerima}} <br>{{$suratketerangan->alamat_penerima}}</p>
         </div>
 
         <p>Perihal <span style="margin-left:32px;">:</span> Surat Keterangan Kerja a.n {{$suratketerangan->karyawan->nama_karyawan}}</p>
