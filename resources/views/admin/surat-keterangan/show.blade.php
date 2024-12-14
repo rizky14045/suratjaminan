@@ -65,6 +65,10 @@
                                                 <td> {{ $suratketerangan->penerima }} </td>
                                             </tr>
                                             <tr>
+                                                <th> Alamat Penerima </th>
+                                                <td> {{ $suratketerangan->alamat_penerima }} </td>
+                                            </tr>
+                                            <tr>
                                                 <th> Keperluan </th>
                                                 <td> {{ $suratketerangan->keperluan}} </td>
                                             </tr>

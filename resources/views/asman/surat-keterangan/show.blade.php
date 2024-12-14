@@ -69,6 +69,10 @@
                                                 <td> {{ $record->penerima}} </td>
                                             </tr>
                                             <tr>
+                                                <th> Alamat Penerima </th>
+                                                <td> {{ $record->alamat_penerima }} </td>
+                                            </tr>
+                                            <tr>
                                                 <th> Keperluan </th>
                                                 <td> {{ $record->keperluan }} </td>
                                             </tr>
