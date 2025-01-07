@@ -52,7 +52,7 @@
             margin: 5px 0;
         }
         .signature .stamp {
-            margin-top: 30px;
+            margin-top: 15px;
             position: relative;
         }
         .footer {
@@ -62,7 +62,7 @@
             color:blue;
             margin-top: 20px;
             font-size: 11px;
-            line-height: 1;
+            line-height: 0.8;
         }
     </style>
 </head>
@@ -130,16 +130,16 @@
 
     <div class="signature" style="display: inline">
         <p>Jakarta, {{date('d F Y')}}</p>
-        <p>MANAJER BUSINESS SUPPORT</p>
+        <p>{{$sm[0]['jabatan']}}</p>
         <div class="stamp">
-            <img src="{{public_path('qrcode/sm.png')}}" alt="" width="85">
+            <img src="{{public_path('qrcode/sm.png')}}" alt="" width="90">
         </div>
-        <img src="{{public_path('qrcode/mkad.png')}}" alt="" width="40" style="padding-right:20px;margin-top:30px;display:inline">
-        <p style="display: inline;">{{$sm[0]['name']}} </p>
-        <img src="{{public_path('qrcode/asman.png')}}" alt="" width="40" style="padding-left:30px;margin-top:30px;">
+        <img src="{{public_path('qrcode/mkad.png')}}" alt="" width="40" style="padding-right:20px;margin-top:15px;display:inline">
+        <p style="display: inline;margin-top: -10px !important;">{{$sm[0]['name']}} </p>
+        <img src="{{public_path('qrcode/asman.png')}}" alt="" width="40" style="padding-left:30px;margin-top:15px;">
         
     </div>
-    <p style="padding-left:63px;margin-top:-7px;">NID: {{$sm[0]['nid']}}</p>
+    <p style="padding-left:63px;margin-top:-10px;">NID: {{$sm[0]['nid']}}</p>
 
     <div class="footer">
         <p>PT PLN NUSANTARA POWER, UNIT PEMBANGKITAN MUARA KARANG</p>
