@@ -74,6 +74,7 @@ Route::middleware(['dokter'])->group(function () {
     Route::post('dokter/ubah-password', 'DOKTER\DokterController@savePassword');
     Route::get('dokter/form-jaminan/{id}', 'DOKTER\DokterController@showJaminan');
     Route::get('dokter/form-jaminan/approve/{id}', 'DOKTER\DokterController@approveJaminan');
+    Route::get('dokter/form-jaminan/reject/{id}', 'DOKTER\DokterController@rejectJaminan');
     Route::get('dokter/form-jaminan-pensiunan', 'DOKTER\DokterController@indexPensiunan');
     Route::get('dokter/show-pdf/{id}', 'DOKTER\DokterController@showPDF');
 });
@@ -85,12 +86,14 @@ Route::middleware(['asman'])->group(function () {
     Route::post('asman/ubah-password', 'ASMAN\AsmanController@savePassword');
     Route::get('asman/form-jaminan/{id}', 'ASMAN\AsmanController@showJaminan');
     Route::get('asman/form-jaminan/approve/{id}', 'ASMAN\AsmanController@approveJaminan');
+    Route::get('asman/form-jaminan/reject/{id}', 'ASMAN\AsmanController@rejectJaminan');
     Route::get('asman/form-jaminan-pensiunan', 'ASMAN\AsmanController@indexPensiunan');
     Route::get('asman/show-pdf/{id}', 'ASMAN\AsmanController@showPDF');
 
     Route::resource('asman/surat-keterangan', 'ASMAN\\SuratKeteranganController');
     Route::get('asman/surat-keterangan/pdf/{id}', 'ASMAN\SuratKeteranganController@showPDF');
     Route::get('asman/surat-keterangan/approve/{id}', 'ASMAN\SuratKeteranganController@approve');
+    Route::get('asman/surat-keterangan/reject/{id}', 'ASMAN\SuratKeteranganController@reject');
     Route::get('asman/visa', 'ASMAN\VisaController@index');
     Route::get('asman/visa/create', 'ASMAN\VisaController@create');
     Route::get('asman/visa/detail/{id}', 'ASMAN\VisaController@show');
@@ -109,12 +112,14 @@ Route::middleware(['mkad'])->group(function () {
     Route::post('mkad/ubah-password', 'MKAD\MKADController@savePassword');
     Route::get('mkad/form-jaminan/{id}', 'MKAD\MKADController@showJaminan');
     Route::get('mkad/form-jaminan/approve/{id}', 'MKAD\MKADController@approveJaminan');
+    Route::get('mkad/form-jaminan/reject/{id}', 'MKAD\MKADController@rejectJaminan');
     Route::get('mkad/form-jaminan-pensiunan', 'MKAD\MKADController@indexPensiunan');
     Route::get('mkad/show-pdf/{id}', 'MKAD\MKADController@showPDF');
 
     Route::resource('mkad/surat-keterangan', 'MKAD\\SuratKeteranganController');
     Route::get('mkad/surat-keterangan/pdf/{id}', 'MKAD\SuratKeteranganController@showPDF');
     Route::get('mkad/surat-keterangan/approve/{id}', 'MKAD\SuratKeteranganController@approve');
+    Route::get('mkad/surat-keterangan/reject/{id}', 'MKAD\SuratKeteranganController@reject');
     Route::get('mkad/visa', 'MKAD\VisaController@index');
     Route::get('mkad/visa/create', 'MKAD\VisaController@create');
     Route::get('mkad/visa/detail/{id}', 'MKAD\VisaController@show');
@@ -133,12 +138,14 @@ Route::middleware(['senior'])->group(function () {
     Route::post('sm/ubah-password', 'SM\SMController@savePassword');
     Route::get('sm/form-jaminan/{id}', 'SM\SMController@showJaminan');
     Route::get('sm/form-jaminan/approve/{id}', 'SM\SMController@approveJaminan');
+    Route::get('sm/form-jaminan/reject/{id}', 'SM\SMController@rejectJaminan');
     Route::get('sm/form-jaminan-pensiunan', 'SM\SMController@indexPensiunan');
     Route::get('sm/show-pdf/{id}', 'SM\SMController@showPDF');
 
     Route::resource('sm/surat-keterangan', 'SM\\SuratKeteranganController');
     Route::get('sm/surat-keterangan/pdf/{id}', 'SM\SuratKeteranganController@showPDF');
     Route::get('sm/surat-keterangan/approve/{id}', 'SM\SuratKeteranganController@approve');
+    Route::get('sm/surat-keterangan/reject/{id}', 'SM\SuratKeteranganController@reject');
     Route::get('sm/visa', 'SM\VisaController@index');
     Route::get('sm/visa/create', 'SM\VisaController@create');
     Route::get('sm/visa/detail/{id}', 'SM\VisaController@show');

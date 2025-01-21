@@ -128,42 +128,78 @@
                                                     @endif
                                                     @if (Auth::user()->role == 'sm')
                                                         @if ($formjaminan->rangking == 4)
-                                                            <a href="{{ url('/sm/form-jaminan/approve/' . $formjaminan->id) }}"
-                                                                title="Approve FormJaminan">
-                                                                <button class="btn btn-sm btn-success">
-                                                                    <span class="fa fa-check"></span>Approve
-                                                                </button>
-                                                            </a>
+                                                            @if ($formjaminan->is_rejected == false) 
+                                                                
+                                                                <a href="{{ url('/sm/form-jaminan/approve/' . $formjaminan->id) }}"
+                                                                    title="Approve FormJaminan">
+                                                                    <button class="btn btn-sm btn-success">
+                                                                        <span class="fa fa-check"></span>Approve
+                                                                    </button>
+                                                                </a>
+                                                                <a href="{{ url('/sm/form-jaminan/reject/' . $formjaminan->id) }}"
+                                                                    title="Reject FormJaminan">
+                                                                    <button class="btn btn-sm btn-danger">
+                                                                        <span class="fa fa-xmark"></span>Reject
+                                                                    </button>
+                                                                </a>
+                                                            @endif
                                                         @endif
                                                     @endif
                                                     @if (Auth::user()->role == 'mkad')
+                                                   
                                                         @if ($formjaminan->rangking == 3)
-                                                            <a href="{{ url('/mkad/form-jaminan/approve/' . $formjaminan->id) }}"
-                                                                title="Approve FormJaminan">
-                                                                <button class="btn btn-sm btn-success">
-                                                                    <span class="fa fa-check"></span>Approve
-                                                                </button>
-                                                            </a>
+                                                            @if ($formjaminan->is_rejected == false)    
+                                                                <a href="{{ url('/mkad/form-jaminan/approve/' . $formjaminan->id) }}"
+                                                                    title="Approve FormJaminan">
+                                                                    <button class="btn btn-sm btn-success">
+                                                                        <span class="fa fa-check"></span>Approve
+                                                                    </button>
+                                                                </a>
+                                                                <a href="{{ url('/mkad/form-jaminan/reject/' . $formjaminan->id) }}"
+                                                                    title="Reject FormJaminan">
+                                                                    <button class="btn btn-sm btn-danger">
+                                                                        <span class="fa fa-xmark"></span>Reject
+                                                                    </button>
+                                                                </a>
+                                                            @endif
                                                         @endif
                                                     @endif
                                                     @if (Auth::user()->role == 'asman')
                                                         @if ($formjaminan->rangking == 2)
-                                                            <a href="{{ url('/asman/form-jaminan/approve/' . $formjaminan->id) }}"
-                                                                title="Approve FormJaminan">
-                                                                <button class="btn btn-sm btn-success">
-                                                                    <span class="fa fa-check"></span>Approve
-                                                                </button>
-                                                            </a>
+                                                            @if ($formjaminan->is_rejected == false) 
+                                                                
+                                                                <a href="{{ url('/asman/form-jaminan/approve/' . $formjaminan->id) }}"
+                                                                    title="Approve FormJaminan">
+                                                                    <button class="btn btn-sm btn-success">
+                                                                        <span class="fa fa-check"></span>Approve
+                                                                    </button>
+                                                                </a>
+                                                                <a href="{{ url('/asman/form-jaminan/reject/' . $formjaminan->id) }}"
+                                                                    title="Reject FormJaminan">
+                                                                    <button class="btn btn-sm btn-danger">
+                                                                        <i class="fa-solid fa-xmark"></i>Reject
+                                                                    </button>
+                                                                </a>
+                                                            @endif
                                                         @endif
                                                     @endif
                                                     @if (Auth::user()->role == 'dokter')
                                                         @if ($formjaminan->rangking == 1)
-                                                            <a href="{{ url('/dokter/form-jaminan/approve/' . $formjaminan->id) }}"
-                                                                title="Approve FormJaminan">
-                                                                <button class="btn btn-sm btn-success">
-                                                                    <span class="fa fa-check"></span>Approve
-                                                                </button>
-                                                            </a>
+                                                            @if ($formjaminan->is_rejected == false) 
+                                                                
+                                                                <a href="{{ url('/dokter/form-jaminan/approve/' . $formjaminan->id) }}"
+                                                                    title="Approve FormJaminan">
+                                                                    <button class="btn btn-sm btn-success">
+                                                                        <span class="fa fa-check"></span>Approve
+                                                                    </button>
+                                                                </a>
+                                                                <a href="{{ url('/dokter/form-jaminan/reject/' . $formjaminan->id) }}"
+                                                                    title="Reject FormJaminan">
+                                                                    <button class="btn btn-sm btn-danger">
+                                                                        <i class="fa-solid fa-xmark"></i>Reject
+                                                                    </button>
+                                                                </a>
+                                                            @endif
                                                         @endif
                                                     @endif
                                                 </td>

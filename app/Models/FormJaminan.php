@@ -27,7 +27,7 @@ class FormJaminan extends Model
      *
      * @var array
      */
-    protected $fillable = ['nomor_surat', 'jenis_surat', 'id_karyawan', 'id_instansi', 'id_jenis_pemeriksaan','nama_pasien','hubungan_keluarga', 'id_rumah_sakit', 'biaya_rumah_sakit', 'status_pengajuan', 'status_email','file_pdf'];
+    protected $fillable = ['nomor_surat', 'jenis_surat', 'id_karyawan', 'id_instansi', 'id_jenis_pemeriksaan','nama_pasien','hubungan_keluarga', 'id_rumah_sakit', 'biaya_rumah_sakit', 'status_pengajuan', 'status_email','file_pdf','is_rejected'];
 
     
 
