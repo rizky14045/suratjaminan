@@ -131,6 +131,7 @@ class DokterController extends Controller
     public function rejectJaminan($id)
     {
         $formjaminan = FormJaminan::findOrFail($id);
+        $formjaminan->rangking = 0;
         $formjaminan->is_rejected = 1;
         $formjaminan->status_pengajuan = 'Surat Jaminan Ditolak';
         $formjaminan->save();

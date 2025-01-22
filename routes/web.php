@@ -103,6 +103,7 @@ Route::middleware(['asman'])->group(function () {
     Route::delete('asman/visa/{id}', 'ASMAN\VisaController@destroy');
     Route::get('asman/visa/pdf/{id}', 'ASMAN\VisaController@showPDF');
     Route::get('asman/visa/approve/{id}', 'ASMAN\VisaController@approve');
+    Route::get('asman/visa/reject/{id}', 'ASMAN\VisaController@reject');
 });
 Route::middleware(['mkad'])->group(function () {
     // MKAD
@@ -129,6 +130,7 @@ Route::middleware(['mkad'])->group(function () {
     Route::delete('mkad/visa/{id}', 'MKAD\VisaController@destroy');
     Route::get('mkad/visa/pdf/{id}', 'MKAD\VisaController@showPDF');
     Route::get('mkad/visa/approve/{id}', 'MKAD\VisaController@approve');
+    Route::get('mkad/visa/reject/{id}', 'MKAD\VisaController@reject');
 });
 Route::middleware(['senior'])->group(function () {
     // SM
@@ -155,5 +157,6 @@ Route::middleware(['senior'])->group(function () {
     Route::delete('sm/visa/{id}', 'SM\VisaController@destroy');
     Route::get('sm/visa/pdf/{id}', 'SM\VisaController@showPDF');
     Route::get('sm/visa/approve/{id}', 'SM\VisaController@approve');
+    Route::get('sm/visa/reject/{id}', 'SM\VisaController@reject');
 
 });

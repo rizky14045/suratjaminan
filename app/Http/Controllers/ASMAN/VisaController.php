@@ -231,6 +231,20 @@ class VisaController extends Controller
 
         return redirect()->back();
     }
+
+    public function reject($id)
+    {
+        $visa = Visa::findOrFail($id);
+        $visa->rangking = 0;
+        $visa->is_rejected = true;
+        $visa->status = 'Surat Visa Telah Ditolak!';
+        $visa->save();
+
+        Alert::success('Form Surat Keterangan Berhasil Ditolak' );
+
+        return redirect()->back();
+    }
+
     public function show_dashboard($id)
     {
         $formjaminan = FormJaminan::findOrFail($id);

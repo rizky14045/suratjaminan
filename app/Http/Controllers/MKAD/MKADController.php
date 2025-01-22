@@ -41,9 +41,9 @@ class MKADController extends Controller
         ->where('rangking','!=', 2)
         ->where('rangking','!=', 1)
         ->count();
-        $formjaminan['keterangan'] =SuratKeterangan::where('rangking','=', 2)->latest()->limit(3)->get();
+        $formjaminan['keterangan'] =SuratKeterangan::where('rangking','=', 2)->where('is_rejected',false)->latest()->limit(3)->get();
         $formjaminan['visa'] =Visa::where('rangking','=', 2)->latest()->limit(3)->get();
-        $formjaminan['count_keterangan'] = SuratKeterangan::where('rangking','=', 2)->count();
+        $formjaminan['count_keterangan'] = SuratKeterangan::where('rangking','=', 2)->where('is_rejected',false)->count();
         $formjaminan['count_visa'] = Visa::where('rangking','=', 2)->count();
         return view('mkad.dashboard', $formjaminan);
     }
@@ -139,6 +139,7 @@ class MKADController extends Controller
     public function rejectJaminan($id)
     {
         $formjaminan = FormJaminan::findOrFail($id);
+        $formjaminan->rangking = 0;
         $formjaminan->is_rejected = 1;
         $formjaminan->status_pengajuan = 'Surat Jaminan Ditolak';
         $formjaminan->save();
