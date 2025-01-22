@@ -32,13 +32,13 @@ class SMController extends Controller
      */
     public function index()
     {   
-        $formjaminan['menunggu'] =FormJaminan::where('rangking','=', 4)->latest()->limit(3)->get();
+        $formjaminan['menunggu'] =FormJaminan::where('rangking','=', 4)->where('is_rejected',false)->latest()->limit(3)->get();
         $formjaminan['sudah'] =FormJaminan::where('rangking','=' , 5)->latest()->limit(3)->get();
-        $formjaminan['count_menunggu'] = FormJaminan::where('rangking','=', 4)->count();
+        $formjaminan['count_menunggu'] = FormJaminan::where('rangking','=', 4)->where('is_rejected',false)->count();
         $formjaminan['count_sudah'] = FormJaminan::where('rangking','=' , 5)->count();
-        $formjaminan['keterangan'] =SuratKeterangan::where('rangking','=', 3)->latest()->limit(3)->get();
+        $formjaminan['keterangan'] =SuratKeterangan::where('rangking','=', 3)->where('is_rejected',false)->latest()->limit(3)->get();
         $formjaminan['visa'] =Visa::where('rangking','=', 3)->latest()->limit(3)->get();
-        $formjaminan['count_keterangan'] = SuratKeterangan::where('rangking','=', 3)->count();
+        $formjaminan['count_keterangan'] = SuratKeterangan::where('rangking','=', 3)->where('is_rejected',false)->count();
         $formjaminan['count_visa'] = Visa::where('rangking','=', 3)->count();
         return view('sm.dashboard', $formjaminan);
     }
@@ -138,6 +138,17 @@ class SMController extends Controller
         $formjaminan->status_pengajuan = 'Sudah Disetujui Senior Manager';
         $formjaminan->save();
         Alert::success('Form Jaminan Berhasil Disetujui' );
+        return redirect()->back();
+    }
+
+    public function rejectJaminan($id)
+    {
+        $formjaminan = FormJaminan::findOrFail($id);
+        $formjaminan->rangking = 0;
+        $formjaminan->is_rejected = 1;
+        $formjaminan->status_pengajuan = 'Surat Jaminan Ditolak';
+        $formjaminan->save();
+        Alert::success('Form Jaminan Berhasil ditolak' );
         return redirect()->back();
     }
 

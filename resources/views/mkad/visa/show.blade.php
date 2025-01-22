@@ -115,12 +115,20 @@
                                                     </button>
                                             </a>
                                             @if ($record->rangking == 2)
-                                                <a href="{{ url('/mkad/visa/approve/' . $record->id) }}"><button
-                                                        class="btn btn-sm btn-success"><span
+                                                    @if ($record->is_rejected == false)
+                                                        
+                                                        <a href="{{ url('/mkad/visa/approve/' . $record->id) }}"><button
+                                                            class="btn btn-sm btn-success"><span
                                                             class="lnr lnr-checkmark-circle"> Approve</span>
-                                                        </button>
-                                                </a>
-                                            @endif
+                                                            </button>
+                                                        </a>
+                                                        <a href="{{ url('/mkad/visa/reject/' . $record->id) }}"><button
+                                                            class="btn btn-sm btn-danger"><span
+                                                            class="lnr lnr-cross-circle"> Reject</span>
+                                                            </button>
+                                                        </a>
+                                                    @endif
+                                             @endif
                                         </tr>
                                     </tbody>
                                 </table>

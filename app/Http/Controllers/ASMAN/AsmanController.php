@@ -32,15 +32,15 @@ class AsmanController extends Controller
      */
     public function index()
     {   
-        $formjaminan['menunggu'] =FormJaminan::where('rangking',2)->latest()->limit(3)->get();
+        $formjaminan['menunggu'] =FormJaminan::where('rangking',2)->where('is_rejected',false)->latest()->limit(3)->get();
         $formjaminan['sudah'] =FormJaminan::where('rangking','!=' ,2)
         ->where('rangking','!=' ,1 )
         ->latest()->limit(3)->get();
-        $formjaminan['count_menunggu'] = FormJaminan::where('rangking',2)->count();
+        $formjaminan['count_menunggu'] = FormJaminan::where('rangking',2)->where('is_rejected',false)->count();
         $formjaminan['count_sudah'] = FormJaminan::where('rangking','!=',2)->where('rangking','!=' ,1 )->count();
-        $formjaminan['keterangan'] =SuratKeterangan::where('rangking','=', 1)->latest()->limit(3)->get();
+        $formjaminan['keterangan'] =SuratKeterangan::where('rangking','=', 1)->where('is_rejected',false)->latest()->limit(3)->get();
         $formjaminan['visa'] =Visa::where('rangking','=', 1)->latest()->limit(3)->get();
-        $formjaminan['count_keterangan'] = SuratKeterangan::where('rangking','=', 1)->count();
+        $formjaminan['count_keterangan'] = SuratKeterangan::where('rangking','=', 1)->where('is_rejected',false)->count();
         $formjaminan['count_visa'] = Visa::where('rangking','=', 1)->count();
         return view('asman.dashboard', $formjaminan);
     }
@@ -133,6 +133,17 @@ class AsmanController extends Controller
         $formjaminan->status_pengajuan = 'Menunggu Persetujuan MBS';
         $formjaminan->save();
         Alert::success('Form Jaminan Berhasil Disetujui' );
+        return redirect()->back();
+    }
+    
+    public function rejectJaminan($id)
+    {
+        $formjaminan = FormJaminan::findOrFail($id);
+        $formjaminan->rangking = 0;
+        $formjaminan->is_rejected = 1;
+        $formjaminan->status_pengajuan = 'Surat Jaminan Ditolak';
+        $formjaminan->save();
+        Alert::success('Form Jaminan Berhasil ditolak' );
         return redirect()->back();
     }
 

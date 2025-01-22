@@ -115,11 +115,19 @@
                                                         </button>
                                                 </a>
                                                 @if ($record->rangking == 1)
-                                                    <a href="{{ url('/asman/visa/approve/' . $record->id) }}"><button
+                                                    @if ($record->is_rejected == false)
+                                                        
+                                                        <a href="{{ url('/asman/visa/approve/' . $record->id) }}"><button
                                                             class="btn btn-sm btn-success"><span
-                                                                class="lnr lnr-checkmark-circle"> Approve</span>
+                                                            class="lnr lnr-checkmark-circle"> Approve</span>
                                                             </button>
-                                                    </a>
+                                                        </a>
+                                                        <a href="{{ url('/asman/visa/reject/' . $record->id) }}"><button
+                                                            class="btn btn-sm btn-danger"><span
+                                                            class="lnr lnr-cross-circle"> Reject</span>
+                                                            </button>
+                                                        </a>
+                                                    @endif
                                                 @endif
                                             </tr>
                                         </tbody>

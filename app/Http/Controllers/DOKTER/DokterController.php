@@ -30,11 +30,11 @@ class DokterController extends Controller
      */
     public function index()
     {   
-        $formjaminan['menunggu'] =FormJaminan::where('rangking','=',1)->latest()->limit(3)->get();
+        $formjaminan['menunggu'] =FormJaminan::where('rangking','=',1)->where('is_rejected',false)->latest()->limit(3)->get();
         $formjaminan['sudah'] =FormJaminan::where('rangking','=', 2)
         ->OrWhere('rangking','!=',1)
         ->latest()->limit(3)->get();
-        $formjaminan['count_menunggu'] = FormJaminan::where('rangking','=',1)->count();
+        $formjaminan['count_menunggu'] = FormJaminan::where('rangking','=',1)->where('is_rejected',false)->count();
         $formjaminan['count_sudah'] = FormJaminan::where('rangking','=', 2)
         ->OrWhere('rangking','!=',1)
         ->count();
@@ -117,6 +117,7 @@ class DokterController extends Controller
         $pdf_name = $nomor_gabung.'-'.$formjaminan->jenis_surat.'-'.date('Y-m-d').'-'.$formjaminan['karyawan']['nid'].'-'. $slug .'.pdf' ;
        return PDF::loadView('admin/template/pdf_dokter', compact(['formjaminan','mkad','sm']))->setPaper('a4', 'portrait')->stream($pdf_name);
     }
+
     public function approveJaminan($id)
     {
         $formjaminan = FormJaminan::findOrFail($id);
@@ -124,6 +125,17 @@ class DokterController extends Controller
         $formjaminan->status_pengajuan = 'Menunggu Persetujuan Asisten Manager';
         $formjaminan->save();
         Alert::success('Form Jaminan Berhasil Disetujui' );
+        return redirect()->back();
+    }
+
+    public function rejectJaminan($id)
+    {
+        $formjaminan = FormJaminan::findOrFail($id);
+        $formjaminan->rangking = 0;
+        $formjaminan->is_rejected = 1;
+        $formjaminan->status_pengajuan = 'Surat Jaminan Ditolak';
+        $formjaminan->save();
+        Alert::success('Form Jaminan Berhasil ditolak' );
         return redirect()->back();
     }
 

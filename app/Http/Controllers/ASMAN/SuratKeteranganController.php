@@ -164,6 +164,19 @@ class SuratKeteranganController extends Controller
         return redirect()->back();
     }
 
+    public function reject($id)
+    {
+        $suratketerangan = Suratketerangan::findOrFail($id);
+        $suratketerangan->rangking = 0;
+        $suratketerangan->is_rejected = true;
+        $suratketerangan->status = 'Surat Keterangan Ditolak';
+        $suratketerangan->save();
+
+        Alert::success('Form Surat Keterangan Berhasil Ditolak' );
+
+        return redirect()->back();
+    }
+
     public function show_dashboard($id)
     {
         $formjaminan = FormJaminan::findOrFail($id);
