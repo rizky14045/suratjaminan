@@ -113,11 +113,11 @@
                                                 </span>
                                             </span>
                                         </a>
-                                        <a class="px-0 pb-2 pt-0 mt-5" href="{{ url('/admin/export') }}">
+                                        <a class="px-0 pb-2 pt-0 mt-5" href="{{ url('/admin/history-record') }}">
                                             <span class="media align-items-center">
-                                                <span class="fa fa-file mr-3"></span>
+                                                <span class="fa fa-clock-o mr-3"></span>
                                                 <span class="media-body text-truncate text-left">
-                                                    <span class="text-truncate text-left">Export</span>
+                                                    <span class="text-truncate text-left">History Record</span>
                                                 </span>
                                             </span>
                                         </a>
@@ -126,6 +126,14 @@
                                                 <span class="fa fa-file mr-3"></span>
                                                 <span class="media-body text-truncate text-left">
                                                     <span class="text-truncate text-left">Export</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                        <a class="px-0 pb-2 pt-0 mt-5" href="{{ url('/admin/surat-keterangan') }}">
+                                            <span class="media align-items-center">
+                                                <span class="fa fa-file mr-3"></span>
+                                                <span class="media-body text-truncate text-left">
+                                                    <span class="text-truncate text-left">Surat</span>
                                                 </span>
                                             </span>
                                         </a>
