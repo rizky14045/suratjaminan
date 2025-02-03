@@ -108,7 +108,7 @@
                                                             <td>{{ $item->nomor_surat }}</td>
                                                             <td>{{ $item->jenis_surat }}</td>
                                                             <td>{{ $item->karyawan['nama_karyawan'] ?? '' }}</td>
-                                                            <td>{{ $item->karyawan['nid'] }}</td>
+                                                            <td>{{ $item->karyawan['nid'] ?? ''}}</td>
                                                             <td>{{ $item->jenisPemeriksaan['jenis_pemeriksaan'] ?? '' }}</td>
                                                             <td>{{ $item->rumahSakit['nama_rumah_sakit'] ?? '' }}</td>
                                                             <td>{{ $item->jenis_kelas }} /
