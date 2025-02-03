@@ -241,11 +241,11 @@
                                                                 <td>{{ $i + 1 }}</td>
                                                                 <td>{{ $item->nomor_surat }}</td>
                                                                 <td>{{ $item->jenis_surat }}</td>
-                                                                <td>{{ $item->karyawan['nama_karyawan'] }}</td>
-                                                                <td>{{ $item->karyawan['nid'] }}</td>
-                                                                <td>{{ $item->jenisPemeriksaan['jenis_pemeriksaan'] }}
+                                                                <td>{{ $item->karyawan['nama_karyawan'] ?? '' }}</td>
+                                                                <td>{{ $item->karyawan['nid'] ?? '' }}</td>
+                                                                <td>{{ $item->jenisPemeriksaan['jenis_pemeriksaan'] ?? '' }}
                                                                 </td>
-                                                                <td>{{ $item->rumahSakit['nama_rumah_sakit'] }}</td>
+                                                                <td>{{ $item->rumahSakit['nama_rumah_sakit']  ?? ''}}</td>
                                                                 <td>{{ $item->jenis_kelas }} /
                                                                     {{ number_format($item->harga) }}
                                                                 </td>
@@ -389,12 +389,12 @@
                                                                 <td>{{ $i + 1 }}</td>
                                                                 <td>{{ $item->nomor_surat }}</td>
                                                                 <td>{{ $item->jenis_surat }}</td>
-                                                                <td>{{ $item->karyawan['nama_karyawan'] }}</td>
-                                                                <td>{{ $item->karyawan['nid'] }}</td>
+                                                                <td>{{ $item->karyawan['nama_karyawan'] ?? '' }}</td>
+                                                                <td>{{ $item->karyawan['nid'] ?? '' }}</td>
                                                                 <td>{{ $item->nama_pasien }}</td>
-                                                                <td>{{ $item->jenisPemeriksaan['jenis_pemeriksaan'] }}
+                                                                <td>{{ $item->jenisPemeriksaan['jenis_pemeriksaan'] ?? '' }}
                                                                 </td>
-                                                                <td>{{ $item->rumahSakit['nama_rumah_sakit'] }}</td>
+                                                                <td>{{ $item->rumahSakit['nama_rumah_sakit'] ?? '' }}</td>
                                                                 <td>{{ $item->jenis_kelas }} /
                                                                     {{ number_format($item->harga) }}
                                                                 </td>
