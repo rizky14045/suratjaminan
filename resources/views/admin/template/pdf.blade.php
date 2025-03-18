@@ -226,10 +226,7 @@
         <p>Semua biaya dapat ditagihkan di <strong>PT PLN Nusantara Power Unit Pembangkitan Muara Karang</strong>, Jalan Pluit Karang
             Ayu Jakarta Utara-14450, sedangkan selisih biaya yang tidak sesuai haknya dan non medis serta biaya materai
             ditanggung oleh Karyawan sebelum meninggalkan Rumah Sakit.</p>
-        <p>Untuk koordinasi terkait diagnosa dan rencana tindakan yang akan di berikan kepada pasien, dapat menghubungi
-            Dokter Perusahaan, yaitu Dr Erni Novelia Sinaga ( No. HP : 081226120949). untuk informasi lebih lanjut terkait
-            administrasi jaminan perawatan kesehatan, dapat menghubungi contact person : Sdr . I Gusti Ngurah Bartha (
-            HP : 082230920005 / ext. 1309) / Sdr, Nasir (HP : 081281121064 / ext. 1313)</p>
+        <p>Untuk koordinasi terkait diagnosa dan rencana tindakan yang akan di berikan kepada pasien, dapat menghubungi Dokter Perusahaan, yaitu dr. Erni Novelia Sinaga ( No. HP : 081226120949). untuk informasi lebih lanjut terkait administrasi jaminan perawatan kesehatan, dapat menghubungi contact person : Sdr . I Gusti Ngurah Bartha ( HP : 082230920005) / Sdr, Nasir (HP : 081281121064) dan juga dapat melakukan koordinasi kepada Assistant Manager SDM, Umum & CSR UP Muara Karang (Ibu Sarika Apriyeni Gopar).</p>
         <p>Demikian atas bantuan dan kerja sama yang baik, kami ucapkan terima kasih.</p>
 
 
