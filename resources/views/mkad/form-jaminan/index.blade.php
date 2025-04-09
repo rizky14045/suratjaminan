@@ -91,15 +91,15 @@
                                                                 {{-- <td class="{{$item->rangking == 3 ? 'text-white' :''}}">{{ $item->karyawan['nama_karyawan'] }}</td>
                                                                 <td class="{{$item->rangking == 3 ? 'text-white' :''}}">{{ $item->karyawan['nid'] }}</td> --}}
                                                                 <td class="{{$item->rangking == 3 ? 'text-white' :''}}">
-                                                                    <span>Nama Karyawan : {{ $item->karyawan['nama_karyawan'] }}</span>
+                                                                    <span>Nama Karyawan : {{ $item->karyawan['nama_karyawan'] ?? '' }}</span>
                                                                     <br>
-                                                                    <span>NID : {{ $item->karyawan['nid'] }}</span>
+                                                                    <span>NID : {{ $item->karyawan['nid'] ?? '' }}</span>
                                                                     <br>
                                                                     <span>Nomor Surat : {{ $item->nomor_surat }}</span>
                                                                     <br>
-                                                                    <span>Jenis Pemeriksaan : {{ $item->jenisPemeriksaan['jenis_pemeriksaan'] }} </span>
+                                                                    <span>Jenis Pemeriksaan : {{ $item->jenisPemeriksaan['jenis_pemeriksaan'] ?? '' }} </span>
                                                                     <br>
-                                                                    <span>Rumah Sakit : {{ $item->rumahSakit['nama_rumah_sakit'] }}</span>
+                                                                    <span>Rumah Sakit : {{ $item->rumahSakit['nama_rumah_sakit'] ?? '' }}</span>
                                                                     <br>
                                                                     <span>Kelas Rawat Inap : {{ $item->jenis_kelas }} /
                                                                         {{ number_format($item->harga) }}</span>
@@ -175,17 +175,17 @@
                                                                 {{-- <td class="{{$item->rangking == 3 ? 'text-white' :''}}">{{ $item->karyawan['nama_karyawan'] }}</td>
                                                                 <td class="{{$item->rangking == 3 ? 'text-white' :''}}">{{ $item->karyawan['nid'] }}</td> --}}
                                                                 <td class="{{$item->rangking == 3 ? 'text-white' :''}}">
-                                                                    <span>Nama Karyawan : {{ $item->karyawan['nama_karyawan'] }}</span>
+                                                                    <span>Nama Karyawan : {{ $item->karyawan['nama_karyawan'] ?? '' }}</span>
                                                                     <br>
-                                                                    <span>NID : {{ $item->karyawan['nid'] }}</span>
+                                                                    <span>NID : {{ $item->karyawan['nid'] ?? '' }}</span>
                                                                     <br>
                                                                     <span>Nomor Surat : {{ $item->nomor_surat }}</span>
                                                                     <br>
                                                                     <span>Nama Pasien : {{ $item->nama_pasien }}</span>
                                                                     <br>
-                                                                    <span>Jenis Pemeriksaan : {{ $item->jenisPemeriksaan['jenis_pemeriksaan'] }} </span>
+                                                                    <span>Jenis Pemeriksaan : {{ $item->jenisPemeriksaan['jenis_pemeriksaan'] ?? '' }} </span>
                                                                     <br>
-                                                                    <span>Rumah Sakit : {{ $item->rumahSakit['nama_rumah_sakit'] }}</span>
+                                                                    <span>Rumah Sakit : {{ $item->rumahSakit['nama_rumah_sakit'] ?? '' }}</span>
                                                                     <br>
                                                                     <span>Kelas Rawat Inap : {{ $item->jenis_kelas }} /
                                                                         {{ number_format($item->harga) }}</span>

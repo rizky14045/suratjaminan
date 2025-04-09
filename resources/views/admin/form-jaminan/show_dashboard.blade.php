@@ -50,32 +50,32 @@
                                             </tr> --}}
                                             <tr>
                                                 <th> Nomor Surat </th>
-                                                <td> {{ $formjaminan->nomor_surat }} </td>
+                                                <td> {{ $formjaminan->nomor_surat ?? '' }} </td>
                                             </tr>
                                             <tr>
                                                 <th> Jenis Surat </th>
-                                                <td> {{ $formjaminan->jenis_surat }} </td>
+                                                <td> {{ $formjaminan->jenis_surat ?? '' }} </td>
                                             </tr>
                                             <tr>
                                                 <th> Karyawan </th>
-                                                <td> {{ $formjaminan->karyawan['nama_karyawan'] }} </td>
+                                                <td> {{ $formjaminan->karyawan['nama_karyawan'] ?? '' }} </td>
                                             </tr>
                                             <tr>
                                                 <th> Jenis Pemeriksaan </th>
-                                                <td> {{ $formjaminan->jenisPemeriksaan['jenis_pemeriksaan'] }} </td>
+                                                <td> {{ $formjaminan->jenisPemeriksaan['jenis_pemeriksaan'] ?? '' }} </td>
                                             </tr>
                                             <tr>
                                                 <th> Nama Pasien </th>
-                                                <td> {{ $formjaminan->nama_pasien }} </td>
+                                                <td> {{ $formjaminan->nama_pasien ?? '' }} </td>
                                             </tr>
                                             <tr>
                                                 <th> Rumah Sakit </th>
-                                                <td> {{ $formjaminan->rumahSakit['nama_rumah_sakit'] }} </td>
+                                                <td> {{ $formjaminan->rumahSakit['nama_rumah_sakit'] ?? '' }} </td>
                                             </tr>
                                             <tr>
                                                 <th> Biaya Rumah Sakit </th>
-                                                <td> {{ $formjaminan->karyawan['kelasRawatInap']['jenis_kelas'] }} /
-                                                    {{ $formjaminan->karyawan['kelasRawatInap']['harga'] }} </td>
+                                                <td> {{ $formjaminan->karyawan['kelasRawatInap']['jenis_kelas'] ?? '' }} /
+                                                    {{ $formjaminan->karyawan['kelasRawatInap']['harga'] ?? '' }} </td>
                                             </tr>
                                             <tr>
                                                 <th> Status Pengajuan </th>
