@@ -148,9 +148,9 @@ class FormJaminanController extends Controller
         $request['status_pengajuan'] = 'Menunggu Persetujuan Dokter';
         $requestData = $request->all();
         $data_karyawan = FormJaminan::create($requestData);
-        if($data_karyawan){
-            Mail::to($dokter[0]['email'])->send(new \App\Mail\Dokter_Mail($dokter,$data_karyawan));
-        }
+        // if($data_karyawan){
+        //     Mail::to($dokter[0]['email'])->send(new \App\Mail\Dokter_Mail($dokter,$data_karyawan));
+        // }
         Alert::success('New ' . 'FormJaminan'. ' Created!' );
         $nomor++;
         if($karyawan['status_karyawan']=='karyawan_tetap'){
@@ -249,13 +249,13 @@ class FormJaminanController extends Controller
     public function sendEmail($id)
     {
         $formjaminan = FormJaminan::where('id',$id)->first();
-        if($formjaminan['rumahsakit']['email']){
-            Mail::to($formjaminan['rumahsakit']['email'])->send(new \App\Mail\FormJaminanEmail($formjaminan));
+        // if($formjaminan['rumahsakit']['email']){
+        //     Mail::to($formjaminan['rumahsakit']['email'])->send(new \App\Mail\FormJaminanEmail($formjaminan));
 
-        }
-        if($formjaminan['karyawan']['email']){
-            Mail::to($formjaminan['karyawan']['email'])->send(new \App\Mail\Karyawan_Mail($formjaminan));
-        }
+        // }
+        // if($formjaminan['karyawan']['email']){
+        //     Mail::to($formjaminan['karyawan']['email'])->send(new \App\Mail\Karyawan_Mail($formjaminan));
+        // }
         Alert::success('Email Success Sent !' );
         $formjaminan->status_email = true;
         $formjaminan->save();

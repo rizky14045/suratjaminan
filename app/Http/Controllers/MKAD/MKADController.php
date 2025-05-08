@@ -128,9 +128,9 @@ class MKADController extends Controller
         $formjaminan->rangking = 4;
         $formjaminan->status_pengajuan = 'Menunggu Persetujuan Senior Manager';
         $formjaminan->save();
-        if($formjaminan){
-            Mail::to($sm[0]['email'])->send(new \App\Mail\Sm_Mail($sm,$formjaminan));
-        }
+        // if($formjaminan){
+        //     Mail::to($sm[0]['email'])->send(new \App\Mail\Sm_Mail($sm,$formjaminan));
+        // }
         Alert::success('Form Jaminan Berhasil Di setujui' );
 
         return redirect()->back();
